@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 export default class DocumentationVariables extends Component {
@@ -19,18 +20,18 @@ export default class DocumentationVariables extends Component {
                 <td>Name</td>
                 <td>Value</td>
               </tr>
-              {this.props.variables.map(v => (
-                <tr>
-                  {v.name ? (
+              {this.props.variables.map(variable => (
+                <tr key={variable.id}>
+                  {variable.name ? (
                     <td>
-                      <code>{v.name}</code>
+                      <code>{variable.name}</code>
                     </td>
                   ) : (
                     <td className="invisible">-</td>
                   )}
-                  {v.value ? (
+                  {variable.value ? (
                     <td>
-                      <code>{v.value}</code>
+                      <code>{variable.value}</code>
                     </td>
                   ) : (
                     <td className="invisible">-</td>
@@ -44,3 +45,6 @@ export default class DocumentationVariables extends Component {
     );
   }
 }
+DocumentationVariables.propTypes = {
+  variables: PropTypes.string.isRequired
+};

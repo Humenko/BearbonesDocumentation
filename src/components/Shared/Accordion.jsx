@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import * as React from 'react';
 
 export class Accordion extends React.Component {
@@ -9,6 +10,10 @@ export class Accordion extends React.Component {
     );
   }
 }
+Accordion.propTypes = {
+  className: PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired
+};
 
 export class AccordionItem extends React.Component {
   constructor(props) {
@@ -47,3 +52,7 @@ export class AccordionItem extends React.Component {
     );
   }
 }
+AccordionItem.propTypes = {
+  header: PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired
+};

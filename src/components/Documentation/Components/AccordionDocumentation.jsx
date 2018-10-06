@@ -31,7 +31,7 @@ export default class AccordionDocumentation extends Component {
                 <div className="doc-preview">
                   <div className="content">
                     <Accordion>
-                      <AccordionItem header={`Panda`}>
+                      <AccordionItem header={'Panda'}>
                         The giant panda lives in a few mountain ranges in
                         central China, mainly in Sichuan, but also in
                         neighbouring Shaanxi and Gansu. As a result of farming,
@@ -69,11 +69,13 @@ export default class AccordionDocumentation extends Component {
                 <div className="doc-preview">
                   <div className="bb-accordion">
                     <div className="header active">
-                      Ursidae<span className="chevron" />
+                      Ursidae
+                      <span className="chevron" />
                     </div>
                     <div className="content active">
                       <div className="header active">
-                        <span className="toggle" />Panda
+                        <span className="toggle" />
+                        Panda
                       </div>
                       <div className="content active">
                         The giant panda lives in a few mountain ranges in
@@ -85,12 +87,14 @@ export default class AccordionDocumentation extends Component {
                       </div>
 
                       <div className="header">
-                        <span className="toggle" />Brown Bear
+                        <span className="toggle" />
+                        Brown Bear
                       </div>
                       <div className="content">...</div>
 
                       <div className="header">
-                        <span className="toggle" />Sloth Bear
+                        <span className="toggle" />
+                        Sloth Bear
                       </div>
                       <div className="content">...</div>
                     </div>
@@ -141,7 +145,7 @@ export default class AccordionDocumentation extends Component {
                 <div className="doc-preview">
                   <div className="content m-b-3">
                     <Accordion className="primary">
-                      <AccordionItem header={`Primary`}>
+                      <AccordionItem header={'Primary'}>
                         The giant panda lives in a few mountain ranges in
                         central China, mainly in Sichuan, but also in
                         neighbouring Shaanxi and Gansu. As a result of farming,
@@ -153,7 +157,7 @@ export default class AccordionDocumentation extends Component {
                   </div>
                   <div className="content m-b-3">
                     <Accordion className="secondary">
-                      <AccordionItem header={`Secondary`}>
+                      <AccordionItem header={'Secondary'}>
                         The giant panda lives in a few mountain ranges in
                         central China, mainly in Sichuan, but also in
                         neighbouring Shaanxi and Gansu. As a result of farming,
@@ -165,7 +169,7 @@ export default class AccordionDocumentation extends Component {
                   </div>
                   <div className="content m-b-3">
                     <Accordion className="positive">
-                      <AccordionItem header={`Positive`}>
+                      <AccordionItem header={'Positive'}>
                         The giant panda lives in a few mountain ranges in
                         central China, mainly in Sichuan, but also in
                         neighbouring Shaanxi and Gansu. As a result of farming,
@@ -177,7 +181,7 @@ export default class AccordionDocumentation extends Component {
                   </div>
                   <div className="content m-b-3">
                     <Accordion className="negative">
-                      <AccordionItem header={`Negative`}>
+                      <AccordionItem header={'Negative'}>
                         The giant panda lives in a few mountain ranges in
                         central China, mainly in Sichuan, but also in
                         neighbouring Shaanxi and Gansu. As a result of farming,
@@ -189,7 +193,7 @@ export default class AccordionDocumentation extends Component {
                   </div>
                   <div className="content m-b-3">
                     <Accordion className="invert">
-                      <AccordionItem header={`Invert`}>
+                      <AccordionItem header={'Invert'}>
                         The giant panda lives in a few mountain ranges in
                         central China, mainly in Sichuan, but also in
                         neighbouring Shaanxi and Gansu. As a result of farming,

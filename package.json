@@ -5,21 +5,19 @@
   "homepage": "https://bearbon.es",
   "scripts": {
     "build-css": "node-sass-chokidar src/styles/sass -o src/styles/css",
-    "watch-css": "npm run build-css && node-sass-chokidar src/styles/sass -o src/styles/css --watch --recursive",
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
-    "test": "react-scripts test --env=jsdom",
-    "eslint": "eslint ./src/** --ext jsx --ext js"
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "watch-css": "npm run build-css && node-sass-chokidar src/styles/sass -o src/styles/css --watch --recursive",
+    "eslint": "eslint ./src/** --ext jsx --ext js",
+    "test": "react-scripts test --env=jsdom"
   },
   "devDependencies": {
-    "babel-eslint": "7.2.3",
     "bearbones": "0.28.0",
-    "eslint": "4.19.1",
     "eslint-plugin-flowtype": "2.47.1",
     "eslint-plugin-react": "7.8.2",
-    "hint": "^3.4.8",
+    "hint": "3.4.8",
     "node-sass-chokidar": "1.3.3",
     "npm-run-all": "4.1.3",
     "react": "16.4.0",
@@ -29,5 +27,11 @@
     "react-router-dynamic-breadcrumbs": "2.1.1",
     "react-scripts": "2.0.4",
     "react-transition-group": "2.3.1"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

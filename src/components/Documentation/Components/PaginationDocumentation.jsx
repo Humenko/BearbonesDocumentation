@@ -29,7 +29,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -63,7 +65,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -77,7 +81,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -91,7 +97,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -105,7 +113,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -119,7 +129,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -173,7 +185,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -187,7 +201,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -201,7 +217,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -215,7 +233,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -229,7 +249,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -283,7 +305,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -297,7 +321,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -311,7 +337,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -325,7 +353,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -339,7 +369,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -353,7 +385,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -411,7 +445,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -425,7 +461,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -439,7 +477,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -453,7 +493,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -467,7 +509,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -481,7 +525,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -539,7 +585,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -553,7 +601,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>
@@ -567,7 +617,9 @@ export default class PaginationDocumentation extends Component {
                       <a className="item active" href="#example">
                         1
                       </a>
-                      <a className="item disabled">...</a>
+                      <a className="item disabled" href="#example">
+                        ...
+                      </a>
                       <a className="item" href="#example">
                         3
                       </a>

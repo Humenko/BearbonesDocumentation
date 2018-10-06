@@ -17,8 +17,8 @@ export default class DocumentationBox extends Component {
     );
   }
 }
-
 DocumentationBox.propTypes = {
+  className: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired

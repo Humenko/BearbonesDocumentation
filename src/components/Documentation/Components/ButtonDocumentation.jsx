@@ -26,7 +26,9 @@ export default class ButtonDocumentation extends Component {
                 <div className="doc-preview">
                   <div className="doc-content">
                     <button className="bb-btn">Button</button>
-                    <a className="bb-btn m-x-2">Anchor</a>
+                    <a href="#example" className="bb-btn m-x-2">
+                      Anchor
+                    </a>
                     <input className="bb-btn" type="submit" value="Input" />
                   </div>
                 </div>
@@ -488,12 +490,24 @@ Icon</button>`}
             <div className="column column-16">
               <div className="bb-box example">
                 <div className="doc-preview">
-                  <a className="link">Link</a>
-                  <a className="link primary m-x-2">Link</a>
-                  <a className="link secondary">Link</a>
-                  <a className="link positive m-x-2">Link</a>
-                  <a className="link negative">Link</a>
-                  <a className="link invert m-l-2">Link</a>
+                  <a href="#example" className="link">
+                    Link
+                  </a>
+                  <a href="#example" className="link primary m-x-2">
+                    Link
+                  </a>
+                  <a href="#example" className="link secondary">
+                    Link
+                  </a>
+                  <a href="#example" className="link positive m-x-2">
+                    Link
+                  </a>
+                  <a href="#example" className="link negative">
+                    Link
+                  </a>
+                  <a href="#example" className="link invert m-l-2">
+                    Link
+                  </a>
                 </div>
                 <div className="doc-snippet">
                   <Highlight className="html">

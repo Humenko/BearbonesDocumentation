@@ -248,7 +248,7 @@ export default class BreadcrumbDocumentation extends Component {
               { name: '$breadcrumb-variant-background', value: 'transparent' },
               { name: '$breadcrumb-variant-color', value: '$base-color' },
               { name: '$breadcrumb-variant-active', value: '$secondary-color' },
-              { name: '$breadcrumb-divider', value: "'|'" },
+              { name: '$breadcrumb-divider', value: '|' },
               { name: '$breadcrumb-variant-divider', value: '$base-color' },
               {},
               { name: '$breadcrumb-item-spacing', value: '1rem' },

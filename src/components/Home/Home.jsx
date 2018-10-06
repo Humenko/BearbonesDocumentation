@@ -105,7 +105,11 @@ class Home extends Component {
                   <h3 className="text-secondary title">Contemporary.</h3>
                   <p className="subtitle lg">
                     Built using the latest and greatest tech including Flexbox,
-                    Sass and <a href="">Font Awesome 5</a>.
+                    Sass and{' '}
+                    <a href="https://fontawesome.com/" target="blank">
+                      Font Awesome 5
+                    </a>
+                    .
                   </p>
                 </div>
                 <div className="column one-third text-center-lg text-right">
@@ -137,8 +141,9 @@ class Home extends Component {
                       className="link text-primary text-underline"
                     >
                       here
-                    </Link>. All you need to do is edit the variables. So, what
-                    are you waiting for?
+                    </Link>
+                    . All you need to do is edit the variables. So, what are you
+                    waiting for?
                   </p>
                 </div>
                 <div className="column column-6 column-offset-3-lg">

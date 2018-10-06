@@ -128,7 +128,7 @@ export default class DividerDocumentation extends Component {
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-divider divider-content">Divider</div>`}
+                    {'<div className="bb-divider divider-content">Divider</div>'}
                   </Highlight>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
@@ -154,7 +154,7 @@ export default class DividerDocumentation extends Component {
                 </div>
                 <div className="doc-snippet">
                   <Highlight className="html">
-                    {`<hr class="bb-divider hidden"/>`}
+                    {'<hr class="bb-divider hidden"/>'}
                   </Highlight>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
