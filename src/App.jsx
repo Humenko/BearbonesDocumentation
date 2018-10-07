@@ -29,6 +29,7 @@ import HeroDocumentation from './components/Documentation/Layout/HeroDocumentati
 import PageNotFound from './components/Error/PageNotFound';
 import Home from './components/Home/Home';
 import DocumentationNavigation from './components/Shared/DocumentationNavigation';
+import Header from './components/Shared/Header';
 import Navbar from './components/Shared/Navbar';
 
 export default class App extends Component {
@@ -36,6 +37,7 @@ export default class App extends Component {
     return (
       <div>
         <main>
+          <Header />
           <Route path="/documentation" component={DocumentationNavigation} />
           <Navbar />
           <Route

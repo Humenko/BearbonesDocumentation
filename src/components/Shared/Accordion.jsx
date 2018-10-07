@@ -11,8 +11,8 @@ export class Accordion extends React.Component {
   }
 }
 Accordion.propTypes = {
-  className: PropTypes.string.isRequired,
-  children: PropTypes.string.isRequired
+  className: PropTypes.node,
+  children: PropTypes.node.isRequired
 };
 
 export class AccordionItem extends React.Component {
@@ -53,6 +53,6 @@ export class AccordionItem extends React.Component {
   }
 }
 AccordionItem.propTypes = {
-  header: PropTypes.string.isRequired,
-  children: PropTypes.string.isRequired
+  header: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };

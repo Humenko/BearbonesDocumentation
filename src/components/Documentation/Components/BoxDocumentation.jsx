@@ -40,11 +40,11 @@ export default class BoxDocumentation extends Component {
                 </div>
                 <div className="doc-snippet">
                   <Highlight className="html">
-                    {`<div className="bb-box">
-  <h4 className="title">
+                    {`<div class="bb-box">
+  <h4 class="title">
     The giant panda is actually a bear.
   </h4>
-  <p className="subtitle">
+  <p class="subtitle">
     The giant panda also known as panda bear or simply
     panda, is a bear native to south central China.
   </p>
@@ -88,33 +88,33 @@ export default class BoxDocumentation extends Component {
                 </div>
                 <div className="doc-snippet">
                   <Highlight className="html">
-                    {`<div className="bb-box primary">
-  <h4 className="title">
+                    {`<div class="bb-box primary">
+  <h4 class="title">
     The giant panda is actually a bear.
   </h4>
-  <p className="subtitle">
+  <p class="subtitle">
     The giant panda also known as panda bear or simply
     panda, is a bear native to south central China.
   </p>
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-box secondary">
+                    {`<div class="bb-box secondary">
   ...
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-box positive">
+                    {`<div class="bb-box positive">
   ...
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-box negative">
+                    {`<div class="bb-box negative">
   ...
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-box invert">
+                    {`<div class="bb-box invert">
   ...
 </div>`}
                   </Highlight>
@@ -161,38 +161,38 @@ export default class BoxDocumentation extends Component {
                 </div>
                 <div className="doc-snippet">
                   <Highlight className="html">
-                    {`<div className="bb-box outline">
-  <h4 className="title">
+                    {`<div class="bb-box outline">
+  <h4 class="title">
     The giant panda is actually a bear.
   </h4>
-  <p className="subtitle">
+  <p class="subtitle">
     The giant panda also known as panda bear or simply
     panda, is a bear native to south central China.
   </p>
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-box outline primary">
+                    {`<div class="bb-box outline primary">
   ...
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-box outline secondary">
+                    {`<div class="bb-box outline secondary">
   ...
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-box outline positive">
+                    {`<div class="bb-box outline positive">
   ...
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-box outline negative">
+                    {`<div class="bb-box outline negative">
   ...
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-box outline invert">
+                    {`<div class="bb-box outline invert">
   ...
 </div>`}
                   </Highlight>

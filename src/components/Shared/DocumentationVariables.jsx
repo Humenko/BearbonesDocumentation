@@ -21,7 +21,7 @@ export default class DocumentationVariables extends Component {
                 <td>Value</td>
               </tr>
               {this.props.variables.map(variable => (
-                <tr key={variable.id}>
+                <tr>
                   {variable.name ? (
                     <td>
                       <code>{variable.name}</code>
@@ -46,5 +46,5 @@ export default class DocumentationVariables extends Component {
   }
 }
 DocumentationVariables.propTypes = {
-  variables: PropTypes.string.isRequired
+  variables: PropTypes.array.isRequired
 };

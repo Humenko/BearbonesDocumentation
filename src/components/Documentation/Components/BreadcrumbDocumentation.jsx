@@ -39,15 +39,15 @@ export default class BreadcrumbDocumentation extends Component {
                 </div>
                 <div className="doc-snippet">
                   <Highlight className="html">
-                    {`<nav className="bb-breadcrumb">
+                    {`<nav class="bb-breadcrumb">
   <ul>
-    <li className="breadcrumb-item active">
+    <li class="breadcrumb-item active">
       <a href="#example">Carnivorans</a>
     </li>
-    <li className="breadcrumb-item">
+    <li class="breadcrumb-item">
       <a href="#example">Ursidae</a>
     </li>
-    <li className="breadcrumb-item">
+    <li class="breadcrumb-item">
       <a href="#example">Panda</a>
     </li>
   </ul>

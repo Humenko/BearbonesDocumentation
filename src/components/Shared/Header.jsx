@@ -6,9 +6,9 @@ class Navbar extends Component {
   render() {
     return (
       <div className="container">
-        <nav className="bb-navbar display" id="top-navbar">
+        <nav className="bb-navbar display fixed" id="top-navbar">
           <div className="brand justify-content-between">
-            <Link to="/home" className="item">
+            <Link to="/" className="item">
               <img src={BearbonesLogo} alt="Bearbones logo" />
             </Link>
             <div className="item">
@@ -29,7 +29,30 @@ class Navbar extends Component {
                 <i className="fab fa-twitter text-xl" aria-hidden="true" />
               </a>
               <div className="item hidden-lg-down">
-                <a className="bb-btn positive">Download</a>
+                <a href="/404" className="bb-btn positive">
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="items">
+            <div className="right">
+              <div className="item bb-dropdown hover">
+                <div className="bb-btn link icon">
+                  <i className="fas fa-palette m-r-2" />
+                  Themes
+                </div>
+                <div className="dropdown-menu">
+                  <a href="#example" className="dropdown-item">
+                    Normal mode
+                  </a>
+                  <a href="#example" className="dropdown-item">
+                    Dark mode
+                  </a>
+                  <a href="#example" className="dropdown-item">
+                    Retro mode
+                  </a>
+                </div>
               </div>
             </div>
           </div>

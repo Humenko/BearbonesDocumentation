@@ -39,15 +39,15 @@ export default class PaginationDocumentation extends Component {
                 </div>
                 <div className="doc-snippet">
                   <Highlight className="html">
-                    {`<div className="bb-stat">
-  <p className="value">20,000</p>
-  <p className="label">Polar Bears</p>  
+                    {`<div class="bb-stat">
+  <p class="value">20,000</p>
+  <p class="label">Polar Bears</p>  
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-stat">
-  <p className="label">Polar Bears</p>
-  <p className="value">20,000</p>
+                    {`<div class="bb-stat">
+  <p class="label">Polar Bears</p>
+  <p class="value">20,000</p>
 </div>`}
                   </Highlight>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
@@ -87,23 +87,23 @@ export default class PaginationDocumentation extends Component {
                 </div>
                 <div className="doc-snippet">
                   <Highlight className="html">
-                    {`<div className="bb-stat primary">
-  <p className="value">20,000</p>
-  <p className="label">Polar Bears</p>  
+                    {`<div class="bb-stat primary">
+  <p class="value">20,000</p>
+  <p class="label">Polar Bears</p>  
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-stat secondary">
+                    {`<div class="bb-stat secondary">
   ...
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-stat positive">
+                    {`<div class="bb-stat positive">
   ...
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-stat negative">
+                    {`<div class="bb-stat negative">
   ...
 </div>`}
                   </Highlight>
@@ -150,28 +150,28 @@ export default class PaginationDocumentation extends Component {
                 </div>
                 <div className="doc-snippet">
                   <Highlight className="html">
-                    {`<div className="bb-stat xs">
-  <p className="value">20,000</p>
-  <p className="label">Polar Bears</p>  
+                    {`<div class="bb-stat xs">
+  <p class="value">20,000</p>
+  <p class="label">Polar Bears</p>  
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-stat sm">
+                    {`<div class="bb-stat sm">
   ...
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-stat">
+                    {`<div class="bb-stat">
   ... 
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-stat lg">
+                    {`<div class="bb-stat lg">
   ... 
 </div>`}
                   </Highlight>
                   <Highlight className="html">
-                    {`<div className="bb-stat xl">
+                    {`<div class="bb-stat xl">
   ...  
 </div>`}
                   </Highlight>
@@ -188,7 +188,9 @@ export default class PaginationDocumentation extends Component {
                   <div className="doc-content">
                     <div className="bb-stat">
                       <p className="value text">
-                        Twenty<br />Thousand
+                        Twenty
+                        <br />
+                        Thousand
                       </p>
                       <p className="label">Polar Bears</p>
                     </div>
@@ -196,11 +198,11 @@ export default class PaginationDocumentation extends Component {
                 </div>
                 <div className="doc-snippet">
                   <Highlight className="html">
-                    {`<div className="bb-stat">
-  <p className="value text">
+                    {`<div class="bb-stat">
+  <p class="value text">
     Twenty<br />Thousand
   </p>
-  <p className="label">Downloads</p>
+  <p class="label">Downloads</p>
 </div>`}
                   </Highlight>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
@@ -221,9 +223,9 @@ export default class PaginationDocumentation extends Component {
                 </div>
                 <div className="doc-snippet">
                   <Highlight className="html">
-                    {`<div className="bb-stat horizontal">
-  <p className="value">20,000</p>
-  <p className="label">Polar Bears</p>  
+                    {`<div class="bb-stat horizontal">
+  <p class="value">20,000</p>
+  <p class="label">Polar Bears</p>  
 </div>`}
                   </Highlight>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
@@ -256,7 +258,9 @@ export default class PaginationDocumentation extends Component {
                       </div>
                       <div className="bb-stat">
                         <p className="value text">
-                          Twenty<br />Thousand
+                          Twenty
+                          <br />
+                          Thousand
                         </p>
                         <p className="label">Polar Bears</p>
                       </div>
@@ -304,7 +308,9 @@ export default class PaginationDocumentation extends Component {
                       </div>
                       <div className="bb-stat">
                         <p className="value text">
-                          Twenty<br />Thousand
+                          Twenty
+                          <br />
+                          Thousand
                         </p>
                         <p className="label">Polar Bears</p>
                       </div>
