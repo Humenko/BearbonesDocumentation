@@ -37,3 +37,7 @@ code {
 .bb-table code {
 	white-space: nowrap;
 }
+
+p code {
+	padding: $padding / 8 $padding / 2;
+}
