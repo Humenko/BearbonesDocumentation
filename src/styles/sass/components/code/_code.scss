@@ -20,24 +20,20 @@
 	}
 	&.javascript {
 		display: inline-block;
-		padding: $padding / 2 $padding;
-		border-radius: $border-radius;
-		background: $primary-color;
-		color: $primary-pair;
+		padding: $padding / 2;
+		border-left: $border-style $border-width * 2 $secondary-color;
+		border-radius: 0;
+		background: $base-pair;
 	}
-}
-
-code {
-	padding: $padding / 2;
-	border-radius: $border-radius;
-	background: $primary-color;
-	color: $primary-pair;
 }
 
 .bb-table code {
 	white-space: nowrap;
 }
 
-p code {
+code {
 	padding: $padding / 8 $padding / 2;
+	border-radius: $border-radius;
+	background: $primary-color;
+	color: $primary-pair;
 }

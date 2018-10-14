@@ -2,24 +2,25 @@
 
 // Colour //
 
-$primary-color: #0a344d !default;
-$primary-pair: #ffffff !default;
+$primary-color: #0A344D !default;
+$primary-pair: #FFFFFF !default;
 //
-$secondary-color: #d17878 !default;
-$secondary-pair: #ffffff !default;
+$secondary-color: #D17878 !default;
+$secondary-pair: #FFFFFF !default;
 //
-$positive-color: #5da265 !default;
-$positive-pair: #ffffff !default;
+$positive-color: #5DA265 !default;
+$positive-pair: #FFFFFF !default;
 //
-$negative-color: #cc493d !default;
-$negative-pair: #ffffff !default;
+$negative-color: #CC493D !default;
+$negative-pair: #FFFFFF !default;
 //
-$base-color: #424242 !default;
-$base-pair: #ffffff !default;
+$base-color: #030303 !default;
+$base-pair: #FFFFFF !default;
 //
-$white: #ffffff !default;
-$light-grey: #a0a0a0 !default;
-$lighter-grey: #fafafa !default;
+$white: #FFFFFF !default;
+$light-grey: #A0A0A0 !default;
+$lighter-grey: #FAFAFA !default;
+$black: #000000 !default;
 
 // Base
 $base-variant-background: $base-color !default;
@@ -63,55 +64,15 @@ $negative-variant-color: $negative-pair !default;
 $negative-variant-hover: darken($negative-variant-background, 10%) !default;
 $negative-variant-active: darken($negative-variant-background, 12%) !default;
 
-$variants: (
-  (
-    invert: (
-      $invert-variant-background,
-      $invert-variant-border,
-      $invert-variant-color,
-      $invert-variant-hover,
-      $invert-variant-active
-    ),
-    primary: (
-      $primary-variant-background,
-      $primary-variant-border,
-      $primary-variant-color,
-      $primary-variant-hover,
-      $primary-variant-active
-    ),
-    secondary: (
-      $secondary-variant-background,
-      $secondary-variant-border,
-      $secondary-variant-color,
-      $secondary-variant-hover,
-      $secondary-variant-active
-    ),
-    positive: (
-      $positive-variant-background,
-      $positive-variant-border,
-      $positive-variant-color,
-      $positive-variant-hover,
-      $positive-variant-active
-    ),
-    negative: (
-      $negative-variant-background,
-      $negative-variant-border,
-      $negative-variant-color,
-      $negative-variant-hover,
-      $negative-variant-active
-    )
-  )
-);
-
 // Spacing //
 
 $padding: 1rem !default;
 $margin: 1.5rem !default;
-$body-spacing-y: 0.5rem !default;
+$body-spacing-y: .5rem !default;
 
 ////****************** LAYOUT ////
 
-$layout-variant-background: $lighter-grey !default;
+$layout-variant-background: darken($base-pair, 2%) !default;
 $layout-variant-color: $base-color !default;
 //
 $container-max-width: 75rem !default;
@@ -121,7 +82,7 @@ $layout-spacing-lg: $layout-spacing-y * 4 !default;
 
 //// GRID ////
 
-$grid-spacing: 0.5rem !default;
+$grid-spacing: .5rem !default;
 $grid-max-column: 16 !default;
 
 // Breakpoints
@@ -134,9 +95,9 @@ $breakpoints: (
 
 // Border //
 
-$border-width: 0.125rem !default;
+$border-width: .125rem !default;
 $border-style: solid !default;
-$border-radius: 0.2rem !default;
+$border-radius: .2rem !default;
 $border-radius-circle: 50% !default;
 $no-border-radius: 0rem !default;
 
@@ -160,8 +121,8 @@ $font-weight: normal !default;
 $font-weight-bold: 600 !default;
 
 // Variant
-$font-size-xs: 0.7rem !default;
-$font-size-sm: 0.85rem !default;
+$font-size-xs: .5rem !default;
+$font-size-sm: .75rem !default;
 $font-size-md: 1rem !default;
 $font-size-lg: 1.25rem !default;
 $font-size-xl: 1.5rem !default;
@@ -185,7 +146,7 @@ $title-spacing-y: 1.5rem !default;
 //******************Transition //
 
 $transition-effect: ease-in-out !default;
-$transition-duration: 0.25s !default;
+$transition-duration: .25s !default;
 
 //// COMPONENTS ////
 
@@ -211,7 +172,7 @@ $accordion-heading-spacing-x: 0 !default;
 $accordion-heading-spacing-y: 1rem !default;
 $accordion-content-spacing-x: 1rem !default;
 $accordion-content-spacing-y: 1rem !default;
-$accordion-toggle-spacing: 0 0.5rem 0 0 !default;
+$accordion-toggle-spacing: 0 .5rem 0 0 !default;
 //
 $accordion-toggle-transition: all $transition-effect $transition-duration !default;
 
@@ -232,14 +193,14 @@ $alert-spacing: 1rem !default;
 $slide-transition-duration: 2s !default;
 $slide-transition-effect: $transition-effect !default;
 $loader-bar-background: $lighter-grey !default;
-$loader-bar-border: 0.5rem !default;
+$loader-bar-border: .5rem !default;
 $loader-bar-border-radius: 50% !default;
-$loader-bar-size: 0.5rem !default;
+$loader-bar-size: .5rem !default;
 $loader-bar-transition-duration: 5s !default;
 $loader-pulse-border-radius: 50% !default;
 $loader-pulse-size: 2rem !default;
 $loader-pulse-transition-duration: 1.75s !default;
-$loader-spinner-border: 0.5rem !default;
+$loader-spinner-border: .5rem !default;
 $loader-spinner-border-radius: 50% !default;
 $loader-spinner-size: 4rem !default;
 $loader-spinner-offset: -($loader-spinner-size / 2) !default;
@@ -289,22 +250,22 @@ $button-font-weight: 400 !default;
 $button-line-height: 1.3 !default;
 $button-text-transform: none !default;
 //
-$button-spacing-x: 0.5rem !default;
-$button-spacing-y: 0.5rem !default;
+$button-spacing-x: .5rem !default;
+$button-spacing-y: .5rem !default;
 //
 $button-transition: all $transition-effect $transition-duration !default;
 // Close button
-$button-close-icon-size: 0.125rem !default;
+$button-close-icon-size: .125rem !default;
 $button-close-size: 1.25rem !default;
-$button-close-size-xs: 0.85rem !default;
+$button-close-size-xs: .85rem !default;
 $button-close-size-sm: 1.05rem !default;
 $button-close-size-lg: 1.45rem !default;
 $button-close-size-xl: 1.65rem !default;
 $button-close-transform: translateX(-50%) translateY(-50%) rotate(45deg) !default;
 // Loading button
-$button-loader-border: 0.1rem !default;
+$button-loader-border: .1rem !default;
 $button-loader-circle: 50% !default;
-$button-loader-size: 0.75rem !default;
+$button-loader-size: .75rem !default;
 $button-loader-offset: -($button-loader-size / 2) !default;
 $button-loader-spacing: $button-loader-offset 0 0 $button-loader-offset !default;
 
@@ -313,13 +274,13 @@ $button-loader-spacing: $button-loader-offset 0 0 $button-loader-offset !default
 $card-background: $white !default;
 $card-border-color: $lighter-grey !default;
 $card-border-style: $border-style !default;
-$card-border-width: 0.25rem !default;
+$card-border-width: .25rem !default;
 $card-border-radius: $border-radius !default;
 $card-color: $base-color !default;
 $card-footer-border-color: $card-border-color !default;
 $card-item-border-color: $card-border-color !default;
-$card-box-shadow: 0 3px 1px -1px rgba(0, 0, 0, 0.1),
-  0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !default;
+$card-box-shadow: 0 3px 1px -1px rgba(0, 0, 0, .1),
+  0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !default;
 $card-content-font-family: $font-family !default;
 $card-content-spacing-x: $padding !default;
 $card-content-spacing-y: $padding !default;
@@ -345,8 +306,8 @@ $divider-spacing-y: 1.5rem !default;
 
 //******************Dropdown //
 
-$dropdown-box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.1),
-  0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !default;
+$dropdown-box-shadow: 0 3px 1px 0 rgba(0, 0, 0, .1),
+  0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !default;
 $dropdown-item-active-color: $primary-color !default;
 $dropdown-background: $base-pair !default;
 $dropdown-border: $border-width $border-style transparent !default;
@@ -355,15 +316,15 @@ $dropdown-border-radius: $border-radius !default;
 $dropdown-menu-font-size: $font-size-md !default;
 $dropdown-menu-spacing-x: 0 !default;
 $dropdown-menu-spacing-y: 0 !default;
-$dropdown-item-spacing-x: 0.75rem !default;
-$dropdown-item-spacing-y: 0.75rem !default;
+$dropdown-item-spacing-x: .75rem !default;
+$dropdown-item-spacing-y: .75rem !default;
 $dropdown-item-color: $primary-color !default;
 $dropdown-item-hover: $primary-color !default;
 $dropdown-item-hover-background: $lighter-grey !default;
 $dropdown-item-active: $primary-color !default;
 $dropdown-item-active-background: $lighter-grey !default;
 $dropdown-min-width: 10rem !default;
-$dropdown-offset: -0.125rem !default;
+$dropdown-offset: -.125rem !default;
 $dropdown-transition: color 0s, opacity $transition-effect $transition-duration,
   transform $transition-effect $transition-duration !default;
 
@@ -372,7 +333,7 @@ $dropdown-transition: color 0s, opacity $transition-effect $transition-duration,
 $footer-variant-background: $lighter-grey !default;
 $footer-variant-color: $base-color !default;
 //
-$footer-box-shadow: 0 0 1.5rem 0 rgba(10, 10, 10, 0.1);
+$footer-box-shadow: 0 0 1.5rem 0 rgba(10, 10, 10, .1);
 //
 $footer-spacing: 3rem $layout-spacing-x 6rem $layout-spacing-x !default;
 
@@ -393,7 +354,7 @@ $field-label-font-weight: 600 !default;
 $field-label-font-size: $font-size !default;
 $field-line-height: 1.3 !default;
 $field-spacing-x: 1rem !default;
-$field-spacing-y: 0.5rem !default;
+$field-spacing-y: .5rem !default;
 $field-text-font-size: $font-size-xs !default;
 $field-height: (
   ($font-size * $field-line-height) + ($field-spacing-y * 2)
@@ -401,7 +362,7 @@ $field-height: (
 $field-transition: border-color $transition-effect $transition-duration,
   background-color $transition-effect $transition-duration,
   color $transition-effect $transition-duration !default;
-$field-select-arrow-size: 0.5rem !default;
+$field-select-arrow-size: .5rem !default;
 $field-select-arrow-color: $light-grey !default;
 $field-select-arrow-color-hover: $light-grey !default;
 
@@ -427,10 +388,10 @@ $media-spacing-y: 1rem !default;
 //******************Navbar //
 
 $navbar-background: $base-pair !default;
-$navbar-box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.1),
-  0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !default;
-$navbar-item-spacing-x: 0.5rem !default;
-$navbar-item-spacing-y: 0.75rem !default;
+$navbar-box-shadow: 0 3px 1px 0 rgba(0, 0, 0, .1),
+  0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !default;
+$navbar-item-spacing-x: .5rem !default;
+$navbar-item-spacing-y: .75rem !default;
 $navbar-font-weight: 600 !default;
 $navbar-container-spacing: 0 1rem !default;
 $navbar-height: 3rem !default;
@@ -449,7 +410,7 @@ $navbar-dropdown-item-hover-background: $primary-color !default;
 $navbar-dropdown-item-active: $primary-color !default;
 $navbar-dropdown-item-active-background: $white !default;
 $navbar-dropdown-radius: $base-pair !default;
-$navbar-dropdown-offset: -0.125rem !default;
+$navbar-dropdown-offset: -.125rem !default;
 $navbar-fixed-spacing-y: 4rem !default;
 $navbar-tab-border-hover-color: $navbar-item-hover-color !default;
 $navbar-tab-border-active-color: $navbar-item-active-color !default;
@@ -477,14 +438,14 @@ $pagination-font-size: $font-size !default;
 $pagination-font-weight: 500 !default;
 //
 $pagination-min-width: 3rem !default;
-$pagination-spacing-y: 0.5rem !default;
-$pagination-spacing-x: 0.75rem !default;
+$pagination-spacing-y: .5rem !default;
+$pagination-spacing-x: .75rem !default;
 //
 $pagination-transition: all $transition-effect $transition-duration !default;
 // Dots
 $pagination-dot-border-radius: $border-radius-circle !default;
-$pagination-dot-size: 0.3rem !default;
-$pagination-dot-spacing: 0.1rem !default;
+$pagination-dot-size: .3rem !default;
+$pagination-dot-spacing: .1rem !default;
 
 // Stat //
 
@@ -503,13 +464,13 @@ $stat-line-height: 1em !default;
 $stat-spacing: 1rem !default;
 //
 $stat-value-font-size-xs: $stat-value-font-size - 1.5rem !default;
-$stat-value-font-size-sm: $stat-value-font-size - 0.75rem !default;
-$stat-value-font-size-lg: $stat-value-font-size + 0.75rem !default;
+$stat-value-font-size-sm: $stat-value-font-size - .75rem !default;
+$stat-value-font-size-lg: $stat-value-font-size + .75rem !default;
 $stat-value-font-size-xl: $stat-value-font-size + 1.5rem !default;
 
 //******************Tab //
 
-$tab-background: $lighter-grey !default;
+$tab-background: darken($base-pair, 2%) !default;
 $tab-border-width: $border-width !default;
 $tab-transition: all $transition-effect $transition-duration !default;
 $tab-item-spacing-x: $padding !default;
@@ -517,7 +478,7 @@ $tab-item-spacing-y: $padding / 2 !default;
 
 // Table //
 
-$table-variant-background: $lighter-grey !default;
+$table-variant-background: darken($base-variant-color, 2%) !default;
 $table-variant-color: $base-variant-background !default;
 $table-variant-border: darken($table-variant-background, 12%) !default;
 $table-variant-hover: darken($table-variant-background, 12%) !default;
@@ -527,64 +488,14 @@ $table-border-radius: $border-radius * 2 !default;
 $table-border-style: $border-style !default;
 $table-border-width: $border-width / 2 !default;
 //
-$table-spacing-x: 0.75rem !default;
-$table-spacing-y: 0.75rem !default;
+$table-spacing-x: .75rem !default;
+$table-spacing-y: .75rem !default;
 //
 $table-transition: all $transition-effect $transition-duration !default;
 
-//// UTILITIES ///
-
-// Spacing //
-
-$spacer: 1rem !default;
-$spacer-x: $spacer !default;
-$spacer-y: $spacer !default;
-$spacers: (
-  0: (
-    x: 0,
-    y: 0
-  ),
-  1: (
-    x: (
-      $spacer-x * 0.25
-    ),
-    y: (
-      $spacer-y * 0.25
-    )
-  ),
-  2: (
-    x: (
-      $spacer-x * 0.5
-    ),
-    y: (
-      $spacer-y * 0.5
-    )
-  ),
-  3: (
-    x: $spacer-x,
-    y: $spacer-y
-  ),
-  4: (
-    x: (
-      $spacer-x * 1.5
-    ),
-    y: (
-      $spacer-y * 1.5
-    )
-  ),
-  5: (
-    x: (
-      $spacer-x * 2
-    ),
-    y: (
-      $spacer-y * 2
-    )
-  )
-) !default;
-
 //******************Chevron
 
-$icon-size: 0.5rem !default;
+$icon-size: .5rem !default;
 $icon-border-color: $light-grey !default;
-$icon-border-width: 0.0625rem !default;
+$icon-border-width: .0625rem !default;
 $icon-border-style: $border-style !default;

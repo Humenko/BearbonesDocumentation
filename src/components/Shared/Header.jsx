@@ -44,13 +44,16 @@ class Navbar extends Component {
                 </div>
                 <div className="dropdown-menu">
                   <a href="#example" className="dropdown-item">
-                    Normal mode
+                    Normal
                   </a>
                   <a href="#example" className="dropdown-item">
-                    Dark mode
+                    Dark
                   </a>
                   <a href="#example" className="dropdown-item">
-                    Retro mode
+                    Retro
+                  </a>
+                  <a href="#example" className="dropdown-item">
+                    Material
                   </a>
                 </div>
               </div>

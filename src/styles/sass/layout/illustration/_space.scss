@@ -1,9 +1,9 @@
 .illustration.hero {
 	&.space {
-		background-color: $base-color;
+		background-color: $black;
 		.container {
 			z-index: 3;
-			color: $base-pair;
+			color: $white;
 		}
 		h1 {
 			text-align: center;
@@ -65,8 +65,8 @@
 			width: .1875rem;
 			height: .1875rem;
 			border-radius: $border-radius-circle;
-			background-color: $base-pair;
-			color: $base-pair;
+			background-color: $white;
+			color: $white;
 			animation-timing-function: ease-in-out;
 
 			will-change: star-animation;

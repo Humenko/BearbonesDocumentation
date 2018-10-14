@@ -5,7 +5,7 @@
 		padding: 0;
 		background: transparent;
 
-		@include box-variant(inherit, $box-variant-color, $light-grey);
+		@include box-variant(inherit, $base-pair, darken($base-pair, 12%));
 		@include respond-to('md') {
 			flex-direction: row;
 		}
@@ -28,8 +28,6 @@
 			}
 		}
 		.doc-preview {
-			background: $white;
-
 			@include respond-to('md') {
 				padding-right: $box-spacing-x;
 			}
@@ -48,7 +46,7 @@
 		}
 		.doc-snippet {
 			padding-bottom: 2.5rem;
-			background: $lighter-grey;
+			background: darken($base-pair, 2%);
 
 			@include respond-to('md') {
 				border-top: none;
@@ -74,20 +72,21 @@
 	display: block;
 	padding: $box-spacing-y $box-spacing-x;
 	min-height: 10.3125rem;
-	background: $white;
+	background: $base-pair;
 	box-shadow: 0 1.25rem 1.5rem -1.25rem rgba(10, 10, 10, .1);
 	transition-duration: 250ms;
 	transition-property: box-shadow, transform;
 
 	@include border-radius($border-radius * 2);
 	@include hover {
-		background: rgba($secondary-color, .05);
+		background: darken($base-pair, 2%);
 		box-shadow: 0 1.75rem 3rem -1.25rem rgba(10, 10, 10, .2);
 		text-decoration: none !important;
 		transform: translateY(-.25rem);
 	}
 	will-change: box-shadow, transform;
 	&.disabled {
+		background: $base-pair;
 		opacity: .4;
 		pointer-events: none;
 	}

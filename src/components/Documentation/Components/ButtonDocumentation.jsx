@@ -109,7 +109,7 @@ export default class ButtonDocumentation extends Component {
                     {'<button class="bb-btn xs">Extra small</button>'}
                   </Highlight>
                   <Highlight className="html">
-                    {'<button class="bb-btn small">Small</button>'}
+                    {'<button class="bb-btn sm">Small</button>'}
                   </Highlight>
                   <Highlight className="html">
                     {'<button class="bb-btn">Medium</button>'}
