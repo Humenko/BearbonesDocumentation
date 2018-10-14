@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 import { Route, Switch } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import About from './components/About/About';
@@ -32,7 +33,13 @@ import DocumentationNavigation from './components/Shared/DocumentationNavigation
 import Header from './components/Shared/Header';
 import Navbar from './components/Shared/Navbar';
 
+ReactGA.initialize('UA-69256675-7');
+
 export default class App extends Component {
+  fireTracking() {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }
+
   render() {
     return (
       <div>
@@ -41,6 +48,7 @@ export default class App extends Component {
           <Route path="/documentation" component={DocumentationNavigation} />
           <Navbar />
           <Route
+            onEnter={this.fireTracking()}
             render={({ location }) => (
               <TransitionGroup>
                 <CSSTransition
