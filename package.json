@@ -2,7 +2,7 @@
   "name": "bearbones-documentation",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bearbon.es",
+  "homepage": "https://bearbon.es/",
   "scripts": {
     "build-css": "node-sass-chokidar src/styles/sass -o src/styles/css",
     "build-js": "react-scripts build",
@@ -14,7 +14,7 @@
     "test": "react-scripts test --env=jsdom"
   },
   "devDependencies": {
-    "bearbones": "0.28.0",
+    "bearbones": "0.29.0",
     "eslint-plugin-flowtype": "2.47.1",
     "eslint-plugin-react": "7.8.2",
     "hint": "3.4.8",
