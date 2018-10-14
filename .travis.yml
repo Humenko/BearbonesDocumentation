@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - "stable"
+  - 'stable'
 
 cache:
   directories:
@@ -9,14 +9,11 @@ cache:
 
 script:
   - npm run build
-  
+
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github-token: $GITHUB_TOKEN
-  local_dir: build
-  on:
-    branch: master
+  provider: firebase
+  token:
+    secure: $FIREBASE_TOKEN
 
 notifications:
   email:
