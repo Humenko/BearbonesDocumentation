@@ -10,6 +10,9 @@ cache:
 script:
   - npm run build
 
+before_install:
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}"
+
 deploy:
   provider: firebase
   skip_cleanup: true
