@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -16,7 +17,7 @@ export default class Footer extends Component {
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <i className="fab fa-github-alt" />
+                      <FontAwesomeIcon icon={['fab', 'github-alt']} size="lg" />
                     </a>
                   </li>
                   <li className="inline-item">
@@ -25,7 +26,7 @@ export default class Footer extends Component {
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <i className="fab fa-twitter" />
+                      <FontAwesomeIcon icon={['fab', 'twitter']} size="lg" />
                     </a>
                   </li>
                 </ul>
@@ -41,7 +42,8 @@ export default class Footer extends Component {
                     target="_blank"
                   >
                     Daniel Humenko
-                  </a>.
+                  </a>
+                  .
                 </p>
                 <Link to="/" className="logo" />
               </div>
@@ -55,7 +57,8 @@ export default class Footer extends Component {
                   target="_blank"
                 >
                   MIT
-                </a>.
+                </a>
+                .
               </p>
             </div>
           </div>

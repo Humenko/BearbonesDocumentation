@@ -193,3 +193,8 @@ $button-box-shadow-hover: none;
 		box-shadow: $button-box-shadow-hover;
 	}
 }
+
+.bb-navbar .item .logo {
+	max-height: 3rem;
+	width: 4rem;
+}

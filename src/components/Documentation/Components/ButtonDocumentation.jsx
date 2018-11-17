@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import Highlight from 'react-highlight';
 import DocumentationVariabes from '../../Shared/DocumentationVariables';
@@ -403,18 +404,18 @@ export default class ButtonDocumentation extends Component {
                   <div className="doc-content">
                     <button className="bb-btn icon">
                       <span>
-                        <i className="fas fa-paw" />
+                        <FontAwesomeIcon icon={['fas', 'paw']} />
                       </span>
                     </button>
                     <button className="bb-btn m-x-2 icon">
                       Icon
                       <span className="p-l-2">
-                        <i className="fas fa-paw" />
+                        <FontAwesomeIcon icon={['fas', 'paw']} />
                       </span>
                     </button>
                     <button className="bb-btn icon">
                       <span className="p-r-2">
-                        <i className="fas fa-paw" />
+                        <FontAwesomeIcon icon={['fas', 'paw']} />
                       </span>
                       Icon
                     </button>
