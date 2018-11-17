@@ -36,10 +36,6 @@ import Navbar from './components/Shared/Navbar';
 ReactGA.initialize('UA-69256675-7');
 
 export default class App extends Component {
-  fireTracking() {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }
-
   render() {
     return (
       <div>
@@ -48,7 +44,6 @@ export default class App extends Component {
           <Route path="/documentation" component={DocumentationNavigation} />
           <Navbar />
           <Route
-            onEnter={this.fireTracking()}
             render={({ location }) => (
               <TransitionGroup>
                 <CSSTransition
@@ -186,8 +181,6 @@ export default class App extends Component {
             )}
           />
         </main>
-        {/* <Navbar />
-        <Footer /> */}
       </div>
     );
   }
