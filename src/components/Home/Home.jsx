@@ -49,17 +49,8 @@ class Home extends Component {
                     <span className="font-weight-bold">customisable</span> CSS
                     frameworks.
                   </p>
-                  <div className="column m-t-3">
-                    {/* <a className="bb-btn icon primary lg" id="cta-view-docs">
-                      Get started
-                      <span>
-                        <i className="fal fa-chevron-down" />
-                      </span>
-                    </a> */}
-                    <Link
-                      to="/documentation"
-                      className="bb-btn icon primary lg outline hidden-lg-down"
-                    >
+                  <div className="column m-t-4">
+                    <Link to="/documentation" className="bb-btn secondary lg">
                       Documentation
                       <span className="p-l-2">
                         <i className="fal fa-file-alt" />
