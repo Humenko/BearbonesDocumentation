@@ -12,7 +12,7 @@ script:
 
 before_install:
   - echo "@fortawesome:registry=https://npm.fontawesome.com/
-//npm.fontawesome.com/:_authToken=\${NPM_TOKEN}"
+//npm.fontawesome.com/:_authToken=\${FA_TOKEN}"
 
 deploy:
   provider: firebase
