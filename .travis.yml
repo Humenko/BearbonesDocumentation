@@ -3,9 +3,6 @@ language: node_js
 node_js:
   - 'stable'
 
-before_install:
-  - npm config set //registry.npmjs.org/:_authToken=$FA_TOKEN
-
 cache:
   directories:
     - node_modules
