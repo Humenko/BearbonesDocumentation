@@ -140,12 +140,12 @@ class Home extends Component {
                     Bearbones gives you the headstart.
                   </h2>
                   <p className="subtitle lg text-primary">
-                    The components are already built, the documentation is{' '}
+                    The components are already built,
                     <Link
                       to="/documentation"
                       className="link text-primary text-underline"
                     >
-                      here
+                      the documentation is here
                     </Link>
                     . All you need to do is edit the variables. So, what are you
                     waiting for?
