@@ -9,8 +9,8 @@ export default class IllustrationPainter extends Component {
         className="doc-svg"
       >
         <defs>
-          <path id="a" d="M.1992.4502H291v444.6H.1992z" />
-          <path id="c" d="M0 .97560869h341.9487V378H0z" />
+          <path d="M.1992.4502H291v444.6H.1992z" />
+          <path d="M0 .97560869h341.9487V378H0z" />
         </defs>
         <g fill="none" fillRule="evenodd">
           <g transform="translate(357 -.45)">

@@ -10,7 +10,7 @@ export default class IllustrationRubble extends Component {
       >
         <title>Placeholder</title>
         <defs>
-          <path id="a" d="M.0002.34749163H410.8V198H.0002z" />
+          <path d="M.0002.34749163H410.8V198H.0002z" />
         </defs>
         <g fill="none" fillRule="evenodd">
           <g className="head" fillRule="nonzero">

@@ -9,7 +9,7 @@ class Navbar extends Component {
       <div className="container">
         <nav className="bb-navbar display fixed" id="top-navbar">
           <div className="brand justify-content-between">
-            <Link to="/" className="item">
+            <Link to="/" aria-label="home" className="item">
               <div className="logo">
                 <BearbonesLogo />
               </div>
@@ -20,6 +20,7 @@ class Navbar extends Component {
                 href="https://github.com/humenko"
                 rel="noopener noreferrer"
                 target="_blank"
+                aria-label="github"
               >
                 <FontAwesomeIcon icon={['fab', 'github-alt']} size="lg" />
               </a>
@@ -28,6 +29,7 @@ class Navbar extends Component {
                 href="https://twitter.com/humenko8"
                 rel="noopener noreferrer"
                 target="_blank"
+                aria-label="twitter"
               >
                 <FontAwesomeIcon icon={['fab', 'twitter']} size="lg" />
               </a>
