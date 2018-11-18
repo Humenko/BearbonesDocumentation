@@ -4,7 +4,7 @@ node_js:
   - 'stable'
 
 before_install:
-  - printf "@fortawesome:registry=https://npm.fontawesome.com/"//npm.fontawesome.com/:_authToken=\${FA_TOKEN}"
+  - npm config set //registry.npmjs.org/:_authToken=$FA_TOKEN
 
 cache:
   directories:
