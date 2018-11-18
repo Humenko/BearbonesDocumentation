@@ -11,8 +11,7 @@ script:
   - npm run build
 
 before_install:
-  - echo "@fortawesome:registry=https://npm.fontawesome.com/"
-  - echo "//npm.fontawesome.com/:_authToken=\${FA_TOKEN}"
+  - echo "//registry.npmjs.org/:_authToken=\${FA_TOKEN}"
 
 deploy:
   provider: firebase
