@@ -25,7 +25,7 @@
 		transform: translateY(calc(-4rem + 20%));
 		animation: head-animation 1.25s forwards;
 		animation-timing-function: $transition-effect;
-		animation-delay: .5s;
+		animation-delay: .25s;
 
 		will-change: head-animation;
 	}
@@ -35,7 +35,7 @@
 		transform: translateX(-4rem);
 		animation: torso-animation 1.25s forwards;
 		animation-timing-function: $transition-effect;
-		animation-delay: .5s;
+		animation-delay: .25s;
 
 		will-change: torso-animation;
 	}
@@ -45,7 +45,7 @@
 		transform: translateY(calc(4rem - 70%));
 		animation: legs-animation 1.25s forwards;
 		animation-timing-function: $transition-effect;
-		animation-delay: .5s;
+		animation-delay: .25s;
 
 		will-change: legs-animation;
 	}
@@ -54,8 +54,9 @@
 .intro {
 	opacity: 0;
 	transform: translateY(calc(-2rem + 10%));
-	animation: intro-animation .5s forwards;
+	animation: intro-animation 1s forwards;
 	animation-timing-function: $transition-effect;
+	animation-delay: .25s;
 
 	will-change: intro-animation;
 }

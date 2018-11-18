@@ -1,3 +1,7 @@
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fal } from '@fortawesome/pro-light-svg-icons';
+import { fas } from '@fortawesome/pro-solid-svg-icons';
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -31,6 +35,8 @@ import Home from './components/Home/Home';
 import DocumentationNavigation from './components/Shared/DocumentationNavigation';
 import Header from './components/Shared/Header';
 import Navbar from './components/Shared/Navbar';
+
+library.add(fab, fal, fas);
 
 export default class App extends Component {
   render() {

@@ -1,7 +1,11 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import IllustrationPainter from '../Shared/IllustrationPainter';
 import IllustrationRubble from '../Shared/IllustrationRubble';
+import Body2 from './Bear/Body/Body2';
+import Head2 from './Bear/Head/Head2';
+import Legs2 from './Bear/Legs/Legs2';
 
 class Home extends Component {
   constructor(props) {
@@ -22,24 +26,15 @@ class Home extends Component {
               <div className="bb-grid lg align-items-center">
                 <div className="column column-6 column-offset-1">
                   <div className="bb-body-parts">
-                    <img
-                      className="body-part head"
-                      id="bb-head"
-                      alt="Placeholder"
-                      src={`/static/media/${this.imgNameHead}`}
-                    />
-                    <img
-                      className="body-part torso"
-                      id="bb-body"
-                      alt="Placeholder"
-                      src={`/static/media/${this.imgNameBody}`}
-                    />
-                    <img
-                      className="body-part legs"
-                      id="bb-legs"
-                      alt="Placeholder"
-                      src={`/static/media/${this.imgNameLegs}`}
-                    />
+                    <div className="body-part head" id="bb-head">
+                      <Head2 />
+                    </div>
+                    <div className="body-part torso" id="bb-body">
+                      <Body2 />
+                    </div>
+                    <div className="body-part legs" id="bb-legs">
+                      <Legs2 />
+                    </div>
                   </div>
                 </div>
                 <div className="column column-6 column-offset-1 text-center intro">
@@ -53,7 +48,7 @@ class Home extends Component {
                     <Link to="/documentation" className="bb-btn secondary lg">
                       Documentation
                       <span className="p-l-2">
-                        <i className="fal fa-file-alt" />
+                        <FontAwesomeIcon icon={['fal', 'file-alt']} />
                       </span>
                     </Link>
                   </div>
@@ -80,8 +75,8 @@ class Home extends Component {
               </div>
               <div className="bb-grid lg m-t-5">
                 <div className="column one-third text-center-lg text-right">
-                  <p>
-                    <i className="fal fa-cogs fa-5x text-secondary m-b-3" />
+                  <p className="text-secondary m-b-3">
+                    <FontAwesomeIcon icon={['fal', 'cogs']} size="5x" />
                   </p>
                   <h3 className="text-secondary title">Customisable.</h3>
                   <p className="subtitle lg">
@@ -90,8 +85,8 @@ class Home extends Component {
                   </p>
                 </div>
                 <div className="column one-third text-center-lg">
-                  <p>
-                    <i className="fab fa-css3 fa-5x text-secondary m-b-3" />
+                  <p className="text-secondary m-b-3">
+                    <FontAwesomeIcon icon={['fab', 'css3']} size="5x" />
                   </p>
                   <h3 className="text-secondary title">Contemporary.</h3>
                   <p className="subtitle lg">
@@ -104,8 +99,8 @@ class Home extends Component {
                   </p>
                 </div>
                 <div className="column one-third text-center-lg text-right">
-                  <p>
-                    <i className="fal fa-thumbs-up fa-5x text-secondary m-b-3" />
+                  <p className="text-secondary m-b-3">
+                    <FontAwesomeIcon icon={['fal', 'thumbs-up']} size="5x" />
                   </p>
                   <h3 className="text-secondary title">Completely Free.</h3>
                   <p className="subtitle lg">

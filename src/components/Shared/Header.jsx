@@ -1,6 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import BearbonesLogo from '../../images/bb-logo.svg';
+import BearbonesLogo from './Logo/BearbonesLogo';
 
 class Navbar extends Component {
   render() {
@@ -9,7 +10,9 @@ class Navbar extends Component {
         <nav className="bb-navbar display fixed" id="top-navbar">
           <div className="brand justify-content-between">
             <Link to="/" className="item">
-              <img src={BearbonesLogo} alt="Bearbones logo" />
+              <div className="logo">
+                <BearbonesLogo />
+              </div>
             </Link>
             <div className="item">
               <a
@@ -18,7 +21,7 @@ class Navbar extends Component {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <i className="fab fa-github-alt text-xl" aria-hidden="true" />
+                <FontAwesomeIcon icon={['fab', 'github-alt']} size="lg" />
               </a>
               <a
                 className="item"
@@ -26,20 +29,23 @@ class Navbar extends Component {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <i className="fab fa-twitter text-xl" aria-hidden="true" />
+                <FontAwesomeIcon icon={['fab', 'twitter']} size="lg" />
               </a>
-              <div className="item hidden-lg-down">
+              {/* <div className="item hidden-lg-down">
                 <a href="/404" className="bb-btn positive">
                   Download
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="items">
-            <div className="right">
+            {/* <div className="right">
               <div className="item bb-dropdown hover">
                 <div className="bb-btn link icon">
-                  <i className="fas fa-palette m-r-2" />
+                  <FontAwesomeIcon
+                    className="m-r-3"
+                    icon={['fas', 'palette']}
+                  />
                   Themes
                 </div>
                 <div className="dropdown-menu">
@@ -57,7 +63,7 @@ class Navbar extends Component {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </nav>
       </div>
