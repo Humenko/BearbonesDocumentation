@@ -3,15 +3,15 @@ language: node_js
 node_js:
   - 'stable'
 
+before_install:
+  - printf "@fortawesome:registry=https://npm.fontawesome.com/"//npm.fontawesome.com/:_authToken=\${FA_TOKEN}"
+
 cache:
   directories:
     - node_modules
 
 script:
   - npm run build
-
-before_install:
-  - printf "@fortawesome:registry=https://registry.fortawesome.com/\n//registry.fortawesome.com/:_authToken=${FA_TOKEN}" >> ~/.npmrc
 
 deploy:
   provider: firebase
