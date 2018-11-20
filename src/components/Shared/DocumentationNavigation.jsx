@@ -10,7 +10,7 @@ const routes = {
 export default class DocumentationNavigation extends Component {
   render() {
     return (
-      <div className="section p-b-0">
+      <div className="section p-b-0 invisible-lg-down">
         <div className="container">
           <div className="bb-grid md">
             <div className="column column-16">

@@ -14,6 +14,7 @@ body {
 }
 
 .bb-navbar {
+	border-top: .5rem solid $secondary-color;
 	opacity: 0;
 	transition: transform $transition-effect $transition-duration,
 	opacity $transition-effect $transition-duration;
@@ -22,6 +23,7 @@ body {
 }
 
 .doc-navbar {
+	border-top: none;
 	opacity: 0;
 	transition: transform $transition-effect $transition-duration,
 	opacity $transition-effect $transition-duration;
@@ -115,7 +117,7 @@ body {
 	z-index: -1;
 	width: 100%;
 	opacity: 0;
-	transform: translateX(-2rem);
+	transform: translateX(-5rem);
 }
 .doc-page-animation-enter.doc-page-animation-enter-active {
 	opacity: 1;
@@ -134,7 +136,7 @@ body {
 .doc-page-animation-exit.doc-page-animation-exit-active {
 	opacity: 0;
 	transition: all .25s ease-in-out;
-	transform: translateX(2rem);
+	transform: translateX(5rem);
 
 	will-change: opacity, transform;
 }
@@ -197,4 +199,17 @@ $button-box-shadow-hover: none;
 .bb-navbar .item .logo {
 	max-height: 3rem;
 	width: 4rem;
+}
+
+@each $breakpoint in map-keys($breakpoints) {
+	.invisible-#{$breakpoint}-up {
+		@include respond-to-up($breakpoint) {
+			visibility: hidden !important;
+		}
+	}
+	.invisible-#{$breakpoint}-down {
+		@include respond-to-down($breakpoint) {
+			visibility: hidden !important;
+		}
+	}
 }

@@ -19,9 +19,14 @@ class Home extends Component {
     this.maxNumber = 3;
   }
 
+  componentDidUpdate() {
+    this.getRandomNumber();
+  }
+
   getRandomNumber() {
     this.randomNumber = () => Math.ceil(Math.random() * this.maxNumber);
-    let random = this.randomNumber();
+    // let random = this.randomNumber();
+    let random = 2;
 
     return random;
   }
