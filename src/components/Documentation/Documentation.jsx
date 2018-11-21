@@ -8,7 +8,7 @@ export default class Documentation extends Component {
         <div className="container">
           <div className="bb-grid md">
             <div className="column column-sm">
-              <h2 className="title">Documentation</h2>
+              <h1 className="title">Documentation</h1>
             </div>
           </div>
           <div className="bb-grid md">

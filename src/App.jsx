@@ -5,7 +5,6 @@ import { fas } from '@fortawesome/pro-solid-svg-icons';
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import About from './components/About/About';
 import AccordionDocumentation from './components/Documentation/Components/AccordionDocumentation';
 import AlertDocumentation from './components/Documentation/Components/AlertDocumentation';
 import AnimationDocumentation from './components/Documentation/Components/AnimationDocumentation';
@@ -56,7 +55,6 @@ export default class App extends Component {
                 >
                   <Switch location={location}>
                     <Route exact path="/" component={Home} />
-                    <Route exact path="/about" component={About} />
                     <Route
                       exact
                       path="/documentation"

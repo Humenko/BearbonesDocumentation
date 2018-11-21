@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import BearbonesLogo from './Logo/BearbonesLogo';
 
-class Navbar extends Component {
+class Header extends Component {
   render() {
     return (
       <div className="container">
@@ -73,4 +73,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default Header;
