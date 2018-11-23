@@ -3,15 +3,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import IllustrationPainter from '../Shared/IllustrationPainter';
 import IllustrationRubble from '../Shared/IllustrationRubble';
-import Body1 from './Bear/Body/Body1';
-import Body2 from './Bear/Body/Body2';
-import Body3 from './Bear/Body/Body3';
-import Head1 from './Bear/Head/Head1';
-import Head2 from './Bear/Head/Head2';
-import Head3 from './Bear/Head/Head3';
-import Legs1 from './Bear/Legs/Legs1';
-import Legs2 from './Bear/Legs/Legs2';
-import Legs3 from './Bear/Legs/Legs3';
+import Bear from './Bear/Bear';
+
+let randomHead = 0;
+let randomBody = 0;
+let randomLegs = 0;
 
 class Home extends Component {
   constructor(props) {
@@ -19,47 +15,27 @@ class Home extends Component {
     this.maxNumber = 3;
   }
 
-  componentDidUpdate() {
-    this.getRandomNumber();
+  componentWillMount() {
+    randomHead = this.getRandomNumber();
+    randomBody = this.getRandomNumber();
+    randomLegs = this.getRandomNumber();
   }
 
   getRandomNumber() {
     this.randomNumber = () => Math.ceil(Math.random() * this.maxNumber);
-    // let random = this.randomNumber();
-    let random = 2;
-
+    let random = this.randomNumber();
     return random;
   }
 
   render() {
-    let randomHead = this.getRandomNumber();
-    let randomBody = this.getRandomNumber();
-    let randomLegs = this.getRandomNumber();
-
     return (
       <section>
-        <div className="hero full-y">
+        <div className="hero full-y m-t-5">
           <div className="body">
             <div className="container full-x">
               <div className="bb-grid lg align-items-center">
                 <div className="column column-6 column-offset-1">
-                  <div className="bb-body-parts">
-                    <div className="body-part head" id="bb-head">
-                      {randomHead === 1 ? <Head1 /> : null}
-                      {randomHead === 2 ? <Head2 /> : null}
-                      {randomHead === 3 ? <Head3 /> : null}
-                    </div>
-                    <div className="body-part torso" id="bb-body">
-                      {randomBody === 1 ? <Body1 /> : null}
-                      {randomBody === 2 ? <Body2 /> : null}
-                      {randomBody === 3 ? <Body3 /> : null}
-                    </div>
-                    <div className="body-part legs" id="bb-legs">
-                      {randomLegs === 1 ? <Legs1 /> : null}
-                      {randomLegs === 2 ? <Legs2 /> : null}
-                      {randomLegs === 3 ? <Legs3 /> : null}
-                    </div>
-                  </div>
+                  <Bear body={randomBody} head={randomHead} legs={randomLegs} />
                 </div>
                 <div className="column column-6 column-offset-1 text-center intro">
                   <h1 className="title">Bearbones</h1>
