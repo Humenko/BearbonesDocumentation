@@ -6,7 +6,7 @@ import ScrollToTop from './components/Shared/ScrollToTop';
 import registerServiceWorker from './registerServiceWorker';
 import './styles/sass/main.scss';
 
-ReactDOM.hydrate(
+ReactDOM.render(
   <Router>
     <ScrollToTop>
       <App />
