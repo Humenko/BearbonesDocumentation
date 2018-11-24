@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://bearbon.es</loc><priority>1.0</priority></url>
+<url><loc>https://bearbon.es/documentation</loc><priority>1.0</priority></url>
+<url><loc>https://bearbon.es/documentation/components/accordion</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/alert</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/animation</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/box</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/breadcrumb</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/button</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/card</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/divider</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/dropdown</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/field</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/footer</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/media</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/navbar</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/pagination</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/stat</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/tab</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/components/table</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/layout/basic</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/layout/grid</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/layout/hero</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/layout/family-grid</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/helper/display</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/helper/flex</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/helper/position</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/helper/spacing</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/helper/visibility</loc><priority>0.5</priority></url>
+</urlset>
