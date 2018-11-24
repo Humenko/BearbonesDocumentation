@@ -1,3 +1,4 @@
+import { faGithubAlt, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
@@ -17,7 +18,7 @@ export default class Footer extends Component {
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <FontAwesomeIcon icon={['fab', 'github-alt']} size="lg" />
+                      <FontAwesomeIcon icon={faGithubAlt} size="lg" />
                     </a>
                   </li>
                   <li className="inline-item">
@@ -26,7 +27,7 @@ export default class Footer extends Component {
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <FontAwesomeIcon icon={['fab', 'twitter']} size="lg" />
+                      <FontAwesomeIcon icon={faTwitter} size="lg" />
                     </a>
                   </li>
                 </ul>

@@ -1,3 +1,4 @@
+import { faFileAlt, faHome } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
@@ -13,13 +14,13 @@ export default class Navbar extends Component {
           <div className="bb-btns full-x no-border-radius">
             <Link to="/" className="bb-btn icon">
               <span>
-                <FontAwesomeIcon icon={['fal', 'home']} />
+                <FontAwesomeIcon icon={faHome} />
               </span>
               Home
             </Link>
             <Link to="/documentation" className="bb-btn icon">
               <span>
-                <FontAwesomeIcon icon={['fal', 'file-alt']} />
+                <FontAwesomeIcon icon={faFileAlt} />
               </span>
               Docs
             </Link>

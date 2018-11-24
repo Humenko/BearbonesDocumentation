@@ -1,3 +1,4 @@
+import { faPaw } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import Highlight from 'react-highlight';
@@ -112,7 +113,7 @@ export default class DividerDocumentation extends Component {
                     A panda bear can eat over 45 lbs of bamboo per day.
                   </p>
                   <div className="bb-divider divider-content">
-                    <FontAwesomeIcon icon={['fas', 'paw']} />
+                    <FontAwesomeIcon icon={faPaw} />
                   </div>
                   <p>
                     One variation of the black bear is a white bear called the

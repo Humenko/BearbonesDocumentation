@@ -1,3 +1,4 @@
+import { faHome } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
@@ -24,7 +25,7 @@ class PageNotFound extends Component {
                 <Link to="/" className="bb-btn invert outline xl full-x">
                   Return to home
                   <span className="p-l-2">
-                    <FontAwesomeIcon icon={['fal', 'home']} />
+                    <FontAwesomeIcon icon={faHome} />
                   </span>
                 </Link>
               </div>

@@ -1,3 +1,9 @@
+import { faCss3 } from '@fortawesome/free-brands-svg-icons';
+import {
+  faCogs,
+  faFileAlt,
+  faThumbsUp
+} from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
@@ -48,7 +54,7 @@ class Home extends Component {
                     <Link to="/documentation" className="bb-btn positive lg">
                       Documentation
                       <span className="p-l-2">
-                        <FontAwesomeIcon icon={['fal', 'file-alt']} />
+                        <FontAwesomeIcon icon={faFileAlt} />
                       </span>
                     </Link>
                   </div>
@@ -76,7 +82,7 @@ class Home extends Component {
               <div className="bb-grid lg m-t-5">
                 <div className="column one-third text-center-lg text-right">
                   <p className="text-secondary m-b-3">
-                    <FontAwesomeIcon icon={['fal', 'cogs']} size="5x" />
+                    <FontAwesomeIcon icon={faCogs} size="5x" />
                   </p>
                   <h3 className="text-secondary title">Customisable.</h3>
                   <p className="subtitle lg">
@@ -86,7 +92,7 @@ class Home extends Component {
                 </div>
                 <div className="column one-third text-center-lg">
                   <p className="text-secondary m-b-3">
-                    <FontAwesomeIcon icon={['fab', 'css3']} size="5x" />
+                    <FontAwesomeIcon icon={faCss3} size="5x" />
                   </p>
                   <h3 className="text-secondary title">Contemporary.</h3>
                   <p className="subtitle lg">
@@ -100,7 +106,7 @@ class Home extends Component {
                 </div>
                 <div className="column one-third text-center-lg text-right">
                   <p className="text-secondary m-b-3">
-                    <FontAwesomeIcon icon={['fal', 'thumbs-up']} size="5x" />
+                    <FontAwesomeIcon icon={faThumbsUp} size="5x" />
                   </p>
                   <h3 className="text-secondary title">Completely Free.</h3>
                   <p className="subtitle lg">

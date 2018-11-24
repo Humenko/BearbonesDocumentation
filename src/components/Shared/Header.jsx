@@ -1,3 +1,4 @@
+import { faGithubAlt, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
@@ -22,7 +23,7 @@ class Header extends Component {
                 target="_blank"
                 aria-label="github"
               >
-                <FontAwesomeIcon icon={['fab', 'github-alt']} size="lg" />
+                <FontAwesomeIcon icon={faGithubAlt} size="lg" />
               </a>
               <a
                 className="item"
@@ -31,7 +32,7 @@ class Header extends Component {
                 target="_blank"
                 aria-label="twitter"
               >
-                <FontAwesomeIcon icon={['fab', 'twitter']} size="lg" />
+                <FontAwesomeIcon icon={faTwitter} size="lg" />
               </a>
               {/* <div className="item hidden-lg-down">
                 <a href="/404" className="bb-btn positive">

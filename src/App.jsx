@@ -1,7 +1,3 @@
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { fal } from '@fortawesome/pro-light-svg-icons';
-import { fas } from '@fortawesome/pro-solid-svg-icons';
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -31,11 +27,9 @@ import VisibilityDocumentation from './components/Documentation/Helper/Visibilit
 import HeroDocumentation from './components/Documentation/Layout/HeroDocumentation';
 import PageNotFound from './components/Error/PageNotFound';
 import Home from './components/Home/Home';
-import DocumentationNavigation from './components/Shared/DocumentationNavigation';
+import BreadcrumbNavigation from './components/Shared/BreadcrumbNavigation';
 import Header from './components/Shared/Header';
 import Navbar from './components/Shared/Navbar';
-
-library.add(fab, fal, fas);
 
 export default class App extends Component {
   render() {
@@ -43,12 +37,14 @@ export default class App extends Component {
       <div>
         <main>
           <Header />
-          <Route path="/documentation" component={DocumentationNavigation} />
+          <Route exact path="/" component={BreadcrumbNavigation} />
+          <Route path="/documentation" component={BreadcrumbNavigation} />
           <Navbar />
           <Route
             render={({ location }) => (
               <TransitionGroup>
                 <CSSTransition
+                  onExited={() => window.scrollTo(0, 0)}
                   key={location.key}
                   classNames="doc-page-animation"
                   timeout={500}
