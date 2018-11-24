@@ -1,4 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import IllustrationMoon from '../Shared/IllustrationMoon';
 
 class PageNotFound extends Component {
@@ -13,7 +15,20 @@ class PageNotFound extends Component {
       <section className="hero illustration space full-y">
         <div className="body">
           <div className="container">
-            <h1 className="title text-white">404</h1>
+            <div className="bb-grid lg">
+              <div className="column-6">
+                <h1 className="title text-white">404</h1>
+                <p className="subtitle text-white p-y-5">
+                  Houston, we have a problem!
+                </p>
+                <Link to="/" className="bb-btn invert outline xl full-x">
+                  Return to home
+                  <span className="p-l-2">
+                    <FontAwesomeIcon icon={['fal', 'home']} />
+                  </span>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
         {[...Array(this.largeStars)].map((e, i) => (
