@@ -14,7 +14,7 @@ body {
 }
 
 .bb-navbar {
-	border-top: .5rem solid $secondary-color;
+	border-top: .25rem solid $secondary-color;
 	opacity: 0;
 	transition: transform $transition-effect $transition-duration,
 	opacity $transition-effect $transition-duration;
@@ -85,6 +85,15 @@ body {
 		&.icon span {
 			margin: 0 0 .5rem 0;
 			font-size: $font-size-lg;
+		}
+	}
+}
+
+.doc.bb-breadcrumb {
+	@include respond-to-down('lg') {
+		margin-top: 4rem;
+		ul li {
+			padding-bottom: 0;
 		}
 	}
 }

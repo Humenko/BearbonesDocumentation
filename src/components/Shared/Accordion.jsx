@@ -34,7 +34,7 @@ export class AccordionItem extends React.Component {
 
   render() {
     return (
-      <div>
+      <>
         <div
           className={`header
                 ${this.state.accordionIsOpen ? 'active' : ''}`}
@@ -48,7 +48,7 @@ export class AccordionItem extends React.Component {
         >
           {this.props.children}
         </div>
-      </div>
+      </>
     );
   }
 }

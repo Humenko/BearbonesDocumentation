@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Breadcrumbs from 'react-router-dynamic-breadcrumbs';
 
 const routes = {
-  '/': 'Home',
   '/documentation/components': null,
   '/documentation/layout': null,
   '/documentation/helper': null
@@ -11,13 +10,13 @@ const routes = {
 export default class DocumentationNavigation extends Component {
   render() {
     return (
-      <div className="section p-b-0 invisible-lg-down">
+      <div className="section p-b-0">
         <div className="container">
           <div className="bb-grid md">
             <div className="column column-16">
               <Breadcrumbs
                 WrapperComponent={props => (
-                  <nav className="bb-breadcrumb">
+                  <nav className="bb-breadcrumb doc">
                     <ul>{props.children}</ul>
                   </nav>
                 )}

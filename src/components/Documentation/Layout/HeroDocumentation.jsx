@@ -4,7 +4,7 @@ import Highlight from 'react-highlight';
 export default class HeroDocumentation extends Component {
   render() {
     return (
-      <div>
+      <>
         <div className="section p-t-0 p-b-0">
           <div className="container">
             <div className="bb-grid md">
@@ -239,7 +239,7 @@ export default class HeroDocumentation extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }

@@ -20,5 +20,5 @@ npm-debug.log*
 
 src/styles/css/**/*
 .firebase/
-/server-build
+/_server/
 .npmrc

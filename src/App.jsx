@@ -25,32 +25,32 @@ import PositionDocumentation from './components/Documentation/Helper/PositionDoc
 import SpacingDocumentation from './components/Documentation/Helper/SpacingDocumentation';
 import VisibilityDocumentation from './components/Documentation/Helper/VisibilityDocumentation';
 import HeroDocumentation from './components/Documentation/Layout/HeroDocumentation';
-import PageNotFound from './components/Error/PageNotFound';
 import Home from './components/Home/Home';
 import BreadcrumbNavigation from './components/Shared/BreadcrumbNavigation';
+import Footer from './components/Shared/Footer';
 import Header from './components/Shared/Header';
 import Navbar from './components/Shared/Navbar';
 
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <>
         <main>
-          <Header />
-          <Route exact path="/" component={BreadcrumbNavigation} />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/documentation" />
+          </Switch>
           <Route path="/documentation" component={BreadcrumbNavigation} />
-          <Navbar />
           <Route
             render={({ location }) => (
               <TransitionGroup>
                 <CSSTransition
-                  onExited={() => window.scrollTo(0, 0)}
+                  onEntering={() => window.scrollTo(0, 0)}
                   key={location.key}
                   classNames="doc-page-animation"
                   timeout={500}
                 >
                   <Switch location={location}>
-                    <Route exact path="/" component={Home} />
                     <Route
                       exact
                       path="/documentation"
@@ -171,14 +171,19 @@ export default class App extends Component {
                       path="/documentation/helper/visibility"
                       component={VisibilityDocumentation}
                     />
-                    <Route path="*" component={PageNotFound} />
+                    {/* <Route path="*" component={PageNotFound} /> */}
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
             )}
           />
+          <Route exact path="/" component={Header} />
+          <Route exact path="/" component={Navbar} />
+          <Route path="/documentation" component={Header} />
+          <Route path="/documentation" component={Navbar} />
         </main>
-      </div>
+        <Route exact path="/" component={Footer} />
+      </>
     );
   }
 }
