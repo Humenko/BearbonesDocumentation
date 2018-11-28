@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Highlight from 'react-highlight';
+import Code from '../../Shared/Code';
 import DocumentationVariabes from '../../Shared/DocumentationVariables';
 
 export default class BreadcrumbDocumentation extends Component {
@@ -13,9 +13,9 @@ export default class BreadcrumbDocumentation extends Component {
               <p className="subtitle">
                 A simple component used to display basic navigational structure.
               </p>
-              <Highlight className="js">
+              <Code language="js">
                 {'import "../bearbones/sass/components/breadcrumb/all"'}
-              </Highlight>
+              </Code>
             </div>
           </div>
           <div className="bb-grid md">
@@ -38,7 +38,7 @@ export default class BreadcrumbDocumentation extends Component {
                   </nav>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<nav class="bb-breadcrumb">
   <ul>
     <li class="breadcrumb-item active">
@@ -52,7 +52,7 @@ export default class BreadcrumbDocumentation extends Component {
     </li>
   </ul>
 </nav>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default class BreadcrumbDocumentation extends Component {
                   </nav>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<nav class="bb-breadcrumb">
   <ul>
     <li class="breadcrumb-item active">
@@ -144,8 +144,8 @@ export default class BreadcrumbDocumentation extends Component {
     </li>
   </ul>
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav className="bb-breadcrumb xs">
   <ul>
     <li class="breadcrumb-item active">
@@ -159,27 +159,27 @@ export default class BreadcrumbDocumentation extends Component {
     </li>
   </ul>
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-breadcrumb sm">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-breadcrumb">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-breadcrumb lg">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-breadcrumb xl">
   ...
 </nav>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -214,7 +214,7 @@ export default class BreadcrumbDocumentation extends Component {
                   </nav>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<nav class="bb-breadcrumb scroll">
   <ul>
     <li class="breadcrumb-item active">
@@ -237,7 +237,7 @@ export default class BreadcrumbDocumentation extends Component {
     </li>
   </ul>
 </nav>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>

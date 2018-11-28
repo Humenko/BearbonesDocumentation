@@ -1,24 +1,31 @@
-.hljs {
+pre[class*='language-'] {
 	display: block;
 	overflow-x: auto;
 	background: transparent;
-	color: $base-color;
-	&.html {
-		.hljs-name,
-		.hljs-strong {
-			font-weight: bold;
-		}
-		.hljs-tag {
+	code {
+		padding: 0;
+		background: transparent;
+		color: $base-color;
+	}
+	&.language-markup {
+		.punctuation {
 			color: $primary-color;
+			font-weight: $font-weight-bold;
 		}
-		.hljs-attr {
+		.tag {
+			.token.tag {
+				color: $primary-color;
+				font-weight: $font-weight-bold;
+			}
+		}
+		.attr-name {
 			color: $negative-color;
 		}
-		.hljs-string {
+		.attr-value {
 			color: $positive-color;
 		}
 	}
-	&.javascript {
+	&.language-js {
 		display: inline-block;
 		padding: $padding / 2;
 		border-left: $border-style $border-width * 2 $secondary-color;

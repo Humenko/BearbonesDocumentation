@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Highlight from 'react-highlight';
 import { Accordion, AccordionItem } from '../../Shared/Accordion';
+import Code from '../../Shared/Code';
 import DocumentationVariabes from '../../Shared/DocumentationVariables';
+
 export default class AccordionDocumentation extends Component {
   render() {
     return (
@@ -14,9 +15,9 @@ export default class AccordionDocumentation extends Component {
                 A collapsible component which allows the user to show and hide
                 content to meet their needs.
               </p>
-              <Highlight className="js">
+              <Code language="js">
                 {'import "../bearbones/sass/components/accordion/all"'}
-              </Highlight>
+              </Code>
             </div>
           </div>
           <div className="bb-grid md">
@@ -43,7 +44,7 @@ export default class AccordionDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-accordion">
   <div class="header">
     Panda<span class="chevron"></span>
@@ -56,7 +57,7 @@ export default class AccordionDocumentation extends Component {
     the lowland areas where it once lived.
   </div>
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -101,7 +102,7 @@ export default class AccordionDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-accordion">
   <div class="header">
     Ursidae<span class="chevron"></>
@@ -132,7 +133,7 @@ export default class AccordionDocumentation extends Component {
     </div>
   </div>
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -205,7 +206,7 @@ export default class AccordionDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-accordion primary">
   <div class="header">
     Panda<span class="chevron"></span>
@@ -218,27 +219,27 @@ export default class AccordionDocumentation extends Component {
     the lowland areas where it once lived.
   </div>
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-accordion secondary">
   ...
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-accordion positive">
   ...
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-accordion negative">
   ...
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-accordion invert">
   ...
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>

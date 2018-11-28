@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Highlight from 'react-highlight';
+import Code from '../../Shared/Code';
 import DocumentationVariabes from '../../Shared/DocumentationVariables';
 
 export default class MediaDocumentation extends Component {
@@ -15,9 +15,9 @@ export default class MediaDocumentation extends Component {
                 content is positioned with some imagery, used widely for social
                 media.
               </p>
-              <Highlight className="js">
+              <Code language="js">
                 {'import "../bearbones/sass/components/media/all"'}
-              </Highlight>
+              </Code>
             </div>
           </div>
           <div className="bb-grid md">
@@ -60,7 +60,7 @@ export default class MediaDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<article class="media">
   <div class="media-left">
     <figure>
@@ -80,7 +80,7 @@ export default class MediaDocumentation extends Component {
     </div>
   </div>
 </article>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -189,7 +189,7 @@ export default class MediaDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet hide">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<article class="media">
   <div class="media-left">
     <figure>
@@ -247,7 +247,7 @@ export default class MediaDocumentation extends Component {
     </div>
   </div>
 </article>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -293,7 +293,7 @@ export default class MediaDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<article class="media center">
   <div class="media-container">
     <div class="media-left">
@@ -313,7 +313,7 @@ export default class MediaDocumentation extends Component {
     </div>
   </div>
 </article>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -358,7 +358,7 @@ export default class MediaDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<article class="media bottom">
   <div class="media-container">
     <div class="media-left">
@@ -378,7 +378,7 @@ export default class MediaDocumentation extends Component {
     </div>
   </div>
 </article>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -423,7 +423,7 @@ export default class MediaDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<article class="media">
   <div class="media-container">
     <div class="media-content">
@@ -443,7 +443,7 @@ export default class MediaDocumentation extends Component {
     </figure>
   </div>
 </article>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>

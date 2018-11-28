@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Highlight from 'react-highlight';
+import Code from '../../Shared/Code';
 
 export default class HeroDocumentation extends Component {
   render() {
@@ -14,9 +14,9 @@ export default class HeroDocumentation extends Component {
                   A component which extends to the whole horizontal viewport,
                   used to showcase key messaging.
                 </p>
-                <Highlight className="js">
+                <Code language="js">
                   {'import "../bearbones/sass/components/hero/all"'}
-                </Highlight>
+                </Code>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@ export default class HeroDocumentation extends Component {
                 <h4 className="title">Basic</h4>
                 <div className="bb-box example full-x">
                   <div className="doc-snippet">
-                    <Highlight className="html">
+                    <Code language="markup">
                       {`<section class="hero">
   <div class="body">
     <div class="container">
@@ -51,7 +51,7 @@ export default class HeroDocumentation extends Component {
     </div>
   </div>
 </section>`}
-                    </Highlight>
+                    </Code>
                     <button className="bb-btn primary doc-copy sm">Copy</button>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ export default class HeroDocumentation extends Component {
                 <h4 className="title">Colour</h4>
                 <div className="bb-box example full-x">
                   <div className="doc-snippet">
-                    <Highlight className="html">
+                    <Code language="markup">
                       {`<section class="hero primary">
   <div class="body">
     <div class="container">
@@ -100,7 +100,7 @@ export default class HeroDocumentation extends Component {
     </div>
   </div>
 </section>`}
-                    </Highlight>
+                    </Code>
                     <button className="bb-btn primary doc-copy sm">Copy</button>
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default class HeroDocumentation extends Component {
               <div className="column column-16">
                 <div className="bb-box example full-x">
                   <div className="doc-snippet">
-                    <Highlight className="html">
+                    <Code language="markup">
                       {`<section class="hero primary full-y">
   <div class="head">
     <div class="container">
@@ -231,7 +231,7 @@ export default class HeroDocumentation extends Component {
     </div>
   </div>
 </section>`}
-                    </Highlight>
+                    </Code>
                     <button className="bb-btn primary doc-copy sm">Copy</button>
                   </div>
                 </div>
