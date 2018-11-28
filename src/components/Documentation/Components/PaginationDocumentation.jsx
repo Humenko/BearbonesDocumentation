@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Highlight from 'react-highlight';
+import Code from '../../Shared/Code';
 import DocumentationVariabes from '../../Shared/DocumentationVariables';
 
 export default class PaginationDocumentation extends Component {
@@ -14,9 +14,9 @@ export default class PaginationDocumentation extends Component {
                 This component is used to display grouped content existing
                 between multiple pages.
               </p>
-              <Highlight className="js">
+              <Code language="js">
                 {'import "../bearbones/sass/components/pagination/all"'}
-              </Highlight>
+              </Code>
             </div>
           </div>
           <div className="bb-grid md">
@@ -42,14 +42,14 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<nav class="bb-pagination">
   <a class="item active" href="#">1</a>
   <a class="item disabled">...</a>
   <a class="item" href="#">3</a>
   <a class="item" href="#">4</a>
 </nav>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -142,34 +142,34 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<nav class="bb-pagination primary">
   <a class="item active" href="#">1</a>
   <a class="item disabled">...</a>
   <a class="item" href="#">3</a>
   <a class="item" href="#">4</a>
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination secondary">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination positive">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination negative">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination invert">
   ...
 </nav>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -262,34 +262,34 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<nav class="bb-pagination xs">
   <a class="item active" href="#">1</a>
   <a class="item disabled">...</a>
   <a class="item" href="#">3</a>
   <a class="item" href="#">4</a>
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination sm">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination lg">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination xl">
   ...
 </nav>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -398,39 +398,39 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<nav class="bb-pagination outline">
   <a class="item active" href="#">1</a>
   <a class="item disabled">...</a>
   <a class="item" href="#">3</a>
   <a class="item" href="#">4</a>
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination outline primary">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination outline secondary">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination outline positive">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination outline negative">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination outline invert">
   ...
 </nav>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -538,39 +538,39 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<nav class="bb-pagination connected">
   <a class="item active" href="#">1</a>
   <a class="item disabled">...</a>
   <a class="item" href="#">3</a>
   <a class="item" href="#">4</a>
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination connected primary">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination connected secondary">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination connected positive">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination connected negative">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination connected invert">
   ...
 </nav>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -630,24 +630,24 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<nav class="bb-pagination primary no-border">
   <a class="item active" href="#">1</a>
   <a class="item disabled">...</a>
   <a class="item" href="#">3</a>
   <a class="item" href="#">4</a>
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination primary outline no-border">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination primary connected no-border">
   ...
 </nav>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -756,39 +756,39 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<nav class="bb-pagination">
   <a class="dot" href="#">1</a>
   <a class="dot">2</a>
   <a class="dot active" href="#">3</a>
   <a class="dot" href="#">4</a>
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination primary">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination secondary">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination positive">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination negative">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination invert">
   ...
 </nav>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -897,39 +897,39 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<nav class="bb-pagination outline">
   <a class="dot" href="#">1</a>
   <a class="dot">2</a>
   <a class="dot active" href="#">3</a>
   <a class="dot" href="#">4</a>
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination outline primary">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination outline secondary">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination outline positive">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination outline negative">
   ...
 </nav>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<nav class="bb-pagination outline invert">
   ...
 </nav>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>

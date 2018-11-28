@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Highlight from 'react-highlight';
+import Code from '../../Shared/Code';
 import DocumentationVariabes from '../../Shared/DocumentationVariables';
 
 export default class AlertDocumentation extends Component {
@@ -13,9 +13,9 @@ export default class AlertDocumentation extends Component {
               <p className="subtitle">
                 This component is used to provide feedback messages for users.
               </p>
-              <Highlight className="js">
+              <Code language="js">
                 {'import "../bearbones/sass/components/alert/all"'}
-              </Highlight>
+              </Code>
             </div>
           </div>
           <div className="bb-grid md">
@@ -33,11 +33,11 @@ export default class AlertDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-alert">
   <p><strong>Alert,</strong> only 8 species of bears are extant.</p>
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -91,31 +91,31 @@ export default class AlertDocumentation extends Component {
                 </div>
 
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-alert primary">
   <p><strong>Alert,</strong> only 8 species of bears are extant.</p>
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-alert secondary">
   <p><strong>Alert,</strong> only 8 species of bears are extant.</p>
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-alert positive">
   <p><strong>Alert,</strong> only 8 species of bears are extant.</p>
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-alert negative">
   <p><strong>Alert,</strong> only 8 species of bears are extant.</p>
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-alert invert">
   <p><strong>Alert,</strong> only 8 species of bears are extant.</p>
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -137,12 +137,12 @@ export default class AlertDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-alert">
   <p><strong>Alert,</strong> only 8 species of bears are extant.</p>
   <div class="close"></div>                        
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>

@@ -1,19 +1,31 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import Prism from 'prismjs';
-import 'prismjs/themes/prism.css';
+import PropTypes from 'prop-types';
+import React from 'react';
+
 const code = ({ language, children }) => {
-    return <pre>{React.createElement((p) => <code className={`language-${language}`} {...p}></code>, {
-        dangerouslySetInnerHTML: {
-            __html: Prism.highlight(children, Prism.languages[language], language)
+  return (
+    <pre>
+      {React.createElement(
+        p => (
+          <code className={`language-${language}`} {...p} />
+        ),
+        {
+          dangerouslySetInnerHTML: {
+            __html: Prism.highlight(
+              children,
+              Prism.languages[language],
+              language
+            )
+          }
         }
-    })}
-    </pre>;
+      )}
+    </pre>
+  );
 };
 
 code.propTypes = {
-    language: PropTypes.oneOf(['javascript', 'markup', 'css']),
-    children: PropTypes.string
-  };
+  language: PropTypes.oneOf(['javascript', 'markup', 'css']),
+  children: PropTypes.string
+};
 
 export default code;

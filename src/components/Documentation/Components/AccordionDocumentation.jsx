@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Accordion, AccordionItem } from '../../Shared/Accordion';
-import DocumentationVariabes from '../../Shared/DocumentationVariables';
 import Code from '../../Shared/Code';
+import DocumentationVariabes from '../../Shared/DocumentationVariables';
 
 export default class AccordionDocumentation extends Component {
   render() {
@@ -15,7 +15,9 @@ export default class AccordionDocumentation extends Component {
                 A collapsible component which allows the user to show and hide
                 content to meet their needs.
               </p>
-              <Code language="js">{'import "../bearbones/sass/components/accordion/all"'}</Code>
+              <Code language="js">
+                {'import "../bearbones/sass/components/accordion/all"'}
+              </Code>
             </div>
           </div>
           <div className="bb-grid md">
@@ -100,7 +102,7 @@ export default class AccordionDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <pre className="html">
+                  <Code language="markup">
                     {`<div class="bb-accordion">
   <div class="header">
     Ursidae<span class="chevron"></>
@@ -131,7 +133,7 @@ export default class AccordionDocumentation extends Component {
     </div>
   </div>
 </div>`}
-                  </pre>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -204,7 +206,7 @@ export default class AccordionDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <pre className="html">
+                  <Code language="markup">
                     {`<div class="bb-accordion primary">
   <div class="header">
     Panda<span class="chevron"></span>
@@ -217,27 +219,27 @@ export default class AccordionDocumentation extends Component {
     the lowland areas where it once lived.
   </div>
 </div>`}
-                  </pre>
-                  <pre className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-accordion secondary">
   ...
 </div>`}
-                  </pre>
-                  <pre className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-accordion positive">
   ...
 </div>`}
-                  </pre>
-                  <pre className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-accordion negative">
   ...
 </div>`}
-                  </pre>
-                  <pre className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-accordion invert">
   ...
 </div>`}
-                  </pre>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Highlight from 'react-highlight';
+import Code from '../../Shared/Code';
 import DocumentationVariabes from '../../Shared/DocumentationVariables';
 
 export default class PaginationDocumentation extends Component {
@@ -14,9 +14,9 @@ export default class PaginationDocumentation extends Component {
                 This component is used to empathise both the label and value for
                 an attribute.
               </p>
-              <Highlight className="js">
+              <Code language="js">
                 {'import "../bearbones/sass/components/stat/all"'}
-              </Highlight>
+              </Code>
             </div>
           </div>
           <div className="bb-grid md">
@@ -38,18 +38,18 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-stat">
   <p class="value">20,000</p>
   <p class="label">Polar Bears</p>  
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-stat">
   <p class="label">Polar Bears</p>
   <p class="value">20,000</p>
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -86,27 +86,27 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-stat primary">
   <p class="value">20,000</p>
   <p class="label">Polar Bears</p>  
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-stat secondary">
   ...
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-stat positive">
   ...
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-stat negative">
   ...
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -149,32 +149,32 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-stat xs">
   <p class="value">20,000</p>
   <p class="label">Polar Bears</p>  
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-stat sm">
   ...
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-stat">
   ... 
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-stat lg">
   ... 
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-stat xl">
   ...  
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -197,14 +197,14 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-stat">
   <p class="value text">
     Twenty<br />Thousand
   </p>
   <p class="label">Downloads</p>
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -222,12 +222,12 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-stat horizontal">
   <p class="value">20,000</p>
   <p class="label">Polar Bears</p>  
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -236,9 +236,9 @@ export default class PaginationDocumentation extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <h3 className="title">Stat Groups</h3>
-              <Highlight className="js">
+              <Code language="js">
                 {'import "../bearbones/sass/components/stat-group/all"'}
-              </Highlight>
+              </Code>
             </div>
           </div>
           <div className="bb-grid md">
@@ -268,7 +268,7 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-stats">
   <div class="bb-stat">
     <p class="value">20,000</p>
@@ -285,7 +285,7 @@ export default class PaginationDocumentation extends Component {
     <p class="label">Polar Bears</p>
   </div>
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -318,7 +318,7 @@ export default class PaginationDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-stats vertical">
   <div class="bb-stat">
     <p class="value">20,000</p>
@@ -335,7 +335,7 @@ export default class PaginationDocumentation extends Component {
     <p class="label">Polar Bears</p>
   </div>
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>

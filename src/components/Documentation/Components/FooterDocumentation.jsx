@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Highlight from 'react-highlight';
+import Code from '../../Shared/Code';
 import DocumentationVariabes from '../../Shared/DocumentationVariables';
 
 export default class FooterDocumentation extends Component {
@@ -14,9 +14,9 @@ export default class FooterDocumentation extends Component {
                 This component is widely used as a source of navigation on the
                 bottom of webpages.
               </p>
-              <Highlight className="js">
+              <Code language="js">
                 {'import "../bearbones/sass/components/footer/all"'}
-              </Highlight>
+              </Code>
             </div>
           </div>
           <div className="bb-grid md">
@@ -31,20 +31,22 @@ export default class FooterDocumentation extends Component {
                           <strong>Bearbones</strong> by{' '}
                           <a className="link" href="#example">
                             Daniel Humenko
-                          </a>.
+                          </a>
+                          .
                         </p>
                         <p>
                           Code licensed{' '}
                           <a className="link" href="#example">
                             MIT
-                          </a>.
+                          </a>
+                          .
                         </p>
                       </div>
                     </footer>
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<footer class="bb-footer">
   <div class="container text-center">
     <p>
@@ -55,7 +57,7 @@ export default class FooterDocumentation extends Component {
     </p>
   </div>
 </footer>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -73,13 +75,15 @@ export default class FooterDocumentation extends Component {
                           <strong>Bearbones</strong> by{' '}
                           <a className="link" href="#example">
                             Daniel Humenko
-                          </a>.
+                          </a>
+                          .
                         </p>
                         <p>
                           Code licensed{' '}
                           <a className="link" href="#example">
                             MIT
-                          </a>.
+                          </a>
+                          .
                         </p>
                       </div>
                     </footer>
@@ -138,7 +142,7 @@ export default class FooterDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<footer class="bb-footer invert">
   <div class="container text-center">
     <p>
@@ -149,27 +153,27 @@ export default class FooterDocumentation extends Component {
     </p>
   </div>
 </footer>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<footer class="bb-footer primary">
   ...
 </footer>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<footer class="bb-footer secondary">
   ...
 </footer>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<footer class="bb-footer positive">
   ...
 </footer>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<footer class="bb-footer negative">
   ...
 </footer>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>

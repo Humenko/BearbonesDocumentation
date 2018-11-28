@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Highlight from 'react-highlight';
+import Code from '../../Shared/Code';
 import DocumentationVariabes from '../../Shared/DocumentationVariables';
 
 export default class BoxDocumentation extends Component {
@@ -14,9 +14,9 @@ export default class BoxDocumentation extends Component {
                 This component is used as a basic container that full widths to
                 any element it is within.
               </p>
-              <Highlight className="js">
+              <Code language="js">
                 {'import "../bearbones/sass/components/box/all"'}
-              </Highlight>
+              </Code>
             </div>
           </div>
           <div className="bb-grid md">
@@ -39,7 +39,7 @@ export default class BoxDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-box">
   <h4 class="title">
     The giant panda is actually a bear.
@@ -49,7 +49,7 @@ export default class BoxDocumentation extends Component {
     panda, is a bear native to south central China.
   </p>
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default class BoxDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-box primary">
   <h4 class="title">
     The giant panda is actually a bear.
@@ -97,27 +97,27 @@ export default class BoxDocumentation extends Component {
     panda, is a bear native to south central China.
   </p>
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-box secondary">
   ...
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-box positive">
   ...
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-box negative">
   ...
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-box invert">
   ...
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -160,7 +160,7 @@ export default class BoxDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-box outline">
   <h4 class="title">
     The giant panda is actually a bear.
@@ -170,32 +170,32 @@ export default class BoxDocumentation extends Component {
     panda, is a bear native to south central China.
   </p>
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-box outline primary">
   ...
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-box outline secondary">
   ...
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-box outline positive">
   ...
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-box outline negative">
   ...
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<div class="bb-box outline invert">
   ...
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>

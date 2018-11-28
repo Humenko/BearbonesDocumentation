@@ -1,7 +1,7 @@
 import { faPaw } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
-import Highlight from 'react-highlight';
+import Code from '../../Shared/Code';
 import DocumentationVariabes from '../../Shared/DocumentationVariables';
 
 export default class ButtonDocumentation extends Component {
@@ -16,9 +16,9 @@ export default class ButtonDocumentation extends Component {
                 An essential component for any design, providing the user a
                 simple way to trigger an event.
               </p>
-              <Highlight className="js">
+              <Code language="js">
                 {'import "../bearbones/sass/components/button/all"'}
-              </Highlight>
+              </Code>
             </div>
           </div>
           <div className="bb-grid md">
@@ -35,15 +35,15 @@ export default class ButtonDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {'<button class="bb-btn">Button</button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<a class="bb-btn">Anchor</a>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<input class="bb-btn" type="submit" value="Input" />'}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -65,21 +65,21 @@ export default class ButtonDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {'<button class="bb-btn primary">Primary</button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn secondary">Secondary</button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn positive">Positive</button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn negative">Negative</button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn invert">Invert</button>'}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -107,21 +107,21 @@ export default class ButtonDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {'<button class="bb-btn xs">Extra small</button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn sm">Small</button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn">Medium</button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn lg">Large</button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn xl">Extra large</button>'}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -152,30 +152,30 @@ export default class ButtonDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {'<button class="bb-btn outline">Default</button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn outline primary">Primary</button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {
                       '<button class="bb-btn outline secondary">Secondary</button>'
                     }
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {
                       '<button class="bb-btn outline positive">Positive</button>'
                     }
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {
                       '<button class="bb-btn outline negative">Negative</button>'
                     }
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn outline invert">Invert</button>'}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -205,30 +205,30 @@ export default class ButtonDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {'<button class="bb-btn inverted">Default</button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn inverted primary">Primary</button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {
                       '<button class="bb-btn inverted secondary">Secondary</button>'
                     }
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {
                       '<button class="bb-btn inverted positive">Positive</button>'
                     }
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {
                       '<button class="bb-btn inverted negative">Negative</button>'
                     }
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn inverted invert">Invert</button>'}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -275,9 +275,9 @@ export default class ButtonDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {'<button class="bb-btn loading">Loading</button>'}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -342,12 +342,12 @@ export default class ButtonDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {'<button class="bb-btn disabled">Disabled</button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button disabled class="bb-btn">Disabled</button>'}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -389,9 +389,9 @@ export default class ButtonDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {'<button class="bb-btn active">Active</button>'}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -423,27 +423,27 @@ export default class ButtonDocumentation extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<button class="bb-btn icon">
   <span>
     <i class="fas fa-paw"></i>
   </span>
 </button>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<button class="bb-btn icon">Icon
   <span class="p-l-2">
     <i class="fas fa-paw"></i>
   </span>
 </button>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<button class="bb-btn icon">
   <span class="p-l-2">
     <i class="fas fa-paw"></i>
   </span>
 Icon</button>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -461,9 +461,9 @@ Icon</button>`}
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {'<button class="bb-btn full-x">Full width</button>'}
-                  </Highlight>
+                  </Code>
 
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
@@ -479,11 +479,11 @@ Icon</button>`}
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {
                       '<button class="bb-btn no-border-radius">No border radius</button>'
                     }
-                  </Highlight>
+                  </Code>
 
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
@@ -512,9 +512,7 @@ Icon</button>`}
                   </a>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
-                    {'<a class="link">Link</a>'}
-                  </Highlight>
+                  <Code language="markup">{'<a class="link">Link</a>'}</Code>
 
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
@@ -534,24 +532,24 @@ Icon</button>`}
                   <button className="close invert m-l-2" />
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {'<button class="bb-btn close"></button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn close primary"></button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn close secondary"></button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn close positive"></button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn close negative"></button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn close invert"></button>'}
-                  </Highlight>
+                  </Code>
 
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
@@ -567,21 +565,21 @@ Icon</button>`}
                   <button className="close xl" />
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {'<button class="bb-btn close xs"></button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn close sm"></button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn close"></button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn close lg"></button>'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<button class="bb-btn close xl"></button>'}
-                  </Highlight>
+                  </Code>
 
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
@@ -591,9 +589,9 @@ Icon</button>`}
           <div className="bb-grid md">
             <div className="column column-16">
               <h3 className="title">Button Groups</h3>
-              <Highlight className="js">
+              <Code language="js">
                 {'import "../bearbones/sass/components/button-group/all"'}
-              </Highlight>
+              </Code>
             </div>
           </div>
           <div className="bb-grid md">
@@ -611,14 +609,14 @@ Icon</button>`}
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-btns">
   <button class="bb-btn primary">Button</button>
   <button class="bb-btn secondary">Button</button>
   <button class="bb-btn positive">Button</button>
   <button class="bb-btn negative">Button</button>
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -639,14 +637,14 @@ Icon</button>`}
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-btns vertical">
   <button class="bb-btn primary">Button</button>
   <button class="bb-btn secondary">Button</button>
   <button class="bb-btn positive">Button</button>
   <button class="bb-btn negative">Button</button>
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -667,14 +665,14 @@ Icon</button>`}
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-btns full-x">
   <button class="bb-btn primary">Button</button>
   <button class="bb-btn secondary">Button</button>
   <button class="bb-btn positive">Button</button>
   <button class="bb-btn negative">Button</button>
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -692,14 +690,14 @@ Icon</button>`}
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-btns no-border-radius">
   <button class="bb-btn primary">Button</button>
   <button class="bb-btn secondary">Button</button>
   <button class="bb-btn positive">Button</button>
   <button class="bb-btn negative">Button</button>
 </div>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>

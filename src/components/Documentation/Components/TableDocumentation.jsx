@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Highlight from 'react-highlight';
+import Code from '../../Shared/Code';
 import DocumentationVariabes from '../../Shared/DocumentationVariables';
 
 export default class TableDocumentaion extends Component {
@@ -14,9 +14,9 @@ export default class TableDocumentaion extends Component {
                 This component is used to spruce up the HTML table we all know
                 and <s>love</s> hate.
               </p>
-              <Highlight className="js">
+              <Code language="js">
                 {'import "../bearbones/sass/components/table/all"'}
-              </Highlight>
+              </Code>
             </div>
           </div>
           <div className="bb-grid md">
@@ -47,7 +47,7 @@ export default class TableDocumentaion extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<table class="bb-table">
   <tbody>
     <tr>
@@ -67,7 +67,7 @@ export default class TableDocumentaion extends Component {
     </tr>
   </tbody>
 </table>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -164,7 +164,7 @@ export default class TableDocumentaion extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<table class="bb-table primary">
   <tbody>
     <tr>
@@ -184,22 +184,22 @@ export default class TableDocumentaion extends Component {
     </tr>
   </tbody>
 </table>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<table class="bb-table secondary">
   ...
 </table>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<table class="bb-table positive">
   ...
 </table>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<table class="bb-table negative">
   ...
 </table>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -232,7 +232,7 @@ export default class TableDocumentaion extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<table class="bb-table primary">
   <tbody>
     <tr>
@@ -252,7 +252,7 @@ export default class TableDocumentaion extends Component {
     </tr>
   </tbody>
 </table>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -370,7 +370,7 @@ export default class TableDocumentaion extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<table class="bb-table striped">
   <tbody>
     <tr>
@@ -390,27 +390,27 @@ export default class TableDocumentaion extends Component {
     </tr>
   </tbody>
 </table>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<table class="bb-table primary striped">
   ...
 </table>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<table class="bb-table secondary striped">
   ...
 </table>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<table class="bb-table positive striped">
   ...
 </table>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<table class="bb-table negative striped">
   ...
 </table>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -527,7 +527,7 @@ export default class TableDocumentaion extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<table class="bb-table naked">
   <tbody>
     <tr>
@@ -547,27 +547,27 @@ export default class TableDocumentaion extends Component {
     </tr>
   </tbody>
 </table>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<table class="bb-table primary naked">
   ...
 </table>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<table class="bb-table secondary naked">
   ...
 </table>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<table class="bb-table positive naked">
   ...
 </table>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {`<table class="bb-table negative naked">
   ...
 </table>`}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -601,7 +601,7 @@ export default class TableDocumentaion extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<table class="bb-table hover">
   <tbody>
     <tr>
@@ -621,7 +621,7 @@ export default class TableDocumentaion extends Component {
     </tr>
   </tbody>
 </table>`}
-                  </Highlight>
+                  </Code>
                 </div>
               </div>
             </div>
@@ -653,7 +653,7 @@ export default class TableDocumentaion extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<table class="bb-table">
   <tbody>
     <tr>
@@ -673,7 +673,7 @@ export default class TableDocumentaion extends Component {
     </tr>
   </tbody>
 </table>`}
-                  </Highlight>
+                  </Code>
                 </div>
               </div>
             </div>
@@ -706,7 +706,7 @@ export default class TableDocumentaion extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<table class="bb-table full-x">
   <tbody>
     <tr>
@@ -726,7 +726,7 @@ export default class TableDocumentaion extends Component {
     </tr>
   </tbody>
 </table>`}
-                  </Highlight>
+                  </Code>
                 </div>
               </div>
             </div>
@@ -758,7 +758,7 @@ export default class TableDocumentaion extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<table class="bb-table no-border-radius">
   <tbody>
     <tr>
@@ -778,7 +778,7 @@ export default class TableDocumentaion extends Component {
     </tr>
   </tbody>
 </table>`}
-                  </Highlight>
+                  </Code>
                 </div>
               </div>
             </div>
@@ -800,7 +800,7 @@ export default class TableDocumentaion extends Component {
                   </div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<table class="bb-table">
   <tbody>
     <tr>
@@ -810,7 +810,7 @@ export default class TableDocumentaion extends Component {
     </tr>
   </tbody>
 </table>`}
-                  </Highlight>
+                  </Code>
                 </div>
               </div>
             </div>

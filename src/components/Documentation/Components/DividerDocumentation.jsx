@@ -1,7 +1,7 @@
 import { faPaw } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
-import Highlight from 'react-highlight';
+import Code from '../../Shared/Code';
 import DocumentationVariabes from '../../Shared/DocumentationVariables';
 
 export default class DividerDocumentation extends Component {
@@ -16,9 +16,9 @@ export default class DividerDocumentation extends Component {
                 This component is used to visually separate content for the
                 user.
               </p>
-              <Highlight className="js">
+              <Code language="js">
                 {'import "../bearbones/sass/components/divider/all"'}
-              </Highlight>
+              </Code>
             </div>
           </div>
           <div className="bb-grid md">
@@ -41,12 +41,10 @@ export default class DividerDocumentation extends Component {
                   <div className="bb-divider" />
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
-                    {'<hr class="bb-divider" />'}
-                  </Highlight>
-                  <Highlight className="html">
+                  <Code language="markup">{'<hr class="bb-divider" />'}</Code>
+                  <Code language="markup">
                     {'<div class="bb-divider"></div>'}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -85,18 +83,18 @@ export default class DividerDocumentation extends Component {
                   <hr className="bb-divider negative" />
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {'<hr class="bb-divider primary" />'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<hr class="bb-divider secondary" />'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<hr class="bb-divider positive" />'}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<hr class="bb-divider negative" />'}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -124,14 +122,14 @@ export default class DividerDocumentation extends Component {
                   <div className="bb-divider divider-content">Divider</div>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {`<div class="bb-divider divider-content">
   <i class="fas fa-paw" />
 </div>`}
-                  </Highlight>
-                  <Highlight className="html">
+                  </Code>
+                  <Code language="markup">
                     {'<div class="bb-divider divider-content">Divider</div>'}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
@@ -155,9 +153,9 @@ export default class DividerDocumentation extends Component {
                   </p>
                 </div>
                 <div className="doc-snippet">
-                  <Highlight className="html">
+                  <Code language="markup">
                     {'<hr class="bb-divider hidden"/>'}
-                  </Highlight>
+                  </Code>
                   <button className="bb-btn primary doc-copy sm">Copy</button>
                 </div>
               </div>
