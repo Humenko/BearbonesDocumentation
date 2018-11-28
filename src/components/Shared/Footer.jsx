@@ -14,18 +14,22 @@ export default class Footer extends Component {
                 <ul className="inline social-links">
                   <li className="inline-item">
                     <a
+                      className="item"
                       href="https://github.com/humenko"
                       rel="noopener noreferrer"
                       target="_blank"
+                      aria-label="github"
                     >
                       <FontAwesomeIcon icon={faGithubAlt} size="lg" />
                     </a>
                   </li>
                   <li className="inline-item">
                     <a
+                      className="item"
                       href="https://twitter.com/humenko8"
                       rel="noopener noreferrer"
                       target="_blank"
+                      aria-label="twitter"
                     >
                       <FontAwesomeIcon icon={faTwitter} size="lg" />
                     </a>
@@ -46,7 +50,7 @@ export default class Footer extends Component {
                   </a>
                   .
                 </p>
-                <Link to="/" className="logo" />
+                <Link to="/" aria-label="home" className="item" />
               </div>
             </div>
             <div className="column">
