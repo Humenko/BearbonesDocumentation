@@ -24,7 +24,7 @@ const code = ({ language, children }) => {
 };
 
 code.propTypes = {
-  language: PropTypes.oneOf(['javascript', 'markup', 'css']),
+  language: PropTypes.oneOf(['js', 'markup', 'css']),
   children: PropTypes.string
 };
 
