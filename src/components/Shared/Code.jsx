@@ -4,7 +4,7 @@ import React from 'react';
 
 const code = ({ language, children }) => {
   return (
-    <pre>
+    <pre className={`language-${language}`}>
       {React.createElement(
         p => (
           <code className={`language-${language}`} {...p} />
