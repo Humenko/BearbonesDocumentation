@@ -1,9 +1,19 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import DocumentationBox from '../Shared/DocumentationBox';
 import MetaTags from '../Shared/MetaTags';
 
-export default class Documentation extends Component {
+class Documentation extends Component {
   render() {
+    const sections = this.props.documenationRoutes
+                        .map(r => r.section)
+                        .filter((value, index, self) => self.indexOf(value) === index)
+                        .map(s => ({
+                          name: s,
+                          links: this.props.documenationRoutes.filter(r => r.section === s)
+                        })
+                      );
+
     return (
       <div className="section p-t-0">
         <MetaTags title={this.props.title} subTitle={this.props.subTitle} />
@@ -13,7 +23,22 @@ export default class Documentation extends Component {
               <h1 className="title">Documentation</h1>
             </div>
           </div>
-          <div className="bb-grid md">
+            {sections.map(section => <div key={section.name} className="bb-grid md">
+              <div className="column column-16">
+                <h3 className="text-primary">{section.name}</h3>
+              </div>
+              {section.links.map(({path, title, subTitle}, i) =>
+                <div key={i} className="column one-third-lg column-8-md">
+                  <DocumentationBox
+                    link={path}
+                    title={title}
+                    subTitle={subTitle}
+                    className={subTitle === 'Coming soon...' && 'disabled'}
+                  />
+                </div>
+              )}
+            </div>)}
+          {/* <div className="bb-grid md">
             <div className="column column-16">
               <h3 className="text-primary">Getting Started</h3>
             </div>
@@ -271,9 +296,18 @@ export default class Documentation extends Component {
                 subTitle="Easily be able to toggle through the visibility of elements with these helper classes."
               />
             </div>
-          </div>
+          </div> */}
+        
+        
         </div>
       </div>
     );
   }
 }
+Documentation.propTypes = {
+  documenationRoutes: PropTypes.array,
+  title: PropTypes.string,
+  subTitle: PropTypes.string
+};
+
+export default Documentation;

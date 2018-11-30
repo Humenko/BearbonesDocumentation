@@ -33,6 +33,25 @@ import Navbar from './components/Shared/Navbar';
 
 const documenationRoutes = [
   {
+    path: '/documentation/gettingstarted',
+    section: 'Getting Started',
+    title: 'Installing Bearbones',
+    subTitle: 'Coming soon...'
+  },
+  {
+    path: '/documentation/gettingstarted',
+    section: 'Getting Started',
+    title: 'Importing',
+    subTitle: 'Coming soon...'
+  },
+  {
+    path: '/documentation/gettingstarted',
+    section: 'Getting Started',
+    title: 'Variables',
+    subTitle: 'Coming soon...'
+  },
+  {
+    section: 'Components',
     path: '/documentation/components/accordion',
     title: 'Accordion',
     subTitle:
@@ -40,18 +59,37 @@ const documenationRoutes = [
     component: AccordionDocumentation
   },
   {
+    section: 'Components',
+    path: '/documentation/components/accordion',
+    title: 'Accordion',
+    subTitle:
+      'A collapsible component which allows the user to show and hide content to meet their needs.',
+    component: AccordionDocumentation
+  },
+  {
+    section: 'Components',
+    path: '/documentation/components/accordion',
+    title: 'Accordion',
+    subTitle:
+      'A collapsible component which allows the user to show and hide content to meet their needs.',
+    component: AccordionDocumentation
+  },
+  {
+    section: 'Components',
     path: '/documentation/components/alert',
     title: 'Alert',
     subTitle: 'Coming soon...',
     component: AlertDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/animation',
     title: 'Animation',
     subTitle: '',
     component: AnimationDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/box',
     title: 'Box',
     subTitle:
@@ -59,6 +97,7 @@ const documenationRoutes = [
     component: BoxDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/breadcrumb',
     title: 'Breadcrumb',
     subTitle:
@@ -66,6 +105,7 @@ const documenationRoutes = [
     component: BreadcrumbDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/button',
     title: 'Button',
     subTitle:
@@ -73,12 +113,14 @@ const documenationRoutes = [
     component: ButtonDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/card',
     title: 'Card',
     subTitle: 'Coming soon...',
     component: CardDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/divider',
     title: 'Divider',
     subTitle:
@@ -86,18 +128,21 @@ const documenationRoutes = [
     component: DividerDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/dropdown',
     title: 'Dropdown',
     subTitle: 'Coming soon...',
     component: DropdownDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/field',
     title: 'Field',
     subTitle: 'Coming soon...',
     component: FieldDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/footer',
     title: 'Footer',
     subTitle:
@@ -105,6 +150,7 @@ const documenationRoutes = [
     component: FooterDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/media',
     title: 'Media',
     subTitle:
@@ -112,12 +158,14 @@ const documenationRoutes = [
     component: MediaDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/navbar',
     title: 'Navbar',
     subTitle: 'Coming soon...',
     component: NavbarDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/pagination',
     title: 'Pagination',
     subTitle:
@@ -125,6 +173,7 @@ const documenationRoutes = [
     component: PaginationDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/stat',
     title: 'Stat',
     subTitle:
@@ -132,12 +181,14 @@ const documenationRoutes = [
     component: StatDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/tab',
     title: 'Tab',
     subTitle: 'Coming soon...',
     component: TabDocumentation
   },
   {
+    section: 'Components',
     path: '/documentation/components/table',
     title: 'Table',
     subTitle:
@@ -145,6 +196,7 @@ const documenationRoutes = [
     component: TableDocumentation
   },
   {
+    section: 'Helper',
     path: '/documentation/helper/display',
     title: 'Display',
     subTitle:
@@ -152,6 +204,7 @@ const documenationRoutes = [
     component: DisplayDocumentation
   },
   {
+    section: 'Helper',
     path: '/documentation/helper/flex',
     title: 'Flex',
     subTitle:
@@ -159,6 +212,7 @@ const documenationRoutes = [
     component: FlexDocumentation
   },
   {
+    section: 'Helper',
     path: '/documentation/helper/position',
     title: 'Position',
     subTitle:
@@ -166,6 +220,7 @@ const documenationRoutes = [
     component: PositionDocumentation
   },
   {
+    section: 'Helper',
     path: '/documentation/helper/spacing',
     title: 'Spacing',
     subTitle:
@@ -173,6 +228,7 @@ const documenationRoutes = [
     component: SpacingDocumentation
   },
   {
+    section: 'Helper',
     path: '/documentation/helper/visibility',
     title: 'Visbility',
     subTitle:
@@ -180,6 +236,7 @@ const documenationRoutes = [
     component: VisibilityDocumentation
   },
   {
+    section: 'Layout',
     path: '/documentation/layout/hero',
     title: 'Hero',
     subTitle:
@@ -222,6 +279,7 @@ export default class App extends Component {
                       render={props => (
                         <Documentation
                           {...props}
+                          documenationRoutes={documenationRoutes}
                           component={Documentation}
                           title="Documentation - Bearbones"
                           subTitle="Bearbones is an open source CSS framework built using the latest and greatest tech including Flexbox, Sass and Font Awesome 5."
