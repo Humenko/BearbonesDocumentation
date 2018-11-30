@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
-
+import MetaTags from '../../Shared/MetaTags';
 export default class HeroDocumentation extends Component {
   render() {
     return (
-      <>
+      <div>
+        <MetaTags title={this.props.title} subTitle={this.props.subTitle} />
         <div className="section p-t-0 p-b-0">
           <div className="container">
             <div className="bb-grid md">
@@ -239,7 +240,7 @@ export default class HeroDocumentation extends Component {
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }

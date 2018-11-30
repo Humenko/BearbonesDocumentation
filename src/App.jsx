@@ -31,15 +31,180 @@ import Footer from './components/Shared/Footer';
 import Header from './components/Shared/Header';
 import Navbar from './components/Shared/Navbar';
 
+const documenationRoutes = [
+  {
+    path: '/documentation/components/accordion',
+    title: 'Accordion',
+    subTitle:
+      'A collapsible component which allows the user to show and hide content to meet their needs.',
+    component: AccordionDocumentation
+  },
+  {
+    path: '/documentation/components/alert',
+    title: 'Alert',
+    subTitle: 'Coming soon...',
+    component: AlertDocumentation
+  },
+  {
+    path: '/documentation/components/animation',
+    title: 'Animation',
+    subTitle: '',
+    component: AnimationDocumentation
+  },
+  {
+    path: '/documentation/components/box',
+    title: 'Box',
+    subTitle:
+      'This component is used as a basic container that full widths to any element it is within.',
+    component: BoxDocumentation
+  },
+  {
+    path: '/documentation/components/breadcrumb',
+    title: 'Breadcrumb',
+    subTitle:
+      'A simple component used to display basic navigational structure.',
+    component: BreadcrumbDocumentation
+  },
+  {
+    path: '/documentation/components/button',
+    title: 'Button',
+    subTitle:
+      'An essential component for any design, providing the user a simple way to trigger an event.',
+    component: ButtonDocumentation
+  },
+  {
+    path: '/documentation/components/card',
+    title: 'Card',
+    subTitle: 'Coming soon...',
+    component: CardDocumentation
+  },
+  {
+    path: '/documentation/components/divider',
+    title: 'Divider',
+    subTitle:
+      'This component is used to visually separate content for the user.',
+    component: DividerDocumentation
+  },
+  {
+    path: '/documentation/components/dropdown',
+    title: 'Dropdown',
+    subTitle: 'Coming soon...',
+    component: DropdownDocumentation
+  },
+  {
+    path: '/documentation/components/field',
+    title: 'Field',
+    subTitle: 'Coming soon...',
+    component: FieldDocumentation
+  },
+  {
+    path: '/documentation/components/footer',
+    title: 'Footer',
+    subTitle:
+      'This component is widely used as a source of navigation on the bottom of webpages.',
+    component: FooterDocumentation
+  },
+  {
+    path: '/documentation/components/media',
+    title: 'Media',
+    subTitle:
+      'This component is used to create repetitive elements where content is positioned with some imagery.',
+    component: MediaDocumentation
+  },
+  {
+    path: '/documentation/components/navbar',
+    title: 'Navbar',
+    subTitle: 'Coming soon...',
+    component: NavbarDocumentation
+  },
+  {
+    path: '/documentation/components/pagination',
+    title: 'Pagination',
+    subTitle:
+      'This component is used to display grouped content existing between multiple pages.',
+    component: PaginationDocumentation
+  },
+  {
+    path: '/documentation/components/stat',
+    title: 'Stat',
+    subTitle:
+      'This component is used to empathise both the label and value for an attribute.',
+    component: StatDocumentation
+  },
+  {
+    path: '/documentation/components/tab',
+    title: 'Tab',
+    subTitle: 'Coming soon...',
+    component: TabDocumentation
+  },
+  {
+    path: '/documentation/components/table',
+    title: 'Table',
+    subTitle:
+      'his component is used to spruce up the HTML table we all know and love.',
+    component: TableDocumentation
+  },
+  {
+    path: '/documentation/helper/display',
+    title: 'Display',
+    subTitle:
+      'Easily be able to toggle through display properties with these helper classes.',
+    component: DisplayDocumentation
+  },
+  {
+    path: '/documentation/helper/flex',
+    title: 'Flex',
+    subTitle:
+      'Easily be able to toggle through flex properties with these helper classes.',
+    component: FlexDocumentation
+  },
+  {
+    path: '/documentation/helper/position',
+    title: 'Position',
+    subTitle:
+      'Easily be able to toggle through position properties with these helper classes.',
+    component: PositionDocumentation
+  },
+  {
+    path: '/documentation/helper/spacing',
+    title: 'Spacing',
+    subTitle:
+      'Easily be able to seet the margin and / or padding of various elements.',
+    component: SpacingDocumentation
+  },
+  {
+    path: '/documentation/helper/visibility',
+    title: 'Visbility',
+    subTitle:
+      'Easily be able to toggle through the visibility of elements with these helper classes."',
+    component: VisibilityDocumentation
+  },
+  {
+    path: '/documentation/layout/hero',
+    title: 'Hero',
+    subTitle:
+      'A component which extends to the whole horizontal viewport, used to showcase key messaging.',
+    component: HeroDocumentation
+  }
+];
+
 export default class App extends Component {
   render() {
     return (
       <>
         <main>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/documentation" />
-          </Switch>
+          <Route
+            exact
+            path="/"
+            render={props => (
+              <Home
+                {...props}
+                component={Home}
+                title="Bearbones: one of the world‘s most customisable CSS frameworks."
+                subTitle="One of the world‘s most customisable CSS frameworks. It's customisable, contemporary and completely Free!"
+              />
+            )}
+          />
           <Route path="/documentation" component={BreadcrumbNavigation} />
           <Route
             render={({ location }) => (
@@ -54,123 +219,30 @@ export default class App extends Component {
                     <Route
                       exact
                       path="/documentation"
-                      component={Documentation}
+                      render={props => (
+                        <Documentation
+                          {...props}
+                          component={Documentation}
+                          title="Documentation - Bearbones"
+                          subTitle="Bearbones is an open source CSS framework built using the latest and greatest tech including Flexbox, Sass and Font Awesome 5."
+                        />
+                      )}
                     />
-                    <Route
-                      exact
-                      path="/documentation/components/accordion"
-                      component={AccordionDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/alert"
-                      component={AlertDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/animation"
-                      component={AnimationDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/box"
-                      component={BoxDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/breadcrumb"
-                      component={BreadcrumbDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/button"
-                      component={ButtonDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/card"
-                      component={CardDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/divider"
-                      component={DividerDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/dropdown"
-                      component={DropdownDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/field"
-                      component={FieldDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/footer"
-                      component={FooterDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/media"
-                      component={MediaDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/navbar"
-                      component={NavbarDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/pagination"
-                      component={PaginationDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/stat"
-                      component={StatDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/tab"
-                      component={TabDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/components/table"
-                      component={TableDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/layout/hero"
-                      component={HeroDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/helper/display"
-                      component={DisplayDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/helper/flex"
-                      component={FlexDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/helper/position"
-                      component={PositionDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/helper/spacing"
-                      component={SpacingDocumentation}
-                    />
-                    <Route
-                      exact
-                      path="/documentation/helper/visibility"
-                      component={VisibilityDocumentation}
-                    />
+                    {documenationRoutes.map(route => (
+                      <Route
+                        exact
+                        path={route.path}
+                        key={route.path}
+                        render={props => (
+                          <route.component
+                            {...props}
+                            component={route.component}
+                            title={route.title + ' - Bearbones'}
+                            subTitle={route.subTitle}
+                          />
+                        )}
+                      />
+                    ))}
                     {/* <Route path="*" component={PageNotFound} /> */}
                   </Switch>
                 </CSSTransition>

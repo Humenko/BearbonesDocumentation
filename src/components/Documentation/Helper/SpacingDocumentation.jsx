@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import DocumentationVariabes from '../../Shared/DocumentationVariables';
+import MetaTags from '../../Shared/MetaTags';
 
 export default class SpacingDocumentation extends Component {
   render() {
     return (
       <div className="section p-t-0">
+        <MetaTags title={this.props.title} subTitle={this.props.subTitle} />
         <div className="container">
           <div className="bb-grid md">
             <div className="column column-16">

@@ -28,6 +28,7 @@ pre[class*='language-'] {
 	&.language-js {
 		display: inline-block;
 		padding: $padding / 2;
+		width: 100%;
 		border-left: $border-style $border-width * 2 $secondary-color;
 		border-radius: 0;
 		background: $base-pair;

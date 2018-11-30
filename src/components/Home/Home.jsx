@@ -9,6 +9,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import IllustrationPainter from '../Shared/IllustrationPainter';
 import IllustrationRubble from '../Shared/IllustrationRubble';
+import MetaTags from '../Shared/MetaTags';
 import Bear from './Bear/Bear';
 
 let randomHead = 0;
@@ -36,6 +37,7 @@ class Home extends Component {
   render() {
     return (
       <section>
+        <MetaTags title={this.props.title} subTitle={this.props.subTitle} />
         <div className="hero full-y m-t-5">
           <div className="body">
             <div className="container full-x">
