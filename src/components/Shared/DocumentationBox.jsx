@@ -9,7 +9,7 @@ export default class DocumentationBox extends Component {
         className={`doc-box ${
           this.props.className ? this.props.className : ''
         }`}
-        to={`/documentation/${this.props.link}`}
+        to={`${this.props.link}`}
       >
         <h4 className="text-secondary">{this.props.title}</h4>
         <p className="text-lg">{this.props.subTitle}</p>

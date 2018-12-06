@@ -7,8 +7,8 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import IllustrationPainter from '../Shared/IllustrationPainter';
-import IllustrationRubble from '../Shared/IllustrationRubble';
+import IllustrationPainter from '../Shared/Illustrations/IllustrationPainter';
+import IllustrationRubble from '../Shared/Illustrations/IllustrationRubble';
 import MetaTags from '../Shared/MetaTags';
 import Bear from './Bear/Bear';
 
@@ -53,7 +53,7 @@ class Home extends Component {
                     frameworks.
                   </p>
                   <div className="column m-t-4">
-                    <Link to="/documentation" className="bb-btn positive lg">
+                    <Link to="/documentation" className="bb-btn secondary lg">
                       Documentation
                       <span className="p-l-2">
                         <FontAwesomeIcon icon={faFileAlt} />
@@ -129,7 +129,7 @@ class Home extends Component {
                     Bearbones gives you the headstart.
                   </h2>
                   <p className="subtitle lg text-primary">
-                    The components are already built,
+                    The components are already built,{' '}
                     <Link
                       to="/documentation"
                       className="link text-primary text-underline"

@@ -2,7 +2,7 @@ import { faHome } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import IllustrationMoon from '../Shared/IllustrationMoon';
+import IllustrationMoon from '../Shared/Illustrations/IllustrationMoon';
 
 class PageNotFound extends Component {
   constructor(props) {

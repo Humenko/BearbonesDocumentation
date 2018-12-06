@@ -28,10 +28,9 @@ import HeroDocumentation from './components/Documentation/Layout/HeroDocumentati
 import Home from './components/Home/Home';
 import BreadcrumbNavigation from './components/Shared/BreadcrumbNavigation';
 import Footer from './components/Shared/Footer';
-import Header from './components/Shared/Header';
-import Navbar from './components/Shared/Navbar';
+import PageLayout from './components/Shared/PageLayout';
 
-const documenationRoutes = [
+const documentationRoutes = [
   {
     path: '/documentation/gettingstarted',
     section: 'Getting Started',
@@ -60,22 +59,6 @@ const documenationRoutes = [
   },
   {
     section: 'Components',
-    path: '/documentation/components/accordion',
-    title: 'Accordion',
-    subTitle:
-      'A collapsible component which allows the user to show and hide content to meet their needs.',
-    component: AccordionDocumentation
-  },
-  {
-    section: 'Components',
-    path: '/documentation/components/accordion',
-    title: 'Accordion',
-    subTitle:
-      'A collapsible component which allows the user to show and hide content to meet their needs.',
-    component: AccordionDocumentation
-  },
-  {
-    section: 'Components',
     path: '/documentation/components/alert',
     title: 'Alert',
     subTitle: 'Coming soon...',
@@ -85,7 +68,7 @@ const documenationRoutes = [
     section: 'Components',
     path: '/documentation/components/animation',
     title: 'Animation',
-    subTitle: '',
+    subTitle: 'Coming soon...',
     component: AnimationDocumentation
   },
   {
@@ -196,6 +179,32 @@ const documenationRoutes = [
     component: TableDocumentation
   },
   {
+    section: 'Layout',
+    path: '/documentation/layout/basic',
+    title: 'Basic',
+    subTitle: 'Coming soon...'
+  },
+  {
+    section: 'Layout',
+    path: '/documentation/layout/grid',
+    title: 'Grid',
+    subTitle: 'Coming soon...'
+  },
+  {
+    section: 'Layout',
+    path: '/documentation/layout/family-grid',
+    title: 'Family Grid',
+    subTitle: 'Coming soon...'
+  },
+  {
+    section: 'Layout',
+    path: '/documentation/layout/hero',
+    title: 'Hero',
+    subTitle:
+      'A component which extends to the whole horizontal viewport, used to showcase key messaging.',
+    component: HeroDocumentation
+  },
+  {
     section: 'Helper',
     path: '/documentation/helper/display',
     title: 'Display',
@@ -210,6 +219,13 @@ const documenationRoutes = [
     subTitle:
       'Easily be able to toggle through flex properties with these helper classes.',
     component: FlexDocumentation
+  },
+  {
+    section: 'Helper',
+    path: '/documentation/helper/list',
+    title: 'List',
+    subTitle: 'Coming soon...',
+    component: SpacingDocumentation
   },
   {
     section: 'Helper',
@@ -229,19 +245,18 @@ const documenationRoutes = [
   },
   {
     section: 'Helper',
+    path: '/documentation/helper/typography',
+    title: 'Typography',
+    subTitle: 'Coming soon...',
+    component: SpacingDocumentation
+  },
+  {
+    section: 'Helper',
     path: '/documentation/helper/visibility',
     title: 'Visbility',
     subTitle:
       'Easily be able to toggle through the visibility of elements with these helper classes."',
     component: VisibilityDocumentation
-  },
-  {
-    section: 'Layout',
-    path: '/documentation/layout/hero',
-    title: 'Hero',
-    subTitle:
-      'A component which extends to the whole horizontal viewport, used to showcase key messaging.',
-    component: HeroDocumentation
   }
 ];
 
@@ -250,67 +265,64 @@ export default class App extends Component {
     return (
       <>
         <main>
-          <Route
-            exact
-            path="/"
-            render={props => (
-              <Home
-                {...props}
-                component={Home}
-                title="Bearbones: one of the world‘s most customisable CSS frameworks."
-                subTitle="One of the world‘s most customisable CSS frameworks. It's customisable, contemporary and completely Free!"
-              />
-            )}
-          />
-          <Route path="/documentation" component={BreadcrumbNavigation} />
-          <Route
-            render={({ location }) => (
-              <TransitionGroup>
-                <CSSTransition
-                  onEntering={() => window.scrollTo(0, 0)}
-                  key={location.key}
-                  classNames="doc-page-animation"
-                  timeout={500}
-                >
-                  <Switch location={location}>
-                    <Route
-                      exact
-                      path="/documentation"
-                      render={props => (
-                        <Documentation
-                          {...props}
-                          documenationRoutes={documenationRoutes}
-                          component={Documentation}
-                          title="Documentation - Bearbones"
-                          subTitle="Bearbones is an open source CSS framework built using the latest and greatest tech including Flexbox, Sass and Font Awesome 5."
-                        />
-                      )}
-                    />
-                    {documenationRoutes.map(route => (
+          <PageLayout>
+            <Route
+              exact
+              path="/"
+              render={props => (
+                <Home
+                  {...props}
+                  component={Home}
+                  title="Bearbones: one of the world‘s most customisable CSS frameworks."
+                  subTitle="One of the world‘s most customisable CSS frameworks. It's customisable, contemporary and completely Free!"
+                />
+              )}
+            />
+            <Route path="/documentation" component={BreadcrumbNavigation} />
+            <Route
+              render={({ location }) => (
+                <TransitionGroup>
+                  <CSSTransition
+                    onEntering={() => window.scrollTo(0, 0)}
+                    key={location.key}
+                    classNames="doc-page-animation"
+                    timeout={500}
+                  >
+                    <Switch location={location}>
                       <Route
                         exact
-                        path={route.path}
-                        key={route.path}
+                        path="/documentation"
                         render={props => (
-                          <route.component
+                          <Documentation
                             {...props}
-                            component={route.component}
-                            title={route.title + ' - Bearbones'}
-                            subTitle={route.subTitle}
+                            documentationRoutes={documentationRoutes}
+                            component={Documentation}
+                            title="Documentation - Bearbones"
+                            subTitle="Bearbones is an open source CSS framework built using the latest and greatest tech including Flexbox, Sass and Font Awesome 5."
                           />
                         )}
                       />
-                    ))}
-                    {/* <Route path="*" component={PageNotFound} /> */}
-                  </Switch>
-                </CSSTransition>
-              </TransitionGroup>
-            )}
-          />
-          <Route exact path="/" component={Header} />
-          <Route exact path="/" component={Navbar} />
-          <Route path="/documentation" component={Header} />
-          <Route path="/documentation" component={Navbar} />
+                      {documentationRoutes.map(route => (
+                        <Route
+                          exact
+                          path={route.path}
+                          key={route.path}
+                          render={props => (
+                            <route.component
+                              {...props}
+                              component={route.component}
+                              title={route.title + ' - Bearbones'}
+                              subTitle={route.subTitle}
+                            />
+                          )}
+                        />
+                      ))}
+                    </Switch>
+                  </CSSTransition>
+                </TransitionGroup>
+              )}
+            />
+          </PageLayout>
         </main>
         <Route exact path="/" component={Footer} />
       </>
