@@ -61,7 +61,7 @@ const documentationRoutes = [
     section: 'Components',
     path: '/documentation/components/alert',
     title: 'Alert',
-    subTitle: 'Coming soon...',
+    subTitle: 'This component is used to provide feedback messages for users.',
     component: AlertDocumentation
   },
   {
