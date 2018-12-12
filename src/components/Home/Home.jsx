@@ -7,6 +7,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../Shared/Footer';
 import IllustrationPainter from '../Shared/Illustrations/IllustrationPainter';
 import IllustrationRubble from '../Shared/Illustrations/IllustrationRubble';
 import MetaTags from '../Shared/MetaTags';
@@ -147,6 +148,7 @@ class Home extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </section>
     );
   }

@@ -4,7 +4,11 @@ import * as React from 'react';
 export class Accordion extends React.Component {
   render() {
     return (
-      <div className={`bb-accordion ${this.props.className}`}>
+      <div
+        className={`bb-accordion ${
+          this.props.className ? this.props.className : ''
+        }`}
+      >
         {this.props.children}
       </div>
     );

@@ -27,7 +27,6 @@ import VisibilityDocumentation from './components/Documentation/Helper/Visibilit
 import HeroDocumentation from './components/Documentation/Layout/HeroDocumentation';
 import Home from './components/Home/Home';
 import BreadcrumbNavigation from './components/Shared/BreadcrumbNavigation';
-import Footer from './components/Shared/Footer';
 import PageLayout from './components/Shared/PageLayout';
 
 const documentationRoutes = [
@@ -324,7 +323,6 @@ export default class App extends Component {
             />
           </PageLayout>
         </main>
-        <Route exact path="/" component={Footer} />
       </>
     );
   }

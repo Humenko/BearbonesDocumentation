@@ -4,6 +4,10 @@
 @import 'components/footer/all';
 @import 'layout/all';
 
+.bb-accordion {
+	width: 100%;
+}
+
 body {
 	padding-bottom: env(safe-area-inset-bottom);
 	background: darken($base-pair, 2%);
