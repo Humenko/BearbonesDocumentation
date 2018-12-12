@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DocumentationVariabes from '../../Shared/DocumentationVariables';
+import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
 export default class SpacingDocumentation extends Component {
@@ -120,7 +120,7 @@ export default class SpacingDocumentation extends Component {
               </table>
             </div>
           </div>
-          <DocumentationVariabes
+          <DocumentationVariables
             variables={[{ name: '$spacer', value: '1rem' }]}
           />
         </div>

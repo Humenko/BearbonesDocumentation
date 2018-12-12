@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
-import DocumentationVariabes from '../../Shared/DocumentationVariables';
+import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
 export default class BreadcrumbDocumentation extends Component {
@@ -245,7 +245,7 @@ export default class BreadcrumbDocumentation extends Component {
               </div>
             </div>
           </div>
-          <DocumentationVariabes
+          <DocumentationVariables
             variables={[
               { name: '$breadcrumb-variant-background', value: 'transparent' },
               { name: '$breadcrumb-variant-color', value: '$base-color' },

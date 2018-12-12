@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
-import DocumentationVariabes from '../../Shared/DocumentationVariables';
+import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
 export default class TableDocumentaion extends Component {
@@ -817,7 +817,7 @@ export default class TableDocumentaion extends Component {
               </div>
             </div>
           </div>
-          <DocumentationVariabes
+          <DocumentationVariables
             variables={[
               { name: '$table-variant-background', value: ' $lighter-grey' },
               {

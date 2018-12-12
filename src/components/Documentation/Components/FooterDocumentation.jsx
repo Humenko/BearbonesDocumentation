@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
-import DocumentationVariabes from '../../Shared/DocumentationVariables';
+import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
 export default class FooterDocumentation extends Component {
@@ -181,7 +181,7 @@ export default class FooterDocumentation extends Component {
               </div>
             </div>
           </div>
-          <DocumentationVariabes
+          <DocumentationVariables
             variables={[
               {
                 name: '$footer-variant-background',

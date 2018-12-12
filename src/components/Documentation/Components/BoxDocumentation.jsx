@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
-import DocumentationVariabes from '../../Shared/DocumentationVariables';
+import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
 export default class BoxDocumentation extends Component {
@@ -203,7 +203,7 @@ export default class BoxDocumentation extends Component {
               </div>
             </div>
           </div>
-          <DocumentationVariabes
+          <DocumentationVariables
             variables={[
               {
                 name: '$box-variant-background',

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Accordion, AccordionItem } from '../../Shared/Accordion';
 import Code from '../../Shared/Code';
-import DocumentationVariabes from '../../Shared/DocumentationVariables';
+import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 export default class AccordionDocumentation extends Component {
   render() {
@@ -246,7 +246,7 @@ export default class AccordionDocumentation extends Component {
               </div>
             </div>
           </div>
-          <DocumentationVariabes
+          <DocumentationVariables
             variables={[
               {
                 name: '$accordion-variant-background',
