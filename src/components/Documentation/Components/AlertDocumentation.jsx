@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
-import DocumentationVariabes from '../../Shared/DocumentationVariables';
+import DocumentationHelper from '../../Shared/DocumentationHelper';
+import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
 export default class AlertDocumentation extends Component {
@@ -23,8 +24,8 @@ export default class AlertDocumentation extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Basic</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <div className="bb-alert">
                       <p>
@@ -33,101 +34,102 @@ export default class AlertDocumentation extends Component {
                       </p>
                     </div>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<div class="bb-alert">
   <p><strong>Alert,</strong> only 8 species of bears are extant.</p>
 </div>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Colours</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <div className="bb-alert primary">
-                      <p>
-                        <strong>Alert,</strong> only 8 species of bears are
-                        extant.
-                      </p>
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content">
+                      <div className="bb-alert primary">
+                        <p>
+                          <strong>Alert,</strong> only 8 species of bears are
+                          extant.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="doc-content">
-                    <div className="bb-alert secondary">
-                      <p>
-                        <strong>Alert,</strong> only 8 species of bears are
-                        extant.
-                      </p>
+                    <div className="doc-content">
+                      <div className="bb-alert secondary">
+                        <p>
+                          <strong>Alert,</strong> only 8 species of bears are
+                          extant.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="doc-content">
-                    <div className="bb-alert positive">
-                      <p>
-                        <strong>Alert,</strong> only 8 species of bears are
-                        extant.
-                      </p>
+                    <div className="doc-content">
+                      <div className="bb-alert positive">
+                        <p>
+                          <strong>Alert,</strong> only 8 species of bears are
+                          extant.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="doc-content">
-                    <div className="bb-alert negative">
-                      <p>
-                        <strong>Alert,</strong> only 8 species of bears are
-                        extant.
-                      </p>
+                    <div className="doc-content">
+                      <div className="bb-alert negative">
+                        <p>
+                          <strong>Alert,</strong> only 8 species of bears are
+                          extant.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="doc-content">
-                    <div className="bb-alert invert">
-                      <p>
-                        <strong>Alert,</strong> only 8 species of bears are
-                        extant.
-                      </p>
+                    <div className="doc-content">
+                      <div className="bb-alert invert">
+                        <p>
+                          <strong>Alert,</strong> only 8 species of bears are
+                          extant.
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </div>
-
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<div class="bb-alert primary">
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<div class="bb-alert primary">
   <p><strong>Alert,</strong> only 8 species of bears are extant.</p>
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-alert secondary">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-alert secondary">
   <p><strong>Alert,</strong> only 8 species of bears are extant.</p>
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-alert positive">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-alert positive">
   <p><strong>Alert,</strong> only 8 species of bears are extant.</p>
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-alert negative">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-alert negative">
   <p><strong>Alert,</strong> only 8 species of bears are extant.</p>
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-alert invert">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-alert invert">
   <p><strong>Alert,</strong> only 8 species of bears are extant.</p>
 </div>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Close</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <div className="bb-alert">
                       <p>
@@ -137,20 +139,19 @@ export default class AlertDocumentation extends Component {
                       <div className="close" />
                     </div>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<div class="bb-alert">
   <p><strong>Alert,</strong> only 8 species of bears are extant.</p>
   <div class="close"></div>                        
 </div>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
-          <DocumentationVariabes
+          <DocumentationVariables
             variables={[
               {
                 name: '$alert-variant-background',

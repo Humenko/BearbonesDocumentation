@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
+import DocumentationHelper from '../../Shared/DocumentationHelper';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
@@ -24,169 +25,178 @@ export default class PaginationDocumentation extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Basic</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <div className="bb-stat">
-                      <p className="value">20,000</p>
-                      <p className="label">Polar Bears</p>
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content">
+                      <div className="bb-stat">
+                        <p className="value">20,000</p>
+                        <p className="label">Polar Bears</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="doc-content">
-                    <div className="bb-stat">
-                      <p className="label">Polar Bears</p>
-                      <p className="value">20,000</p>
+                    <div className="doc-content">
+                      <div className="bb-stat">
+                        <p className="label">Polar Bears</p>
+                        <p className="value">20,000</p>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<div class="bb-stat">
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<div class="bb-stat">
   <p class="value">20,000</p>
   <p class="label">Polar Bears</p>  
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-stat">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-stat">
   <p class="label">Polar Bears</p>
   <p class="value">20,000</p>
 </div>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Colours</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <div className="bb-stat primary">
-                      <p className="value text-primary">20,000</p>
-                      <p className="label">Polar Bears</p>
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content">
+                      <div className="bb-stat primary">
+                        <p className="value text-primary">20,000</p>
+                        <p className="label">Polar Bears</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="doc-content">
-                    <div className="bb-stat secondary">
-                      <p className="value text-secondary">20,000</p>
-                      <p className="label">Polar Bears</p>
+                    <div className="doc-content">
+                      <div className="bb-stat secondary">
+                        <p className="value text-secondary">20,000</p>
+                        <p className="label">Polar Bears</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="doc-content">
-                    <div className="bb-stat positive">
-                      <p className="value text-positive">20,000</p>
-                      <p className="label">Polar Bears</p>
+                    <div className="doc-content">
+                      <div className="bb-stat positive">
+                        <p className="value text-positive">20,000</p>
+                        <p className="label">Polar Bears</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="doc-content">
-                    <div className="bb-stat negative">
-                      <p className="value text-negative">20,000</p>
-                      <p className="label">Polar Bears</p>
+                    <div className="doc-content">
+                      <div className="bb-stat negative">
+                        <p className="value text-negative">20,000</p>
+                        <p className="label">Polar Bears</p>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<div class="bb-stat primary">
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<div class="bb-stat primary">
   <p class="value">20,000</p>
   <p class="label">Polar Bears</p>  
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-stat secondary">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-stat secondary">
   ...
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-stat positive">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-stat positive">
   ...
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-stat negative">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-stat negative">
   ...
 </div>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Sizes</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <div className="bb-stat xs">
-                      <p className="value">20,000</p>
-                      <p className="label">Polar Bears</p>
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content">
+                      <div className="bb-stat xs">
+                        <p className="value">20,000</p>
+                        <p className="label">Polar Bears</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="doc-content">
-                    <div className="bb-stat sm">
-                      <p className="value">20,000</p>
-                      <p className="label">Polar Bears</p>
+                    <div className="doc-content">
+                      <div className="bb-stat sm">
+                        <p className="value">20,000</p>
+                        <p className="label">Polar Bears</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="doc-content">
-                    <div className="bb-stat">
-                      <p className="value">20,000</p>
-                      <p className="label">Polar Bears</p>
+                    <div className="doc-content">
+                      <div className="bb-stat">
+                        <p className="value">20,000</p>
+                        <p className="label">Polar Bears</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="doc-content">
-                    <div className="bb-stat lg">
-                      <p className="value">20,000</p>
-                      <p className="label">Polar Bears</p>
+                    <div className="doc-content">
+                      <div className="bb-stat lg">
+                        <p className="value">20,000</p>
+                        <p className="label">Polar Bears</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="doc-content">
-                    <div className="bb-stat xl">
-                      <p className="value">20,000</p>
-                      <p className="label">Polar Bears</p>
+                    <div className="doc-content">
+                      <div className="bb-stat xl">
+                        <p className="value">20,000</p>
+                        <p className="label">Polar Bears</p>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<div class="bb-stat xs">
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<div class="bb-stat xs">
   <p class="value">20,000</p>
   <p class="label">Polar Bears</p>  
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-stat sm">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-stat sm">
   ...
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-stat">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-stat">
   ... 
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-stat lg">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-stat lg">
   ... 
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-stat xl">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-stat xl">
   ...  
 </div>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Styles</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <div className="bb-stat">
                       <p className="value text">
@@ -197,8 +207,8 @@ export default class PaginationDocumentation extends Component {
                       <p className="label">Polar Bears</p>
                     </div>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<div class="bb-stat">
   <p class="value text">
@@ -207,32 +217,30 @@ export default class PaginationDocumentation extends Component {
   <p class="label">Downloads</p>
 </div>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <div className="bb-stat horizontal">
                       <p className="value">20,000</p>
                       <p className="label">Polar Bears</p>
                     </div>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<div class="bb-stat horizontal">
   <p class="value">20,000</p>
   <p class="label">Polar Bears</p>  
 </div>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
@@ -246,8 +254,8 @@ export default class PaginationDocumentation extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Basic</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <div className="bb-stats">
                       <div className="bb-stat">
@@ -268,8 +276,8 @@ export default class PaginationDocumentation extends Component {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<div class="bb-stats">
   <div class="bb-stat">
@@ -288,16 +296,15 @@ export default class PaginationDocumentation extends Component {
   </div>
 </div>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Vertical</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <div className="bb-stats vertical">
                       <div className="bb-stat">
@@ -318,8 +325,8 @@ export default class PaginationDocumentation extends Component {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<div class="bb-stats vertical">
   <div class="bb-stat">
@@ -338,9 +345,8 @@ export default class PaginationDocumentation extends Component {
   </div>
 </div>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <DocumentationVariables

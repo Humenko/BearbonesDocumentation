@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { Accordion, AccordionItem } from '../../Shared/Accordion';
 import Code from '../../Shared/Code';
+import DocumentationHelper from '../../Shared/DocumentationHelper';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
+
 export default class AccordionDocumentation extends Component {
   render() {
     return (
@@ -24,14 +26,14 @@ export default class AccordionDocumentation extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Basic</h4>
-              <p className="subtitle sm">
+              <p className="subtitle sm p-b-3">
                 As there is no js in Bearbones, you need to toggle the{' '}
                 <code>.active</code> class on the element header and content you
                 want to expand/collapse.
               </p>
-              <div className="bb-box m-t-3 example">
-                <div className="doc-preview">
-                  <div className="content">
+              <DocumentationHelper
+                content={
+                  <div className="doc-content">
                     <Accordion>
                       <AccordionItem header={'Panda'}>
                         The giant panda lives in a few mountain ranges in
@@ -43,8 +45,8 @@ export default class AccordionDocumentation extends Component {
                       </AccordionItem>
                     </Accordion>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<div class="bb-accordion">
   <div class="header">
@@ -59,50 +61,51 @@ export default class AccordionDocumentation extends Component {
   </div>
 </div>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Nested</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="bb-accordion">
-                    <div className="header active">
-                      Ursidae
-                      <span className="chevron" />
-                    </div>
-                    <div className="content active">
+              <DocumentationHelper
+                content={
+                  <div className="doc-content">
+                    <div className="bb-accordion">
                       <div className="header active">
-                        <span className="toggle" />
-                        Panda
+                        Ursidae
+                        <span className="chevron" />
                       </div>
                       <div className="content active">
-                        The giant panda lives in a few mountain ranges in
-                        central China, mainly in Sichuan, but also in
-                        neighbouring Shaanxi and Gansu. As a result of farming,
-                        deforestation, and other development, the giant panda
-                        has been driven out of the lowland areas where it once
-                        lived.
-                      </div>
+                        <div className="header active">
+                          <span className="toggle" />
+                          Panda
+                        </div>
+                        <div className="content active">
+                          The giant panda lives in a few mountain ranges in
+                          central China, mainly in Sichuan, but also in
+                          neighbouring Shaanxi and Gansu. As a result of
+                          farming, deforestation, and other development, the
+                          giant panda has been driven out of the lowland areas
+                          where it once lived.
+                        </div>
 
-                      <div className="header">
-                        <span className="toggle" />
-                        Brown Bear
-                      </div>
-                      <div className="content">...</div>
+                        <div className="header">
+                          <span className="toggle" />
+                          Brown Bear
+                        </div>
+                        <div className="content">...</div>
 
-                      <div className="header">
-                        <span className="toggle" />
-                        Sloth Bear
+                        <div className="header">
+                          <span className="toggle" />
+                          Sloth Bear
+                        </div>
+                        <div className="content">...</div>
                       </div>
-                      <div className="content">...</div>
                     </div>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<div class="bb-accordion">
   <div class="header">
@@ -135,80 +138,82 @@ export default class AccordionDocumentation extends Component {
   </div>
 </div>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Colours</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="content m-b-3">
-                    <Accordion className="primary">
-                      <AccordionItem header={'Primary'}>
-                        The giant panda lives in a few mountain ranges in
-                        central China, mainly in Sichuan, but also in
-                        neighbouring Shaanxi and Gansu. As a result of farming,
-                        deforestation, and other development, the giant panda
-                        has been driven out of the lowland areas where it once
-                        lived.
-                      </AccordionItem>
-                    </Accordion>
-                  </div>
-                  <div className="content m-b-3">
-                    <Accordion className="secondary">
-                      <AccordionItem header={'Secondary'}>
-                        The giant panda lives in a few mountain ranges in
-                        central China, mainly in Sichuan, but also in
-                        neighbouring Shaanxi and Gansu. As a result of farming,
-                        deforestation, and other development, the giant panda
-                        has been driven out of the lowland areas where it once
-                        lived.
-                      </AccordionItem>
-                    </Accordion>
-                  </div>
-                  <div className="content m-b-3">
-                    <Accordion className="positive">
-                      <AccordionItem header={'Positive'}>
-                        The giant panda lives in a few mountain ranges in
-                        central China, mainly in Sichuan, but also in
-                        neighbouring Shaanxi and Gansu. As a result of farming,
-                        deforestation, and other development, the giant panda
-                        has been driven out of the lowland areas where it once
-                        lived.
-                      </AccordionItem>
-                    </Accordion>
-                  </div>
-                  <div className="content m-b-3">
-                    <Accordion className="negative">
-                      <AccordionItem header={'Negative'}>
-                        The giant panda lives in a few mountain ranges in
-                        central China, mainly in Sichuan, but also in
-                        neighbouring Shaanxi and Gansu. As a result of farming,
-                        deforestation, and other development, the giant panda
-                        has been driven out of the lowland areas where it once
-                        lived.
-                      </AccordionItem>
-                    </Accordion>
-                  </div>
-                  <div className="content m-b-3">
-                    <Accordion className="invert">
-                      <AccordionItem header={'Invert'}>
-                        The giant panda lives in a few mountain ranges in
-                        central China, mainly in Sichuan, but also in
-                        neighbouring Shaanxi and Gansu. As a result of farming,
-                        deforestation, and other development, the giant panda
-                        has been driven out of the lowland areas where it once
-                        lived.
-                      </AccordionItem>
-                    </Accordion>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<div class="bb-accordion primary">
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content m-b-3">
+                      <Accordion className="primary">
+                        <AccordionItem header={'Primary'}>
+                          The giant panda lives in a few mountain ranges in
+                          central China, mainly in Sichuan, but also in
+                          neighbouring Shaanxi and Gansu. As a result of
+                          farming, deforestation, and other development, the
+                          giant panda has been driven out of the lowland areas
+                          where it once lived.
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                    <div className="doc-content m-b-3">
+                      <Accordion className="secondary">
+                        <AccordionItem header={'Secondary'}>
+                          The giant panda lives in a few mountain ranges in
+                          central China, mainly in Sichuan, but also in
+                          neighbouring Shaanxi and Gansu. As a result of
+                          farming, deforestation, and other development, the
+                          giant panda has been driven out of the lowland areas
+                          where it once lived.
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                    <div className="doc-content m-b-3">
+                      <Accordion className="positive">
+                        <AccordionItem header={'Positive'}>
+                          The giant panda lives in a few mountain ranges in
+                          central China, mainly in Sichuan, but also in
+                          neighbouring Shaanxi and Gansu. As a result of
+                          farming, deforestation, and other development, the
+                          giant panda has been driven out of the lowland areas
+                          where it once lived.
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                    <div className="doc-content m-b-3">
+                      <Accordion className="negative">
+                        <AccordionItem header={'Negative'}>
+                          The giant panda lives in a few mountain ranges in
+                          central China, mainly in Sichuan, but also in
+                          neighbouring Shaanxi and Gansu. As a result of
+                          farming, deforestation, and other development, the
+                          giant panda has been driven out of the lowland areas
+                          where it once lived.
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                    <div className="doc-content m-b-3">
+                      <Accordion className="invert">
+                        <AccordionItem header={'Invert'}>
+                          The giant panda lives in a few mountain ranges in
+                          central China, mainly in Sichuan, but also in
+                          neighbouring Shaanxi and Gansu. As a result of
+                          farming, deforestation, and other development, the
+                          giant panda has been driven out of the lowland areas
+                          where it once lived.
+                        </AccordionItem>
+                      </Accordion>
+                    </div>
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<div class="bb-accordion primary">
   <div class="header">
     Panda<span class="chevron"></span>
   </div>
@@ -220,30 +225,30 @@ export default class AccordionDocumentation extends Component {
     the lowland areas where it once lived.
   </div>
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-accordion secondary">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-accordion secondary">
   ...
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-accordion positive">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-accordion positive">
   ...
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-accordion negative">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-accordion negative">
   ...
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-accordion invert">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-accordion invert">
   ...
 </div>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <DocumentationVariables

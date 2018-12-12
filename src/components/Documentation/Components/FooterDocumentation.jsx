@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
+import DocumentationHelper from '../../Shared/DocumentationHelper';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
@@ -24,8 +25,9 @@ export default class FooterDocumentation extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Basic</h4>
-              <div className="bb-box example full-x">
-                <div className="doc-preview">
+              <DocumentationHelper
+                className="full-x"
+                content={
                   <div className="doc-content">
                     <footer className="bb-footer">
                       <div className="container text-center">
@@ -46,8 +48,8 @@ export default class FooterDocumentation extends Component {
                       </div>
                     </footer>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<footer class="bb-footer">
   <div class="container text-center">
@@ -60,92 +62,95 @@ export default class FooterDocumentation extends Component {
   </div>
 </footer>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Colour</h4>
-              <div className="bb-box example full-x">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <footer className="bb-footer invert">
-                      <div className="container text-center">
-                        <p>
-                          <strong>Bearbones</strong> by{' '}
-                          <a className="link" href="#example">
-                            Daniel Humenko
-                          </a>
-                          .
-                        </p>
-                        <p>
-                          Code licensed{' '}
-                          <a className="link" href="#example">
-                            MIT
-                          </a>
-                          .
-                        </p>
-                      </div>
-                    </footer>
-                  </div>
-                  <div className="doc-content">
-                    <footer className="bb-footer primary">
-                      <div className="container text-center">
-                        <p>
-                          <strong>Bearbones</strong> by{' '}
-                          <a href="#example">Daniel Humenko</a>.
-                        </p>
-                        <p>
-                          Code licensed <a href="#example">MIT</a>.
-                        </p>
-                      </div>
-                    </footer>
-                  </div>
-                  <div className="doc-content">
-                    <footer className="bb-footer secondary">
-                      <div className="container text-center">
-                        <p>
-                          <strong>Bearbones</strong> by{' '}
-                          <a href="#example">Daniel Humenko</a>.
-                        </p>
-                        <p>
-                          Code licensed <a href="#example">MIT</a>.
-                        </p>
-                      </div>
-                    </footer>
-                  </div>
-                  <div className="doc-content">
-                    <footer className="bb-footer positive">
-                      <div className="container text-center">
-                        <p>
-                          <strong>Bearbones</strong> by{' '}
-                          <a href="#example">Daniel Humenko</a>.
-                        </p>
-                        <p>
-                          Code licensed <a href="#example">MIT</a>.
-                        </p>
-                      </div>
-                    </footer>
-                  </div>
-                  <div className="doc-content">
-                    <footer className="bb-footer negative">
-                      <div className="container text-center">
-                        <p>
-                          <strong>Bearbones</strong> by{' '}
-                          <a href="#example">Daniel Humenko</a>.
-                        </p>
-                        <p>
-                          Code licensed <a href="#example">MIT</a>.
-                        </p>
-                      </div>
-                    </footer>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<footer class="bb-footer invert">
+              <DocumentationHelper
+                className="full-x"
+                content={
+                  <>
+                    <div className="doc-content">
+                      <footer className="bb-footer invert">
+                        <div className="container text-center">
+                          <p>
+                            <strong>Bearbones</strong> by{' '}
+                            <a className="link" href="#example">
+                              Daniel Humenko
+                            </a>
+                            .
+                          </p>
+                          <p>
+                            Code licensed{' '}
+                            <a className="link" href="#example">
+                              MIT
+                            </a>
+                            .
+                          </p>
+                        </div>
+                      </footer>
+                    </div>
+                    <div className="doc-content">
+                      <footer className="bb-footer primary">
+                        <div className="container text-center">
+                          <p>
+                            <strong>Bearbones</strong> by{' '}
+                            <a href="#example">Daniel Humenko</a>.
+                          </p>
+                          <p>
+                            Code licensed <a href="#example">MIT</a>.
+                          </p>
+                        </div>
+                      </footer>
+                    </div>
+                    <div className="doc-content">
+                      <footer className="bb-footer secondary">
+                        <div className="container text-center">
+                          <p>
+                            <strong>Bearbones</strong> by{' '}
+                            <a href="#example">Daniel Humenko</a>.
+                          </p>
+                          <p>
+                            Code licensed <a href="#example">MIT</a>.
+                          </p>
+                        </div>
+                      </footer>
+                    </div>
+                    <div className="doc-content">
+                      <footer className="bb-footer positive">
+                        <div className="container text-center">
+                          <p>
+                            <strong>Bearbones</strong> by{' '}
+                            <a href="#example">Daniel Humenko</a>.
+                          </p>
+                          <p>
+                            Code licensed <a href="#example">MIT</a>.
+                          </p>
+                        </div>
+                      </footer>
+                    </div>
+                    <div className="doc-content">
+                      <footer className="bb-footer negative">
+                        <div className="container text-center">
+                          <p>
+                            <strong>Bearbones</strong> by{' '}
+                            <a href="#example">Daniel Humenko</a>.
+                          </p>
+                          <p>
+                            Code licensed <a href="#example">MIT</a>.
+                          </p>
+                        </div>
+                      </footer>
+                    </div>
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<footer class="bb-footer invert">
   <div class="container text-center">
     <p>
       <strong>Bearbones</strong> by <a href="#example">Daniel Humenko</a>.
@@ -155,30 +160,30 @@ export default class FooterDocumentation extends Component {
     </p>
   </div>
 </footer>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<footer class="bb-footer primary">
+                    </Code>
+                    <Code language="markup">
+                      {`<footer class="bb-footer primary">
   ...
 </footer>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<footer class="bb-footer secondary">
+                    </Code>
+                    <Code language="markup">
+                      {`<footer class="bb-footer secondary">
   ...
 </footer>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<footer class="bb-footer positive">
+                    </Code>
+                    <Code language="markup">
+                      {`<footer class="bb-footer positive">
   ...
 </footer>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<footer class="bb-footer negative">
+                    </Code>
+                    <Code language="markup">
+                      {`<footer class="bb-footer negative">
   ...
 </footer>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <DocumentationVariables

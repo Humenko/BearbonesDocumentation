@@ -1,25 +1,20 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import Copy from 'react-copy';
 
-export default class DocumentationBox extends Component {
+export default class DocumentationHelper extends Component {
   render() {
     return (
-      <Link
-        className={`doc-box ${
-          this.props.className ? this.props.className : ''
-        }`}
-        to={`${this.props.link}`}
-      >
-        <h4 className="text-secondary">{this.props.title}</h4>
-        <p className="text-lg">{this.props.subTitle}</p>
-      </Link>
+      <div className={`bb-box example ${this.props.className}`}>
+        {this.props.content && (
+          <div className="doc-preview">{this.props.content}</div>
+        )}
+        <div className="doc-snippet">
+          <Copy textToBeCopied={this.props.code}>
+            <button className="bb-btn primary doc-copy sm">Copy</button>
+          </Copy>
+        </div>
+      </div>
     );
   }
 }
-DocumentationBox.propTypes = {
-  className: PropTypes.string,
-  link: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string.isRequired
-};
+DocumentationHelper.propTypes = {};

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
+import DocumentationHelper from '../../Shared/DocumentationHelper';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
@@ -24,8 +25,8 @@ export default class TableDocumentaion extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Basic</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <table className="bb-table">
                       <tbody>
@@ -47,8 +48,8 @@ export default class TableDocumentaion extends Component {
                       </tbody>
                     </table>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<table class="bb-table">
   <tbody>
@@ -70,104 +71,106 @@ export default class TableDocumentaion extends Component {
   </tbody>
 </table>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Colours</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <table className="bb-table primary">
-                      <tbody>
-                        <tr>
-                          <td>Brown Bear</td>
-                          <td>Polar Bear</td>
-                          <td>Black Bear</td>
-                        </tr>
-                        <tr>
-                          <td>Andean Bear</td>
-                          <td>Panda Bear</td>
-                          <td>Sloth bear</td>
-                        </tr>
-                        <tr>
-                          <td>Sun Bear</td>
-                          <td>Atlas Bear</td>
-                          <td>Grizzly Bear</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="doc-content">
-                    <table className="bb-table secondary">
-                      <tbody>
-                        <tr>
-                          <td>Brown Bear</td>
-                          <td>Polar Bear</td>
-                          <td>Black Bear</td>
-                        </tr>
-                        <tr>
-                          <td>Andean Bear</td>
-                          <td>Panda Bear</td>
-                          <td>Sloth bear</td>
-                        </tr>
-                        <tr>
-                          <td>Sun Bear</td>
-                          <td>Atlas Bear</td>
-                          <td>Grizzly Bear</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="doc-content">
-                    <table className="bb-table positive">
-                      <tbody>
-                        <tr>
-                          <td>Brown Bear</td>
-                          <td>Polar Bear</td>
-                          <td>Black Bear</td>
-                        </tr>
-                        <tr>
-                          <td>Andean Bear</td>
-                          <td>Panda Bear</td>
-                          <td>Sloth bear</td>
-                        </tr>
-                        <tr>
-                          <td>Sun Bear</td>
-                          <td>Atlas Bear</td>
-                          <td>Grizzly Bear</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="doc-content">
-                    <table className="bb-table negative">
-                      <tbody>
-                        <tr>
-                          <td>Brown Bear</td>
-                          <td>Polar Bear</td>
-                          <td>Black Bear</td>
-                        </tr>
-                        <tr>
-                          <td>Andean Bear</td>
-                          <td>Panda Bear</td>
-                          <td>Sloth bear</td>
-                        </tr>
-                        <tr>
-                          <td>Sun Bear</td>
-                          <td>Atlas Bear</td>
-                          <td>Grizzly Bear</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<table class="bb-table primary">
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content">
+                      <table className="bb-table primary">
+                        <tbody>
+                          <tr>
+                            <td>Brown Bear</td>
+                            <td>Polar Bear</td>
+                            <td>Black Bear</td>
+                          </tr>
+                          <tr>
+                            <td>Andean Bear</td>
+                            <td>Panda Bear</td>
+                            <td>Sloth bear</td>
+                          </tr>
+                          <tr>
+                            <td>Sun Bear</td>
+                            <td>Atlas Bear</td>
+                            <td>Grizzly Bear</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="doc-content">
+                      <table className="bb-table secondary">
+                        <tbody>
+                          <tr>
+                            <td>Brown Bear</td>
+                            <td>Polar Bear</td>
+                            <td>Black Bear</td>
+                          </tr>
+                          <tr>
+                            <td>Andean Bear</td>
+                            <td>Panda Bear</td>
+                            <td>Sloth bear</td>
+                          </tr>
+                          <tr>
+                            <td>Sun Bear</td>
+                            <td>Atlas Bear</td>
+                            <td>Grizzly Bear</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="doc-content">
+                      <table className="bb-table positive">
+                        <tbody>
+                          <tr>
+                            <td>Brown Bear</td>
+                            <td>Polar Bear</td>
+                            <td>Black Bear</td>
+                          </tr>
+                          <tr>
+                            <td>Andean Bear</td>
+                            <td>Panda Bear</td>
+                            <td>Sloth bear</td>
+                          </tr>
+                          <tr>
+                            <td>Sun Bear</td>
+                            <td>Atlas Bear</td>
+                            <td>Grizzly Bear</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="doc-content">
+                      <table className="bb-table negative">
+                        <tbody>
+                          <tr>
+                            <td>Brown Bear</td>
+                            <td>Polar Bear</td>
+                            <td>Black Bear</td>
+                          </tr>
+                          <tr>
+                            <td>Andean Bear</td>
+                            <td>Panda Bear</td>
+                            <td>Sloth bear</td>
+                          </tr>
+                          <tr>
+                            <td>Sun Bear</td>
+                            <td>Atlas Bear</td>
+                            <td>Grizzly Bear</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<table class="bb-table primary">
   <tbody>
     <tr>
       <td>Brown Bear</td>
@@ -186,31 +189,31 @@ export default class TableDocumentaion extends Component {
     </tr>
   </tbody>
 </table>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<table class="bb-table secondary">
+                    </Code>
+                    <Code language="markup">
+                      {`<table class="bb-table secondary">
   ...
 </table>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<table class="bb-table positive">
+                    </Code>
+                    <Code language="markup">
+                      {`<table class="bb-table positive">
   ...
 </table>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<table class="bb-table negative">
+                    </Code>
+                    <Code language="markup">
+                      {`<table class="bb-table negative">
   ...
 </table>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <table className="bb-table">
                       <tbody>
@@ -232,8 +235,8 @@ export default class TableDocumentaion extends Component {
                       </tbody>
                     </table>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<table class="bb-table primary">
   <tbody>
@@ -255,125 +258,127 @@ export default class TableDocumentaion extends Component {
   </tbody>
 </table>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Styles</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <table className="bb-table striped">
-                      <tbody>
-                        <tr>
-                          <td>Brown Bear</td>
-                          <td>Polar Bear</td>
-                          <td>Black Bear</td>
-                        </tr>
-                        <tr>
-                          <td>Andean Bear</td>
-                          <td>Panda Bear</td>
-                          <td>Sloth bear</td>
-                        </tr>
-                        <tr>
-                          <td>Sun Bear</td>
-                          <td>Atlas Bear</td>
-                          <td>Grizzly Bear</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="doc-content">
-                    <table className="bb-table primary striped">
-                      <tbody>
-                        <tr>
-                          <td>Brown Bear</td>
-                          <td>Polar Bear</td>
-                          <td>Black Bear</td>
-                        </tr>
-                        <tr>
-                          <td>Andean Bear</td>
-                          <td>Panda Bear</td>
-                          <td>Sloth bear</td>
-                        </tr>
-                        <tr>
-                          <td>Sun Bear</td>
-                          <td>Atlas Bear</td>
-                          <td>Grizzly Bear</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="doc-content">
-                    <table className="bb-table secondary striped">
-                      <tbody>
-                        <tr>
-                          <td>Brown Bear</td>
-                          <td>Polar Bear</td>
-                          <td>Black Bear</td>
-                        </tr>
-                        <tr>
-                          <td>Andean Bear</td>
-                          <td>Panda Bear</td>
-                          <td>Sloth bear</td>
-                        </tr>
-                        <tr>
-                          <td>Sun Bear</td>
-                          <td>Atlas Bear</td>
-                          <td>Grizzly Bear</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="doc-content">
-                    <table className="bb-table positive striped">
-                      <tbody>
-                        <tr>
-                          <td>Brown Bear</td>
-                          <td>Polar Bear</td>
-                          <td>Black Bear</td>
-                        </tr>
-                        <tr>
-                          <td>Andean Bear</td>
-                          <td>Panda Bear</td>
-                          <td>Sloth bear</td>
-                        </tr>
-                        <tr>
-                          <td>Sun Bear</td>
-                          <td>Atlas Bear</td>
-                          <td>Grizzly Bear</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="doc-content">
-                    <table className="bb-table negative striped">
-                      <tbody>
-                        <tr>
-                          <td>Brown Bear</td>
-                          <td>Polar Bear</td>
-                          <td>Black Bear</td>
-                        </tr>
-                        <tr>
-                          <td>Andean Bear</td>
-                          <td>Panda Bear</td>
-                          <td>Sloth bear</td>
-                        </tr>
-                        <tr>
-                          <td>Sun Bear</td>
-                          <td>Atlas Bear</td>
-                          <td>Grizzly Bear</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<table class="bb-table striped">
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content">
+                      <table className="bb-table striped">
+                        <tbody>
+                          <tr>
+                            <td>Brown Bear</td>
+                            <td>Polar Bear</td>
+                            <td>Black Bear</td>
+                          </tr>
+                          <tr>
+                            <td>Andean Bear</td>
+                            <td>Panda Bear</td>
+                            <td>Sloth bear</td>
+                          </tr>
+                          <tr>
+                            <td>Sun Bear</td>
+                            <td>Atlas Bear</td>
+                            <td>Grizzly Bear</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="doc-content">
+                      <table className="bb-table primary striped">
+                        <tbody>
+                          <tr>
+                            <td>Brown Bear</td>
+                            <td>Polar Bear</td>
+                            <td>Black Bear</td>
+                          </tr>
+                          <tr>
+                            <td>Andean Bear</td>
+                            <td>Panda Bear</td>
+                            <td>Sloth bear</td>
+                          </tr>
+                          <tr>
+                            <td>Sun Bear</td>
+                            <td>Atlas Bear</td>
+                            <td>Grizzly Bear</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="doc-content">
+                      <table className="bb-table secondary striped">
+                        <tbody>
+                          <tr>
+                            <td>Brown Bear</td>
+                            <td>Polar Bear</td>
+                            <td>Black Bear</td>
+                          </tr>
+                          <tr>
+                            <td>Andean Bear</td>
+                            <td>Panda Bear</td>
+                            <td>Sloth bear</td>
+                          </tr>
+                          <tr>
+                            <td>Sun Bear</td>
+                            <td>Atlas Bear</td>
+                            <td>Grizzly Bear</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="doc-content">
+                      <table className="bb-table positive striped">
+                        <tbody>
+                          <tr>
+                            <td>Brown Bear</td>
+                            <td>Polar Bear</td>
+                            <td>Black Bear</td>
+                          </tr>
+                          <tr>
+                            <td>Andean Bear</td>
+                            <td>Panda Bear</td>
+                            <td>Sloth bear</td>
+                          </tr>
+                          <tr>
+                            <td>Sun Bear</td>
+                            <td>Atlas Bear</td>
+                            <td>Grizzly Bear</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="doc-content">
+                      <table className="bb-table negative striped">
+                        <tbody>
+                          <tr>
+                            <td>Brown Bear</td>
+                            <td>Polar Bear</td>
+                            <td>Black Bear</td>
+                          </tr>
+                          <tr>
+                            <td>Andean Bear</td>
+                            <td>Panda Bear</td>
+                            <td>Sloth bear</td>
+                          </tr>
+                          <tr>
+                            <td>Sun Bear</td>
+                            <td>Atlas Bear</td>
+                            <td>Grizzly Bear</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<table class="bb-table striped">
   <tbody>
     <tr>
       <td>Brown Bear</td>
@@ -392,145 +397,148 @@ export default class TableDocumentaion extends Component {
     </tr>
   </tbody>
 </table>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<table class="bb-table primary striped">
+                    </Code>
+                    <Code language="markup">
+                      {`<table class="bb-table primary striped">
   ...
 </table>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<table class="bb-table secondary striped">
+                    </Code>
+                    <Code language="markup">
+                      {`<table class="bb-table secondary striped">
   ...
 </table>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<table class="bb-table positive striped">
+                    </Code>
+                    <Code language="markup">
+                      {`<table class="bb-table positive striped">
   ...
 </table>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<table class="bb-table negative striped">
+                    </Code>
+                    <Code language="markup">
+                      {`<table class="bb-table negative striped">
   ...
 </table>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <table className="bb-table naked">
-                      <tbody>
-                        <tr>
-                          <td>Brown Bear</td>
-                          <td>Polar Bear</td>
-                          <td>Black Bear</td>
-                        </tr>
-                        <tr>
-                          <td>Andean Bear</td>
-                          <td>Panda Bear</td>
-                          <td>Sloth bear</td>
-                        </tr>
-                        <tr>
-                          <td>Sun Bear</td>
-                          <td>Atlas Bear</td>
-                          <td>Grizzly Bear</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="doc-content">
-                    <table className="bb-table primary naked">
-                      <tbody>
-                        <tr>
-                          <td>Brown Bear</td>
-                          <td>Polar Bear</td>
-                          <td>Black Bear</td>
-                        </tr>
-                        <tr>
-                          <td>Andean Bear</td>
-                          <td>Panda Bear</td>
-                          <td>Sloth bear</td>
-                        </tr>
-                        <tr>
-                          <td>Sun Bear</td>
-                          <td>Atlas Bear</td>
-                          <td>Grizzly Bear</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="doc-content">
-                    <table className="bb-table secondary naked">
-                      <tbody>
-                        <tr>
-                          <td>Brown Bear</td>
-                          <td>Polar Bear</td>
-                          <td>Black Bear</td>
-                        </tr>
-                        <tr>
-                          <td>Andean Bear</td>
-                          <td>Panda Bear</td>
-                          <td>Sloth bear</td>
-                        </tr>
-                        <tr>
-                          <td>Sun Bear</td>
-                          <td>Atlas Bear</td>
-                          <td>Grizzly Bear</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="doc-content">
-                    <table className="bb-table positive naked">
-                      <tbody>
-                        <tr>
-                          <td>Brown Bear</td>
-                          <td>Polar Bear</td>
-                          <td>Black Bear</td>
-                        </tr>
-                        <tr>
-                          <td>Andean Bear</td>
-                          <td>Panda Bear</td>
-                          <td>Sloth bear</td>
-                        </tr>
-                        <tr>
-                          <td>Sun Bear</td>
-                          <td>Atlas Bear</td>
-                          <td>Grizzly Bear</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div className="doc-content">
-                    <table className="bb-table negative naked">
-                      <tbody>
-                        <tr>
-                          <td>Brown Bear</td>
-                          <td>Polar Bear</td>
-                          <td>Black Bear</td>
-                        </tr>
-                        <tr>
-                          <td>Andean Bear</td>
-                          <td>Panda Bear</td>
-                          <td>Sloth bear</td>
-                        </tr>
-                        <tr>
-                          <td>Sun Bear</td>
-                          <td>Atlas Bear</td>
-                          <td>Grizzly Bear</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<table class="bb-table naked">
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content">
+                      <table className="bb-table naked">
+                        <tbody>
+                          <tr>
+                            <td>Brown Bear</td>
+                            <td>Polar Bear</td>
+                            <td>Black Bear</td>
+                          </tr>
+                          <tr>
+                            <td>Andean Bear</td>
+                            <td>Panda Bear</td>
+                            <td>Sloth bear</td>
+                          </tr>
+                          <tr>
+                            <td>Sun Bear</td>
+                            <td>Atlas Bear</td>
+                            <td>Grizzly Bear</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="doc-content">
+                      <table className="bb-table primary naked">
+                        <tbody>
+                          <tr>
+                            <td>Brown Bear</td>
+                            <td>Polar Bear</td>
+                            <td>Black Bear</td>
+                          </tr>
+                          <tr>
+                            <td>Andean Bear</td>
+                            <td>Panda Bear</td>
+                            <td>Sloth bear</td>
+                          </tr>
+                          <tr>
+                            <td>Sun Bear</td>
+                            <td>Atlas Bear</td>
+                            <td>Grizzly Bear</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="doc-content">
+                      <table className="bb-table secondary naked">
+                        <tbody>
+                          <tr>
+                            <td>Brown Bear</td>
+                            <td>Polar Bear</td>
+                            <td>Black Bear</td>
+                          </tr>
+                          <tr>
+                            <td>Andean Bear</td>
+                            <td>Panda Bear</td>
+                            <td>Sloth bear</td>
+                          </tr>
+                          <tr>
+                            <td>Sun Bear</td>
+                            <td>Atlas Bear</td>
+                            <td>Grizzly Bear</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="doc-content">
+                      <table className="bb-table positive naked">
+                        <tbody>
+                          <tr>
+                            <td>Brown Bear</td>
+                            <td>Polar Bear</td>
+                            <td>Black Bear</td>
+                          </tr>
+                          <tr>
+                            <td>Andean Bear</td>
+                            <td>Panda Bear</td>
+                            <td>Sloth bear</td>
+                          </tr>
+                          <tr>
+                            <td>Sun Bear</td>
+                            <td>Atlas Bear</td>
+                            <td>Grizzly Bear</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="doc-content">
+                      <table className="bb-table negative naked">
+                        <tbody>
+                          <tr>
+                            <td>Brown Bear</td>
+                            <td>Polar Bear</td>
+                            <td>Black Bear</td>
+                          </tr>
+                          <tr>
+                            <td>Andean Bear</td>
+                            <td>Panda Bear</td>
+                            <td>Sloth bear</td>
+                          </tr>
+                          <tr>
+                            <td>Sun Bear</td>
+                            <td>Atlas Bear</td>
+                            <td>Grizzly Bear</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<table class="bb-table naked">
   <tbody>
     <tr>
       <td>Brown Bear</td>
@@ -549,37 +557,37 @@ export default class TableDocumentaion extends Component {
     </tr>
   </tbody>
 </table>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<table class="bb-table primary naked">
+                    </Code>
+                    <Code language="markup">
+                      {`<table class="bb-table primary naked">
   ...
 </table>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<table class="bb-table secondary naked">
+                    </Code>
+                    <Code language="markup">
+                      {`<table class="bb-table secondary naked">
   ...
 </table>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<table class="bb-table positive naked">
+                    </Code>
+                    <Code language="markup">
+                      {`<table class="bb-table positive naked">
   ...
 </table>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<table class="bb-table negative naked">
+                    </Code>
+                    <Code language="markup">
+                      {`<table class="bb-table negative naked">
   ...
 </table>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">State</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <table className="bb-table hover">
                       <tbody>
@@ -601,8 +609,8 @@ export default class TableDocumentaion extends Component {
                       </tbody>
                     </table>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<table class="bb-table hover">
   <tbody>
@@ -624,14 +632,14 @@ export default class TableDocumentaion extends Component {
   </tbody>
 </table>`}
                   </Code>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <table className="bb-table">
                       <tbody>
@@ -653,8 +661,8 @@ export default class TableDocumentaion extends Component {
                       </tbody>
                     </table>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<table class="bb-table">
   <tbody>
@@ -676,15 +684,15 @@ export default class TableDocumentaion extends Component {
   </tbody>
 </table>`}
                   </Code>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Helper</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <table className="bb-table full-x">
                       <tbody>
@@ -706,8 +714,8 @@ export default class TableDocumentaion extends Component {
                       </tbody>
                     </table>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<table class="bb-table full-x">
   <tbody>
@@ -729,14 +737,14 @@ export default class TableDocumentaion extends Component {
   </tbody>
 </table>`}
                   </Code>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <table className="bb-table no-border-radius">
                       <tbody>
@@ -758,8 +766,8 @@ export default class TableDocumentaion extends Component {
                       </tbody>
                     </table>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<table class="bb-table no-border-radius">
   <tbody>
@@ -781,14 +789,14 @@ export default class TableDocumentaion extends Component {
   </tbody>
 </table>`}
                   </Code>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <table className="bb-table">
                       <tbody>
@@ -800,8 +808,8 @@ export default class TableDocumentaion extends Component {
                       </tbody>
                     </table>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<table class="bb-table">
   <tbody>
@@ -813,8 +821,8 @@ export default class TableDocumentaion extends Component {
   </tbody>
 </table>`}
                   </Code>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <DocumentationVariables

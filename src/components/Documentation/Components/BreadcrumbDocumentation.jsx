@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
+import DocumentationHelper from '../../Shared/DocumentationHelper';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
@@ -23,8 +24,8 @@ export default class BreadcrumbDocumentation extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Basic</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <nav className="bb-breadcrumb">
                     <ul>
                       <li className="breadcrumb-item active">
@@ -38,8 +39,8 @@ export default class BreadcrumbDocumentation extends Component {
                       </li>
                     </ul>
                   </nav>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<nav class="bb-breadcrumb">
   <ul>
@@ -55,85 +56,87 @@ export default class BreadcrumbDocumentation extends Component {
   </ul>
 </nav>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Sizes</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <nav className="bb-breadcrumb xs">
-                    <ul>
-                      <li className="breadcrumb-item active">
-                        <a href="#example">Carnivorans</a>
-                      </li>
-                      <li className="breadcrumb-item">
-                        <a href="#example">Ursidae</a>
-                      </li>
-                      <li className="breadcrumb-item">
-                        <a href="#example">Panda</a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <nav className="bb-breadcrumb sm">
-                    <ul>
-                      <li className="breadcrumb-item active">
-                        <a href="#example">Carnivorans</a>
-                      </li>
-                      <li className="breadcrumb-item">
-                        <a href="#example">Ursidae</a>
-                      </li>
-                      <li className="breadcrumb-item">
-                        <a href="#example">Panda</a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <nav className="bb-breadcrumb">
-                    <ul>
-                      <li className="breadcrumb-item active">
-                        <a href="#example">Carnivorans</a>
-                      </li>
-                      <li className="breadcrumb-item">
-                        <a href="#example">Ursidae</a>
-                      </li>
-                      <li className="breadcrumb-item">
-                        <a href="#example">Panda</a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <nav className="bb-breadcrumb lg">
-                    <ul>
-                      <li className="breadcrumb-item active">
-                        <a href="#example">Carnivorans</a>
-                      </li>
-                      <li className="breadcrumb-item">
-                        <a href="#example">Ursidae</a>
-                      </li>
-                      <li className="breadcrumb-item">
-                        <a href="#example">Panda</a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <nav className="bb-breadcrumb xl">
-                    <ul>
-                      <li className="breadcrumb-item active">
-                        <a href="#example">Carnivorans</a>
-                      </li>
-                      <li className="breadcrumb-item">
-                        <a href="#example">Ursidae</a>
-                      </li>
-                      <li className="breadcrumb-item">
-                        <a href="#example">Panda</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<nav class="bb-breadcrumb">
+              <DocumentationHelper
+                content={
+                  <>
+                    <nav className="bb-breadcrumb xs">
+                      <ul>
+                        <li className="breadcrumb-item active">
+                          <a href="#example">Carnivorans</a>
+                        </li>
+                        <li className="breadcrumb-item">
+                          <a href="#example">Ursidae</a>
+                        </li>
+                        <li className="breadcrumb-item">
+                          <a href="#example">Panda</a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <nav className="bb-breadcrumb sm">
+                      <ul>
+                        <li className="breadcrumb-item active">
+                          <a href="#example">Carnivorans</a>
+                        </li>
+                        <li className="breadcrumb-item">
+                          <a href="#example">Ursidae</a>
+                        </li>
+                        <li className="breadcrumb-item">
+                          <a href="#example">Panda</a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <nav className="bb-breadcrumb">
+                      <ul>
+                        <li className="breadcrumb-item active">
+                          <a href="#example">Carnivorans</a>
+                        </li>
+                        <li className="breadcrumb-item">
+                          <a href="#example">Ursidae</a>
+                        </li>
+                        <li className="breadcrumb-item">
+                          <a href="#example">Panda</a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <nav className="bb-breadcrumb lg">
+                      <ul>
+                        <li className="breadcrumb-item active">
+                          <a href="#example">Carnivorans</a>
+                        </li>
+                        <li className="breadcrumb-item">
+                          <a href="#example">Ursidae</a>
+                        </li>
+                        <li className="breadcrumb-item">
+                          <a href="#example">Panda</a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <nav className="bb-breadcrumb xl">
+                      <ul>
+                        <li className="breadcrumb-item active">
+                          <a href="#example">Carnivorans</a>
+                        </li>
+                        <li className="breadcrumb-item">
+                          <a href="#example">Ursidae</a>
+                        </li>
+                        <li className="breadcrumb-item">
+                          <a href="#example">Panda</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<nav className="bb-breadcrumb xs">
   <ul>
     <li class="breadcrumb-item active">
       <a href="#example">Carnivorans</a>
@@ -146,52 +149,37 @@ export default class BreadcrumbDocumentation extends Component {
     </li>
   </ul>
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav className="bb-breadcrumb xs">
-  <ul>
-    <li class="breadcrumb-item active">
-      <a href="#example">Carnivorans</a>
-    </li>
-    <li class="breadcrumb-item">
-      <a href="#example">Ursidae</a>
-    </li>
-    <li class="breadcrumb-item">
-      <a href="#example">Panda</a>
-    </li>
-  </ul>
-</nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-breadcrumb sm">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-breadcrumb sm">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-breadcrumb">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-breadcrumb">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-breadcrumb lg">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-breadcrumb lg">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-breadcrumb xl">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-breadcrumb xl">
   ...
 </nav>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Scroll</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <nav className="bb-breadcrumb scroll">
                     <ul>
                       <li className="breadcrumb-item active">
@@ -214,8 +202,8 @@ export default class BreadcrumbDocumentation extends Component {
                       </li>
                     </ul>
                   </nav>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<nav class="bb-breadcrumb scroll">
   <ul>
@@ -240,9 +228,8 @@ export default class BreadcrumbDocumentation extends Component {
   </ul>
 </nav>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <DocumentationVariables

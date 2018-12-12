@@ -463,10 +463,12 @@ $stat-line-height: 1em !default;
 //
 $stat-spacing: 1rem !default;
 //
-$stat-value-font-size-xs: $stat-value-font-size - 1.5rem !default;
-$stat-value-font-size-sm: $stat-value-font-size - .75rem !default;
-$stat-value-font-size-lg: $stat-value-font-size + .75rem !default;
-$stat-value-font-size-xl: $stat-value-font-size + 1.5rem !default;
+$stat-value-font-size-xs: $stat-value-font-size - 1rem !default;
+$stat-value-font-size-sm: $stat-value-font-size - .5rem !default;
+$stat-value-font-size-lg: $stat-value-font-size + .5rem !default;
+$stat-value-font-size-xl: $stat-value-font-size + 1rem !default;
+
+//FIX FONT SIZING
 
 //******************Tab //
 

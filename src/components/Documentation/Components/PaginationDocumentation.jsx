@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
+import DocumentationHelper from '../../Shared/DocumentationHelper';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
@@ -24,8 +25,8 @@ export default class PaginationDocumentation extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Basic</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <nav className="bb-pagination">
                       <a className="item active" href="#example">
@@ -42,8 +43,8 @@ export default class PaginationDocumentation extends Component {
                       </a>
                     </nav>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<nav class="bb-pagination">
   <a class="item active" href="#">1</a>
@@ -52,889 +53,909 @@ export default class PaginationDocumentation extends Component {
   <a class="item" href="#">4</a>
 </nav>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Colours</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <nav className="bb-pagination primary">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination secondary">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination positive">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination negative">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination invert">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<nav class="bb-pagination primary">
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content">
+                      <nav className="bb-pagination primary">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination secondary">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination positive">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination negative">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination invert">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination primary">
   <a class="item active" href="#">1</a>
   <a class="item disabled">...</a>
   <a class="item" href="#">3</a>
   <a class="item" href="#">4</a>
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination secondary">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination secondary">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination positive">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination positive">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination negative">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination negative">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination invert">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination invert">
   ...
 </nav>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Sizes</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <nav className="bb-pagination xs">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination sm">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination lg">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination xl">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<nav class="bb-pagination xs">
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content">
+                      <nav className="bb-pagination xs">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination sm">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination lg">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination xl">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination xs">
   <a class="item active" href="#">1</a>
   <a class="item disabled">...</a>
   <a class="item" href="#">3</a>
   <a class="item" href="#">4</a>
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination sm">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination sm">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination lg">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination lg">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination xl">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination xl">
   ...
 </nav>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Styles</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <nav className="bb-pagination outline">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination outline primary">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination outline secondary">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination outline positive">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination outline negative">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination outline invert">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<nav class="bb-pagination outline">
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content">
+                      <nav className="bb-pagination outline">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination outline primary">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination outline secondary">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination outline positive">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination outline negative">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination outline invert">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination outline">
   <a class="item active" href="#">1</a>
   <a class="item disabled">...</a>
   <a class="item" href="#">3</a>
   <a class="item" href="#">4</a>
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination outline primary">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination outline primary">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination outline secondary">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination outline secondary">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination outline positive">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination outline positive">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination outline negative">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination outline negative">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination outline invert">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination outline invert">
   ...
 </nav>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <nav className="bb-pagination connected">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination connected primary">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination connected secondary">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination connected positive">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination connected negative">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination connected invert">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<nav class="bb-pagination connected">
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content">
+                      <nav className="bb-pagination connected">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination connected primary">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination connected secondary">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination connected positive">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination connected negative">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination connected invert">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination connected">
   <a class="item active" href="#">1</a>
   <a class="item disabled">...</a>
   <a class="item" href="#">3</a>
   <a class="item" href="#">4</a>
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination connected primary">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination connected primary">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination connected secondary">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination connected secondary">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination connected positive">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination connected positive">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination connected negative">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination connected negative">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination connected invert">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination connected invert">
   ...
 </nav>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <nav className="bb-pagination primary no-border">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination primary outline no-border">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination primary connected no-border">
-                      <a className="item active" href="#example">
-                        1
-                      </a>
-                      <a className="item disabled" href="#example">
-                        ...
-                      </a>
-                      <a className="item" href="#example">
-                        3
-                      </a>
-                      <a className="item" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<nav class="bb-pagination primary no-border">
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content">
+                      <nav className="bb-pagination primary no-border">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination primary outline no-border">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination primary connected no-border">
+                        <a className="item active" href="#example">
+                          1
+                        </a>
+                        <a className="item disabled" href="#example">
+                          ...
+                        </a>
+                        <a className="item" href="#example">
+                          3
+                        </a>
+                        <a className="item" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination primary no-border">
   <a class="item active" href="#">1</a>
   <a class="item disabled">...</a>
   <a class="item" href="#">3</a>
   <a class="item" href="#">4</a>
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination primary outline no-border">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination primary outline no-border">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination primary connected no-border">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination primary connected no-border">
   ...
 </nav>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Dots</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <nav className="bb-pagination">
-                      <a className="dot" href="#example">
-                        1
-                      </a>
-                      <a className="dot" href="#example">
-                        2
-                      </a>
-                      <a className="dot active" href="#example">
-                        3
-                      </a>
-                      <a className="dot" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination primary">
-                      <a className="dot" href="#example">
-                        1
-                      </a>
-                      <a className="dot" href="#example">
-                        2
-                      </a>
-                      <a className="dot active" href="#example">
-                        3
-                      </a>
-                      <a className="dot" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination secondary">
-                      <a className="dot" href="#example">
-                        1
-                      </a>
-                      <a className="dot" href="#example">
-                        2
-                      </a>
-                      <a className="dot active" href="#example">
-                        3
-                      </a>
-                      <a className="dot" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination positive">
-                      <a className="dot" href="#example">
-                        1
-                      </a>
-                      <a className="dot" href="#example">
-                        2
-                      </a>
-                      <a className="dot active" href="#example">
-                        3
-                      </a>
-                      <a className="dot" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination negative">
-                      <a className="dot" href="#example">
-                        1
-                      </a>
-                      <a className="dot" href="#example">
-                        2
-                      </a>
-                      <a className="dot active" href="#example">
-                        3
-                      </a>
-                      <a className="dot" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination invert">
-                      <a className="dot" href="#example">
-                        1
-                      </a>
-                      <a className="dot" href="#example">
-                        2
-                      </a>
-                      <a className="dot active" href="#example">
-                        3
-                      </a>
-                      <a className="dot" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<nav class="bb-pagination">
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content">
+                      <nav className="bb-pagination">
+                        <a className="dot" href="#example">
+                          1
+                        </a>
+                        <a className="dot" href="#example">
+                          2
+                        </a>
+                        <a className="dot active" href="#example">
+                          3
+                        </a>
+                        <a className="dot" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination primary">
+                        <a className="dot" href="#example">
+                          1
+                        </a>
+                        <a className="dot" href="#example">
+                          2
+                        </a>
+                        <a className="dot active" href="#example">
+                          3
+                        </a>
+                        <a className="dot" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination secondary">
+                        <a className="dot" href="#example">
+                          1
+                        </a>
+                        <a className="dot" href="#example">
+                          2
+                        </a>
+                        <a className="dot active" href="#example">
+                          3
+                        </a>
+                        <a className="dot" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination positive">
+                        <a className="dot" href="#example">
+                          1
+                        </a>
+                        <a className="dot" href="#example">
+                          2
+                        </a>
+                        <a className="dot active" href="#example">
+                          3
+                        </a>
+                        <a className="dot" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination negative">
+                        <a className="dot" href="#example">
+                          1
+                        </a>
+                        <a className="dot" href="#example">
+                          2
+                        </a>
+                        <a className="dot active" href="#example">
+                          3
+                        </a>
+                        <a className="dot" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination invert">
+                        <a className="dot" href="#example">
+                          1
+                        </a>
+                        <a className="dot" href="#example">
+                          2
+                        </a>
+                        <a className="dot active" href="#example">
+                          3
+                        </a>
+                        <a className="dot" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination">
   <a class="dot" href="#">1</a>
   <a class="dot">2</a>
   <a class="dot active" href="#">3</a>
   <a class="dot" href="#">4</a>
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination primary">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination primary">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination secondary">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination secondary">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination positive">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination positive">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination negative">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination negative">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination invert">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination invert">
   ...
 </nav>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Dots</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="doc-content">
-                    <nav className="bb-pagination outline">
-                      <a className="dot" href="#example">
-                        1
-                      </a>
-                      <a className="dot" href="#example">
-                        2
-                      </a>
-                      <a className="dot active" href="#example">
-                        3
-                      </a>
-                      <a className="dot" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination outline primary">
-                      <a className="dot" href="#example">
-                        1
-                      </a>
-                      <a className="dot" href="#example">
-                        2
-                      </a>
-                      <a className="dot active" href="#example">
-                        3
-                      </a>
-                      <a className="dot" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination outline secondary">
-                      <a className="dot" href="#example">
-                        1
-                      </a>
-                      <a className="dot" href="#example">
-                        2
-                      </a>
-                      <a className="dot active" href="#example">
-                        3
-                      </a>
-                      <a className="dot" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination outline positive">
-                      <a className="dot" href="#example">
-                        1
-                      </a>
-                      <a className="dot" href="#example">
-                        2
-                      </a>
-                      <a className="dot active" href="#example">
-                        3
-                      </a>
-                      <a className="dot" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination outline negative">
-                      <a className="dot" href="#example">
-                        1
-                      </a>
-                      <a className="dot" href="#example">
-                        2
-                      </a>
-                      <a className="dot active" href="#example">
-                        3
-                      </a>
-                      <a className="dot" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                  <div className="doc-content">
-                    <nav className="bb-pagination outline invert">
-                      <a className="dot" href="#example">
-                        1
-                      </a>
-                      <a className="dot" href="#example">
-                        2
-                      </a>
-                      <a className="dot active" href="#example">
-                        3
-                      </a>
-                      <a className="dot" href="#example">
-                        4
-                      </a>
-                    </nav>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<nav class="bb-pagination outline">
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="doc-content">
+                      <nav className="bb-pagination outline">
+                        <a className="dot" href="#example">
+                          1
+                        </a>
+                        <a className="dot" href="#example">
+                          2
+                        </a>
+                        <a className="dot active" href="#example">
+                          3
+                        </a>
+                        <a className="dot" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination outline primary">
+                        <a className="dot" href="#example">
+                          1
+                        </a>
+                        <a className="dot" href="#example">
+                          2
+                        </a>
+                        <a className="dot active" href="#example">
+                          3
+                        </a>
+                        <a className="dot" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination outline secondary">
+                        <a className="dot" href="#example">
+                          1
+                        </a>
+                        <a className="dot" href="#example">
+                          2
+                        </a>
+                        <a className="dot active" href="#example">
+                          3
+                        </a>
+                        <a className="dot" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination outline positive">
+                        <a className="dot" href="#example">
+                          1
+                        </a>
+                        <a className="dot" href="#example">
+                          2
+                        </a>
+                        <a className="dot active" href="#example">
+                          3
+                        </a>
+                        <a className="dot" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination outline negative">
+                        <a className="dot" href="#example">
+                          1
+                        </a>
+                        <a className="dot" href="#example">
+                          2
+                        </a>
+                        <a className="dot active" href="#example">
+                          3
+                        </a>
+                        <a className="dot" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                    <div className="doc-content">
+                      <nav className="bb-pagination outline invert">
+                        <a className="dot" href="#example">
+                          1
+                        </a>
+                        <a className="dot" href="#example">
+                          2
+                        </a>
+                        <a className="dot active" href="#example">
+                          3
+                        </a>
+                        <a className="dot" href="#example">
+                          4
+                        </a>
+                      </nav>
+                    </div>
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination outline">
   <a class="dot" href="#">1</a>
   <a class="dot">2</a>
   <a class="dot active" href="#">3</a>
   <a class="dot" href="#">4</a>
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination outline primary">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination outline primary">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination outline secondary">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination outline secondary">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination outline positive">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination outline positive">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination outline negative">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination outline negative">
   ...
 </nav>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<nav class="bb-pagination outline invert">
+                    </Code>
+                    <Code language="markup">
+                      {`<nav class="bb-pagination outline invert">
   ...
 </nav>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <DocumentationVariables

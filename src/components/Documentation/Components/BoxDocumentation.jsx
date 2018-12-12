@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
+import DocumentationHelper from '../../Shared/DocumentationHelper';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
@@ -24,8 +25,8 @@ export default class BoxDocumentation extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Basic</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
+              <DocumentationHelper
+                content={
                   <div className="doc-content">
                     <div className="column column-10">
                       <div className="bb-box">
@@ -39,8 +40,8 @@ export default class BoxDocumentation extends Component {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<div class="bb-box">
   <h4 class="title">
@@ -52,45 +53,47 @@ export default class BoxDocumentation extends Component {
   </p>
 </div>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Colours</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="column column-10">
-                    <div className="bb-box primary">
-                      <h4>The giant panda is actually a bear.</h4>
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="column column-10">
+                      <div className="bb-box primary">
+                        <h4>The giant panda is actually a bear.</h4>
+                      </div>
                     </div>
-                  </div>
-                  <div className="column column-10">
-                    <div className="bb-box secondary">
-                      <h4>The giant panda is actually a bear.</h4>
+                    <div className="column column-10">
+                      <div className="bb-box secondary">
+                        <h4>The giant panda is actually a bear.</h4>
+                      </div>
                     </div>
-                  </div>
-                  <div className="column column-10">
-                    <div className="bb-box positive">
-                      <h4>The giant panda is actually a bear.</h4>
+                    <div className="column column-10">
+                      <div className="bb-box positive">
+                        <h4>The giant panda is actually a bear.</h4>
+                      </div>
                     </div>
-                  </div>
-                  <div className="column column-10">
-                    <div className="bb-box negative">
-                      <h4>The giant panda is actually a bear.</h4>
+                    <div className="column column-10">
+                      <div className="bb-box negative">
+                        <h4>The giant panda is actually a bear.</h4>
+                      </div>
                     </div>
-                  </div>
-                  <div className="column column-10">
-                    <div className="bb-box invert">
-                      <h4>The giant panda is actually a bear.</h4>
+                    <div className="column column-10">
+                      <div className="bb-box invert">
+                        <h4>The giant panda is actually a bear.</h4>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<div class="bb-box primary">
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<div class="bb-box primary">
   <h4 class="title">
     The giant panda is actually a bear.
   </h4>
@@ -99,71 +102,74 @@ export default class BoxDocumentation extends Component {
     panda, is a bear native to south central China.
   </p>
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-box secondary">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-box secondary">
   ...
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-box positive">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-box positive">
   ...
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-box negative">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-box negative">
   ...
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-box invert">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-box invert">
   ...
 </div>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Styles</h4>
-              <div className="bb-box example">
-                <div className="doc-preview">
-                  <div className="column column-10">
-                    <div className="bb-box outline">
-                      <h4>The giant panda is actually a bear.</h4>
+              <DocumentationHelper
+                content={
+                  <>
+                    <div className="column column-10">
+                      <div className="bb-box outline">
+                        <h4>The giant panda is actually a bear.</h4>
+                      </div>
                     </div>
-                  </div>
-                  <div className="column column-10">
-                    <div className="bb-box outline primary">
-                      <h4>The giant panda is actually a bear.</h4>
+                    <div className="column column-10">
+                      <div className="bb-box outline primary">
+                        <h4>The giant panda is actually a bear.</h4>
+                      </div>
                     </div>
-                  </div>
-                  <div className="column column-10">
-                    <div className="bb-box outline secondary">
-                      <h4>The giant panda is actually a bear.</h4>
+                    <div className="column column-10">
+                      <div className="bb-box outline secondary">
+                        <h4>The giant panda is actually a bear.</h4>
+                      </div>
                     </div>
-                  </div>
-                  <div className="column column-10">
-                    <div className="bb-box outline positive">
-                      <h4>The giant panda is actually a bear.</h4>
+                    <div className="column column-10">
+                      <div className="bb-box outline positive">
+                        <h4>The giant panda is actually a bear.</h4>
+                      </div>
                     </div>
-                  </div>
-                  <div className="column column-10">
-                    <div className="bb-box outline negative">
-                      <h4>The giant panda is actually a bear.</h4>
+                    <div className="column column-10">
+                      <div className="bb-box outline negative">
+                        <h4>The giant panda is actually a bear.</h4>
+                      </div>
                     </div>
-                  </div>
-                  <div className="column column-10">
-                    <div className="bb-box outline invert">
-                      <h4>The giant panda is actually a bear.</h4>
+                    <div className="column column-10">
+                      <div className="bb-box outline invert">
+                        <h4>The giant panda is actually a bear.</h4>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="doc-snippet">
-                  <Code language="markup">
-                    {`<div class="bb-box outline">
+                  </>
+                }
+                code={
+                  <>
+                    <Code language="markup">
+                      {`<div class="bb-box outline">
   <h4 class="title">
     The giant panda is actually a bear.
   </h4>
@@ -172,35 +178,35 @@ export default class BoxDocumentation extends Component {
     panda, is a bear native to south central China.
   </p>
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-box outline primary">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-box outline primary">
   ...
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-box outline secondary">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-box outline secondary">
   ...
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-box outline positive">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-box outline positive">
   ...
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-box outline negative">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-box outline negative">
   ...
 </div>`}
-                  </Code>
-                  <Code language="markup">
-                    {`<div class="bb-box outline invert">
+                    </Code>
+                    <Code language="markup">
+                      {`<div class="bb-box outline invert">
   ...
 </div>`}
-                  </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                    </Code>
+                  </>
+                }
+              />
             </div>
           </div>
           <DocumentationVariables

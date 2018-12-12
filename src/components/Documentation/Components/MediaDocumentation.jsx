@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
+import DocumentationHelper from '../../Shared/DocumentationHelper';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
@@ -25,8 +26,9 @@ export default class MediaDocumentation extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Basic</h4>
-              <div className="bb-box example full-x">
-                <div className="doc-preview">
+              <DocumentationHelper
+                className="full-x"
+                content={
                   <div className="doc-content">
                     <article className="media">
                       <div className="media-left">
@@ -60,8 +62,8 @@ export default class MediaDocumentation extends Component {
                       </div>
                     </article>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<article class="media">
   <div class="media-left">
@@ -83,16 +85,16 @@ export default class MediaDocumentation extends Component {
   </div>
 </article>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Nested</h4>
-              <div className="bb-box example full-x">
-                <div className="doc-preview">
+              <DocumentationHelper
+                className="full-x"
+                content={
                   <div className="doc-content">
                     <article className="media">
                       <div className="media-left">
@@ -189,8 +191,8 @@ export default class MediaDocumentation extends Component {
                       </div>
                     </article>
                   </div>
-                </div>
-                <div className="doc-snippet hide">
+                }
+                code={
                   <Code language="markup">
                     {`<article class="media">
   <div class="media-left">
@@ -250,16 +252,16 @@ export default class MediaDocumentation extends Component {
   </div>
 </article>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
               <h4 className="title">Alignment</h4>
-              <div className="bb-box example full-x">
-                <div className="doc-preview">
+              <DocumentationHelper
+                className="full-x"
+                content={
                   <div className="doc-content">
                     <article className="media center">
                       <div className="media-left">
@@ -293,8 +295,8 @@ export default class MediaDocumentation extends Component {
                       </div>
                     </article>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<article class="media center">
   <div class="media-container">
@@ -316,15 +318,15 @@ export default class MediaDocumentation extends Component {
   </div>
 </article>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <div className="bb-box example full-x">
-                <div className="doc-preview">
+              <DocumentationHelper
+                className="full-x"
+                content={
                   <div className="doc-content">
                     <article className="media bottom">
                       <div className="media-left">
@@ -358,8 +360,8 @@ export default class MediaDocumentation extends Component {
                       </div>
                     </article>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<article class="media bottom">
   <div class="media-container">
@@ -381,15 +383,15 @@ export default class MediaDocumentation extends Component {
   </div>
 </article>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <div className="bb-box example full-x">
-                <div className="doc-preview">
+              <DocumentationHelper
+                className="full-x"
+                content={
                   <div className="doc-content">
                     <article className="media">
                       <div className="media-container">
@@ -423,8 +425,8 @@ export default class MediaDocumentation extends Component {
                       </div>
                     </article>
                   </div>
-                </div>
-                <div className="doc-snippet">
+                }
+                code={
                   <Code language="markup">
                     {`<article class="media">
   <div class="media-container">
@@ -446,9 +448,8 @@ export default class MediaDocumentation extends Component {
   </div>
 </article>`}
                   </Code>
-                  <button className="bb-btn primary doc-copy sm">Copy</button>
-                </div>
-              </div>
+                }
+              />
             </div>
           </div>
           <DocumentationVariables

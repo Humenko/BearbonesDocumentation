@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
+import DocumentationHelper from '../../Shared/DocumentationHelper';
 import MetaTags from '../../Shared/MetaTags';
 export default class HeroDocumentation extends Component {
   render() {
@@ -38,8 +39,9 @@ export default class HeroDocumentation extends Component {
             <div className="bb-grid md">
               <div className="column column-16">
                 <h4 className="title">Basic</h4>
-                <div className="bb-box example full-x">
-                  <div className="doc-snippet">
+                <DocumentationHelper
+                  className="full-x"
+                  code={
                     <Code language="markup">
                       {`<section class="hero">
   <div class="body">
@@ -53,9 +55,8 @@ export default class HeroDocumentation extends Component {
   </div>
 </section>`}
                     </Code>
-                    <button className="bb-btn primary doc-copy sm">Copy</button>
-                  </div>
-                </div>
+                  }
+                />
               </div>
             </div>
           </div>
@@ -87,8 +88,9 @@ export default class HeroDocumentation extends Component {
             <div className="bb-grid md">
               <div className="column column-16">
                 <h4 className="title">Colour</h4>
-                <div className="bb-box example full-x">
-                  <div className="doc-snippet">
+                <DocumentationHelper
+                  className="full-x"
+                  code={
                     <Code language="markup">
                       {`<section class="hero primary">
   <div class="body">
@@ -102,9 +104,8 @@ export default class HeroDocumentation extends Component {
   </div>
 </section>`}
                     </Code>
-                    <button className="bb-btn primary doc-copy sm">Copy</button>
-                  </div>
-                </div>
+                  }
+                />
               </div>
             </div>
           </div>
@@ -195,8 +196,9 @@ export default class HeroDocumentation extends Component {
           <div className="container">
             <div className="bb-grid md">
               <div className="column column-16">
-                <div className="bb-box example full-x">
-                  <div className="doc-snippet">
+                <DocumentationHelper
+                  className="full-x"
+                  code={
                     <Code language="markup">
                       {`<section class="hero primary full-y">
   <div class="head">
@@ -233,9 +235,8 @@ export default class HeroDocumentation extends Component {
   </div>
 </section>`}
                     </Code>
-                    <button className="bb-btn primary doc-copy sm">Copy</button>
-                  </div>
-                </div>
+                  }
+                />
               </div>
             </div>
           </div>
