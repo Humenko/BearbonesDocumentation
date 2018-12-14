@@ -17,7 +17,7 @@ let randomHead = 0;
 let randomBody = 0;
 let randomLegs = 0;
 
-class Home extends Component {
+export default class Home extends Component {
   constructor(props) {
     super(props);
     this.maxNumber = 3;
@@ -153,5 +153,3 @@ class Home extends Component {
     );
   }
 }
-
-export default Home;

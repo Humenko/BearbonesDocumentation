@@ -1,74 +1,72 @@
 import { faGithubAlt, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default class Footer extends Component {
-  render() {
-    return (
-      <footer className="bb-footer">
-        <div className="container">
-          <div className="bb-grid lg">
-            <div className="column">
-              <div className="text-center">
-                <ul className="inline social-links">
-                  <li className="inline-item">
-                    <a
-                      className="item"
-                      href="https://github.com/humenko"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      aria-label="github"
-                    >
-                      <FontAwesomeIcon icon={faGithubAlt} size="lg" />
-                    </a>
-                  </li>
-                  <li className="inline-item">
-                    <a
-                      className="item"
-                      href="https://twitter.com/humenko8"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      aria-label="twitter"
-                    >
-                      <FontAwesomeIcon icon={faTwitter} size="lg" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="column">
-              <div className="text-center">
-                <p className="m-b-3">
-                  <strong>Bearbones</strong> by{' '}
+export default function Footer() {
+  return (
+    <footer className="bb-footer">
+      <div className="container">
+        <div className="bb-grid lg">
+          <div className="column">
+            <div className="text-center">
+              <ul className="inline social-links">
+                <li className="inline-item">
                   <a
-                    href="https://www.humenko.co.uk"
+                    className="item"
+                    href="https://github.com/humenko"
                     rel="noopener noreferrer"
                     target="_blank"
+                    aria-label="github"
                   >
-                    Daniel Humenko
+                    <FontAwesomeIcon icon={faGithubAlt} size="lg" />
                   </a>
-                  .
-                </p>
-                <Link to="/" aria-label="home" className="item" />
-              </div>
+                </li>
+                <li className="inline-item">
+                  <a
+                    className="item"
+                    href="https://twitter.com/humenko8"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    aria-label="twitter"
+                  >
+                    <FontAwesomeIcon icon={faTwitter} size="lg" />
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div className="column">
-              <p className="text-center">
-                Code licensed{' '}
+          </div>
+          <div className="column">
+            <div className="text-center">
+              <p className="m-b-3">
+                <strong>Bearbones</strong> by{' '}
                 <a
-                  href="https://github.com/Humenko/Bearbones/blob/master/LICENSE"
+                  href="https://www.humenko.co.uk"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  MIT
+                  Daniel Humenko
                 </a>
                 .
               </p>
+              <Link to="/" aria-label="home" className="item" />
             </div>
           </div>
+          <div className="column">
+            <p className="text-center">
+              Code licensed{' '}
+              <a
+                href="https://github.com/Humenko/Bearbones/blob/master/LICENSE"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                MIT
+              </a>
+              .
+            </p>
+          </div>
         </div>
-      </footer>
-    );
-  }
+      </div>
+    </footer>
+  );
 }

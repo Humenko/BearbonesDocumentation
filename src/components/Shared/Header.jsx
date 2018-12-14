@@ -1,48 +1,47 @@
 import { faGithubAlt, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import BearbonesLogo from './Logo/BearbonesLogo';
 
-class Header extends Component {
-  render() {
-    return (
-      <div className="container">
-        <nav className="bb-navbar display fixed" id="top-navbar">
-          <div className="brand justify-content-between">
-            <Link to="/" aria-label="home" className="item">
-              <div className="logo">
-                <BearbonesLogo />
-              </div>
-            </Link>
-            <div className="item">
-              <a
-                className="item"
-                href="https://github.com/humenko"
-                rel="noopener noreferrer"
-                target="_blank"
-                aria-label="github"
-              >
-                <FontAwesomeIcon icon={faGithubAlt} size="lg" />
-              </a>
-              <a
-                className="item"
-                href="https://twitter.com/humenko8"
-                rel="noopener noreferrer"
-                target="_blank"
-                aria-label="twitter"
-              >
-                <FontAwesomeIcon icon={faTwitter} size="lg" />
-              </a>
-              {/* <div className="item hidden-lg-down">
+export default function Header() {
+  return (
+    <div className="container">
+      <nav className="bb-navbar display fixed" id="top-navbar">
+        <div className="brand justify-content-between">
+          <Link to="/" aria-label="home" className="item">
+            <div className="logo">
+              <BearbonesLogo />
+            </div>
+          </Link>
+          <div className="item">
+            <a
+              className="item"
+              href="https://github.com/humenko"
+              rel="noopener noreferrer"
+              target="_blank"
+              aria-label="github"
+            >
+              <FontAwesomeIcon icon={faGithubAlt} size="lg" />
+            </a>
+            <a
+              className="item"
+              href="https://twitter.com/humenko8"
+              rel="noopener noreferrer"
+              target="_blank"
+              aria-label="twitter"
+            >
+              <FontAwesomeIcon icon={faTwitter} size="lg" />
+            </a>
+            {/* <div className="item hidden-lg-down">
                 <a href="/404" className="bb-btn positive">
                   Download
                 </a>
               </div> */}
-            </div>
           </div>
-          <div className="items">
-            {/* <div className="right">
+        </div>
+        <div className="items">
+          {/* <div className="right">
               <div className="item bb-dropdown hover">
                 <div className="bb-btn link icon">
                   <FontAwesomeIcon
@@ -67,11 +66,8 @@ class Header extends Component {
                 </div>
               </div>
             </div> */}
-          </div>
-        </nav>
-      </div>
-    );
-  }
+        </div>
+      </nav>
+    </div>
+  );
 }
-
-export default Header;

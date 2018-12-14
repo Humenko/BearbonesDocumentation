@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import AccordionDocumentation from './components/Documentation/Components/AccordionDocumentation';
@@ -259,71 +259,69 @@ const documentationRoutes = [
   }
 ];
 
-export default class App extends Component {
-  render() {
-    return (
-      <>
-        <main>
-          <PageLayout>
-            <Route
-              exact
-              path="/"
-              render={props => (
-                <Home
-                  {...props}
-                  component={Home}
-                  title="Bearbones: one of the world‘s most customisable CSS frameworks."
-                  subTitle="One of the world‘s most customisable CSS frameworks. It's customisable, contemporary and completely Free!"
-                />
-              )}
-            />
-            <Route path="/documentation" component={BreadcrumbNavigation} />
-            <Route
-              render={({ location }) => (
-                <TransitionGroup>
-                  <CSSTransition
-                    onEntering={() => window.scrollTo(0, 0)}
-                    key={location.key}
-                    classNames="doc-page-animation"
-                    timeout={500}
-                  >
-                    <Switch location={location}>
+export default function App() {
+  return (
+    <>
+      <main>
+        <PageLayout>
+          <Route
+            exact
+            path="/"
+            render={props => (
+              <Home
+                {...props}
+                component={Home}
+                title="Bearbones: one of the world‘s most customisable CSS frameworks."
+                subTitle="One of the world‘s most customisable CSS frameworks. It's customisable, contemporary and completely Free!"
+              />
+            )}
+          />
+          <Route path="/documentation" component={BreadcrumbNavigation} />
+          <Route
+            render={({ location }) => (
+              <TransitionGroup>
+                <CSSTransition
+                  onEntering={() => window.scrollTo(0, 0)}
+                  key={location.key}
+                  classNames="doc-page-animation"
+                  timeout={500}
+                >
+                  <Switch location={location}>
+                    <Route
+                      exact
+                      path="/documentation"
+                      render={props => (
+                        <Documentation
+                          {...props}
+                          documentationRoutes={documentationRoutes}
+                          component={Documentation}
+                          title="Documentation - Bearbones"
+                          subTitle="Bearbones is an open source CSS framework built using the latest and greatest tech including Flexbox, Sass and Font Awesome 5."
+                        />
+                      )}
+                    />
+                    {documentationRoutes.map(route => (
                       <Route
                         exact
-                        path="/documentation"
+                        path={route.path}
+                        key={route.path}
                         render={props => (
-                          <Documentation
+                          <route.component
                             {...props}
-                            documentationRoutes={documentationRoutes}
-                            component={Documentation}
-                            title="Documentation - Bearbones"
-                            subTitle="Bearbones is an open source CSS framework built using the latest and greatest tech including Flexbox, Sass and Font Awesome 5."
+                            component={route.component}
+                            title={route.title + ' - Bearbones'}
+                            subTitle={route.subTitle}
                           />
                         )}
                       />
-                      {documentationRoutes.map(route => (
-                        <Route
-                          exact
-                          path={route.path}
-                          key={route.path}
-                          render={props => (
-                            <route.component
-                              {...props}
-                              component={route.component}
-                              title={route.title + ' - Bearbones'}
-                              subTitle={route.subTitle}
-                            />
-                          )}
-                        />
-                      ))}
-                    </Switch>
-                  </CSSTransition>
-                </TransitionGroup>
-              )}
-            />
-          </PageLayout>
-        </main>
-      </>
-    );
-  }
+                    ))}
+                  </Switch>
+                </CSSTransition>
+              </TransitionGroup>
+            )}
+          />
+        </PageLayout>
+      </main>
+    </>
+  );
 }
