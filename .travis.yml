@@ -7,6 +7,10 @@ cache:
   directories:
     - node_modules
 
+before_install:
+  - echo @fortawesome:registry=https://npm.fontawesome.com/ >> .npmrc
+  - echo //npm.fontawesome.com/:_authToken=$FA_TOKEN >> .npmrc
+
 script:
   - yarn build
 
