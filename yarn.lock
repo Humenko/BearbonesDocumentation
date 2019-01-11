@@ -1783,10 +1783,10 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bearbones@^0.31.0:
-  version "0.31.0"
-  resolved "https://registry.yarnpkg.com/bearbones/-/bearbones-0.31.0.tgz#9ee081347c8292830c099a8114dc0ff8500a0a4d"
-  integrity sha512-cyJz1+E6BjGzqQrzWnAwWbmc2thZpvmgZBAHb5jJyejT1Ube3NuTqTVcgmW8otMPy6uRSbvUl9xf+tNgIMe4Dg==
+bearbones@^0.31.2:
+  version "0.31.2"
+  resolved "https://registry.yarnpkg.com/bearbones/-/bearbones-0.31.2.tgz#e3b30d6de4cabf5f64c2bc44f070cb27b45e50bd"
+  integrity sha512-hXvisaqhi1hfyOQAirJy1GQFKMdD1zO8JyddY4Dc8bIhva/YD7diAysnTKyKMKqvk+NsetEHuQvdcN5jKJ5wZA==
 
 bfj@6.1.1:
   version "6.1.1"
