@@ -59,6 +59,11 @@
 	animation-delay: .25s;
 
 	will-change: intro-animation;
+	h1 {
+		font-weight: 400;
+		font-family: $logo-font-family;
+		line-height: 1;
+	}
 }
 
 @keyframes head-animation {

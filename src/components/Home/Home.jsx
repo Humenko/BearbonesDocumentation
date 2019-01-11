@@ -76,10 +76,10 @@ export default class Home extends Component {
               </div>
               <div className="bb-grid md">
                 <div className="column text-center">
-                  <h2 className="title">
+                  <h3 className="title">
                     Wanting to develop with a CSS framework without the worry of
                     it looking like everyone elses?
-                  </h2>
+                  </h3>
                 </div>
               </div>
               <div className="bb-grid lg m-t-5">
