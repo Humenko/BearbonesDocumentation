@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 export default class SubHeading extends Component {
   render() {
     return (
-      <div className="media center m-b-3">
+      <div className="media center title">
         <div className="media-left">
           <FontAwesomeIcon
             icon={this.props.icon ? this.props.icon : faPaw}
@@ -16,7 +16,7 @@ export default class SubHeading extends Component {
         </div>
         <div className="media-container">
           <div className="media-content">
-            <h4>{this.props.title}</h4>
+            <h3>{this.props.title}</h3>
           </div>
         </div>
       </div>

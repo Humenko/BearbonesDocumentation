@@ -35,7 +35,7 @@ export default class HeroDocumentation extends Component {
             </div>
           </div>
         </section>
-        <div className="section p-t-0">
+        <div className="section lg p-t-0">
           <div className="container">
             <div className="bb-grid md">
               <div className="column column-16">
@@ -193,7 +193,7 @@ export default class HeroDocumentation extends Component {
             </div>
           </div>
         </section>
-        <div className="section p-t-0 m-t-3">
+        <div className="section lg p-t-0 m-t-3">
           <div className="container">
             <div className="bb-grid md">
               <div className="column column-16">
