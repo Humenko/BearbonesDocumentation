@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
 import DocumentationHelper from '../../Shared/DocumentationHelper';
+import SubHeading from '../../Shared/DocumentationSubHeading';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
@@ -26,7 +27,7 @@ export default class ButtonDocumentation extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Basic</h4>
+              <SubHeading title="Basic" />
               <DocumentationHelper
                 content={
                   <div className="doc-content">
@@ -55,7 +56,7 @@ export default class ButtonDocumentation extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Colours</h4>
+              <SubHeading title="Colours" />
               <DocumentationHelper
                 content={
                   <div className="doc-content">
@@ -92,7 +93,7 @@ export default class ButtonDocumentation extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Sizes</h4>
+              <SubHeading title="Sizes" />
               <DocumentationHelper
                 content={
                   <>
@@ -137,7 +138,7 @@ export default class ButtonDocumentation extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Styles</h4>
+              <SubHeading title="Styles" />
               <DocumentationHelper
                 content={
                   <div className="doc-content">
@@ -250,7 +251,7 @@ export default class ButtonDocumentation extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">State</h4>
+              <SubHeading title="State" />
               <DocumentationHelper
                 content={
                   <>
@@ -430,7 +431,7 @@ export default class ButtonDocumentation extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Icons</h4>
+              <SubHeading title="Icons" />
               <DocumentationHelper
                 content={
                   <div className="doc-content">
@@ -483,7 +484,7 @@ Icon</button>`}
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Helper</h4>
+              <SubHeading title="Helper" />
               <DocumentationHelper
                 content={
                   <div className="doc-content">
@@ -549,7 +550,7 @@ Icon</button>`}
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Close</h4>
+              <SubHeading title="Close" />
               <DocumentationHelper
                 content={
                   <>
@@ -628,7 +629,7 @@ Icon</button>`}
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Basic</h4>
+              <SubHeading title="Basic" />
               <DocumentationHelper
                 content={
                   <div className="doc-content">
@@ -655,7 +656,7 @@ Icon</button>`}
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Vertical</h4>
+              <SubHeading title="Vertical" />
               <DocumentationHelper
                 content={
                   <div className="doc-content">
@@ -682,7 +683,7 @@ Icon</button>`}
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Helper</h4>
+              <SubHeading title="Helper" />
               <DocumentationHelper
                 content={
                   <div className="doc-content">

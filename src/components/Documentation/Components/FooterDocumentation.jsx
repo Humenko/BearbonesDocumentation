@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
 import DocumentationHelper from '../../Shared/DocumentationHelper';
+import SubHeading from '../../Shared/DocumentationSubHeading';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
@@ -24,7 +25,7 @@ export default class FooterDocumentation extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Basic</h4>
+              <SubHeading title="Basic" />
               <DocumentationHelper
                 className="full-x"
                 content={
@@ -68,7 +69,7 @@ export default class FooterDocumentation extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Colour</h4>
+              <SubHeading title="Colours" />
               <DocumentationHelper
                 className="full-x"
                 content={

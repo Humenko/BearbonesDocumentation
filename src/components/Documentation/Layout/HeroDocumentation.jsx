@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
 import DocumentationHelper from '../../Shared/DocumentationHelper';
+import SubHeading from '../../Shared/DocumentationSubHeading';
 import MetaTags from '../../Shared/MetaTags';
 export default class HeroDocumentation extends Component {
   render() {
@@ -38,7 +39,7 @@ export default class HeroDocumentation extends Component {
           <div className="container">
             <div className="bb-grid md">
               <div className="column column-16">
-                <h4 className="title">Basic</h4>
+                <SubHeading title="Basic" />
                 <DocumentationHelper
                   className="full-x"
                   code={
@@ -87,7 +88,7 @@ export default class HeroDocumentation extends Component {
           <div className="container">
             <div className="bb-grid md">
               <div className="column column-16">
-                <h4 className="title">Colour</h4>
+                <SubHeading title="Colours" />
                 <DocumentationHelper
                   className="full-x"
                   code={
@@ -147,7 +148,7 @@ export default class HeroDocumentation extends Component {
           <div className="container">
             <div className="bb-grid md">
               <div className="column column-16">
-                <h4 className="title">Full viewport</h4>
+                <SubHeading title="Full Viewport" />
                 <p className="subtitle">
                   With the hero component you also have the ability to set the
                   size to the full width and height of the device.

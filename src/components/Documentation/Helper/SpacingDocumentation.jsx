@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SubHeading from '../../Shared/DocumentationSubHeading';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
@@ -20,7 +21,7 @@ export default class SpacingDocumentation extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-8">
-              <h4 className="title">Basic</h4>
+              <SubHeading title="Basic" />
               <p className="subtitle sm">
                 <ul>
                   <li>

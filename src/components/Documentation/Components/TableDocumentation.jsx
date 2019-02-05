@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
 import DocumentationHelper from '../../Shared/DocumentationHelper';
+import SubHeading from '../../Shared/DocumentationSubHeading';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
@@ -24,7 +25,7 @@ export default class TableDocumentaion extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Basic</h4>
+              <SubHeading title="Basic" />
               <DocumentationHelper
                 content={
                   <div className="doc-content">
@@ -77,7 +78,7 @@ export default class TableDocumentaion extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Colours</h4>
+              <SubHeading title="Colours" />
               <DocumentationHelper
                 content={
                   <>
@@ -264,7 +265,7 @@ export default class TableDocumentaion extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Styles</h4>
+              <SubHeading title="Styles" />
               <DocumentationHelper
                 content={
                   <>
@@ -585,7 +586,7 @@ export default class TableDocumentaion extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">State</h4>
+              <SubHeading title="State" />
               <DocumentationHelper
                 content={
                   <div className="doc-content">
@@ -690,7 +691,7 @@ export default class TableDocumentaion extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h4 className="title">Helper</h4>
+              <SubHeading title="Helper" />
               <DocumentationHelper
                 content={
                   <div className="doc-content">

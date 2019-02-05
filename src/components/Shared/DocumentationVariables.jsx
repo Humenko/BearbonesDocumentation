@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import SubHeading from '../Shared/DocumentationSubHeading';
 
 export default class DocumentationVariables extends Component {
   render() {
     return (
       <div className="column-16 m-y-5">
-        <h4 className="title">Variables</h4>
+        <SubHeading title="Variables" />
         <p className="subtitle">
           You can use these variables below to personalise this element.
           <br />
@@ -14,7 +15,7 @@ export default class DocumentationVariables extends Component {
           </a>
         </p>
         <div className="column scroll">
-          <table className="bb-table doc striped m-t-5">
+          <table className="bb-table doc striped m-y-5">
             <tbody>
               <tr className="font-weight-bold text-sm">
                 <td>Name</td>
