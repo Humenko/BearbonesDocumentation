@@ -32,6 +32,11 @@ pre[class*='language-'] {
 		border-left: $border-style $border-width * 2 $secondary-color;
 		border-radius: 0;
 		background: $base-pair;
+		color: $primary-color;
+		font-weight: $font-weight-bold;
+		code {
+			color: $primary-color;
+		}
 	}
 }
 
@@ -44,4 +49,17 @@ code {
 	border-radius: $border-radius;
 	background: $primary-color;
 	color: $primary-pair;
+}
+
+.code-block {
+	display: inline-block;
+	margin: 1rem 0;
+	padding: $padding / 2;
+	width: 100%;
+	border-left: $border-style $border-width * 2 $secondary-color;
+	border-radius: 0;
+	background: $base-pair;
+	pre {
+		margin: 0;
+	}
 }

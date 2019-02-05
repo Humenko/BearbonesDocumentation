@@ -2,6 +2,7 @@ import React from 'react';
 import Breadcrumbs from 'react-router-dynamic-breadcrumbs';
 
 const routes = {
+  '/documentation/getting-started': null,
   '/documentation/components': null,
   '/documentation/layout': null,
   '/documentation/helper': null

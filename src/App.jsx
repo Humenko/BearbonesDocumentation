@@ -19,6 +19,7 @@ import StatDocumentation from './components/Documentation/Components/StatDocumen
 import TabDocumentation from './components/Documentation/Components/TabDocumentation';
 import TableDocumentation from './components/Documentation/Components/TableDocumentation';
 import Documentation from './components/Documentation/Documentation';
+import InstallingDocumentation from './components/Documentation/GettingStarted/InstallingDocumentation';
 import DisplayDocumentation from './components/Documentation/Helper/DisplayDocumentation';
 import FlexDocumentation from './components/Documentation/Helper/FlexDocumentation';
 import PositionDocumentation from './components/Documentation/Helper/PositionDocumentation';
@@ -31,19 +32,20 @@ import PageLayout from './components/Shared/PageLayout';
 
 const documentationRoutes = [
   {
-    path: '/documentation/gettingstarted',
     section: 'Getting Started',
-    title: 'Installing Bearbones',
-    subTitle: 'Coming soon...'
+    path: '/documentation/getting-started/installation',
+    title: 'Installation',
+    subTitle: 'How to get up and running with Bearbones.',
+    component: InstallingDocumentation
   },
   {
-    path: '/documentation/gettingstarted',
+    path: '/documentation/getting-started',
     section: 'Getting Started',
     title: 'Importing',
     subTitle: 'Coming soon...'
   },
   {
-    path: '/documentation/gettingstarted',
+    path: '/documentation/getting-started',
     section: 'Getting Started',
     title: 'Variables',
     subTitle: 'Coming soon...'
@@ -310,6 +312,7 @@ export default function App() {
                             {...props}
                             component={route.component}
                             title={route.title + ' - Bearbones'}
+                            heading={route.title}
                             subTitle={route.subTitle}
                           />
                         )}
