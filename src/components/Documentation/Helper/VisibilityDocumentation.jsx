@@ -9,7 +9,7 @@ export default class VisibilityDocumentation extends Component {
         <div className="container">
           <div className="bb-grid md">
             <div className="column column-16">
-              <h1 className="title">Visibility</h1>
+              <h1 className="title">{this.props.heading}</h1>
               <p className="subtitle">
                 Easily be able to toggle through the visibility of elements with
                 these helper classes.

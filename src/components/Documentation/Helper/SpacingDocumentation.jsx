@@ -11,7 +11,7 @@ export default class SpacingDocumentation extends Component {
         <div className="container">
           <div className="bb-grid md">
             <div className="column column-16">
-              <h1 className="title">Spacing</h1>
+              <h1 className="title">{this.props.heading}</h1>
               <p className="subtitle">
                 This helper is for setting the margin and / or padding of
                 various elements, using this method is a lot more efficient and

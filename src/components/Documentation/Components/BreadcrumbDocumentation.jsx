@@ -13,7 +13,7 @@ export default class BreadcrumbDocumentation extends Component {
         <div className="container">
           <div className="bb-grid md">
             <div className="column column-16">
-              <h1 className="title">Breadcrumb</h1>
+              <h1 className="title">{this.props.heading}</h1>
               <p className="subtitle">
                 A simple component used to display basic navigational structure.
               </p>

@@ -13,7 +13,7 @@ export default class PaginationDocumentation extends Component {
         <div className="container">
           <div className="bb-grid md">
             <div className="column column-16">
-              <h1 className="title">Stat</h1>
+              <h1 className="title">{this.props.heading}</h1>
               <p className="subtitle">
                 This component is used to empathise both the label and value for
                 an attribute.

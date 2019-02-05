@@ -12,7 +12,7 @@ export default class HeroDocumentation extends Component {
           <div className="container">
             <div className="bb-grid md">
               <div className="column column-16">
-                <h1 className="title">Hero</h1>
+                <h1 className="title">{this.props.heading}</h1>
                 <p className="subtitle">
                   A component which extends to the whole horizontal viewport,
                   used to showcase key messaging.

@@ -13,7 +13,7 @@ export default class TableDocumentaion extends Component {
         <div className="container">
           <div className="bb-grid md">
             <div className="column column-16">
-              <h1 className="title">Table</h1>
+              <h1 className="title">{this.props.heading}</h1>
               <p className="subtitle">
                 This component is used to spruce up the HTML table we all know
                 and <s>love</s> hate.

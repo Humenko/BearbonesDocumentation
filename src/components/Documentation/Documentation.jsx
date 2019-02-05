@@ -14,7 +14,7 @@ class Documentation extends Component {
       }));
 
     return (
-      <div className="section p-t-0">
+      <div className="section lg p-t-0">
         <MetaTags title={this.props.title} subTitle={this.props.subTitle} />
         <div className="container m-b-5">
           <div className="bb-grid md">

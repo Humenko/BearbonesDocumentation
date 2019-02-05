@@ -13,7 +13,7 @@ export default class MediaDocumentation extends Component {
         <div className="container">
           <div className="bb-grid md">
             <div className="column column-16">
-              <h1 className="title">Media</h1>
+              <h1 className="title">{this.props.heading}</h1>
               <p className="subtitle">
                 This component is used to create repetitive elements where
                 content is positioned with some imagery, used widely for social

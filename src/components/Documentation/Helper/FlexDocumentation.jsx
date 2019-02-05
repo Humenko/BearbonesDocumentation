@@ -9,7 +9,7 @@ export default class DisplayDocumentation extends Component {
         <div className="container">
           <div className="bb-grid md">
             <div className="column column-16">
-              <h1 className="title">Flex</h1>
+              <h1 className="title">{this.props.heading}</h1>
               <p className="subtitle">
                 Easily be able to toggle through flex properties with these
                 helper classes.

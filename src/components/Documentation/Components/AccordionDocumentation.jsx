@@ -14,7 +14,7 @@ export default class AccordionDocumentation extends Component {
         <div className="container">
           <div className="bb-grid md">
             <div className="column column-16">
-              <h1 className="title">Accordion</h1>
+              <h1 className="title">{this.props.heading}</h1>
               <p className="subtitle">
                 A collapsible component which allows the user to show and hide
                 content to meet their needs.
