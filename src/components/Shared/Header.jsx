@@ -17,7 +17,7 @@ export default function Header() {
           <div className="item">
             <a
               className="item"
-              href="https://github.com/humenko"
+              href={process.env.REACT_APP_GITHUB_URL}
               rel="noopener noreferrer"
               target="_blank"
               aria-label="github"
@@ -26,7 +26,7 @@ export default function Header() {
             </a>
             <a
               className="item"
-              href="https://twitter.com/humenko8"
+              href={process.env.REACT_APP_TWITTER_URL}
               rel="noopener noreferrer"
               target="_blank"
               aria-label="twitter"

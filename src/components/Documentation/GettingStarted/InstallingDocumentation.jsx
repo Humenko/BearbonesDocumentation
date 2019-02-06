@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
+import Heading from '../../Shared/DocumentationHeading';
 import DocumentationHelper from '../../Shared/DocumentationHelper';
 import SubHeading from '../../Shared/DocumentationSubHeading';
 import MetaTags from '../../Shared/MetaTags';
@@ -10,17 +11,10 @@ export default class InstallingDocumentation extends Component {
       <div className="section lg p-t-0">
         <MetaTags title={this.props.title} subTitle={this.props.subTitle} />
         <div className="container">
+          <Heading title={this.props.heading} subTitle={this.props.subTitle} />
           <div className="bb-grid md">
             <div className="column column-16">
-              <h1 className="title">{this.props.heading}</h1>
-              <p className="subtitle">
-                How to get up and running with Bearbones.
-              </p>
-              <p>
-                There are various ways to get started with Bearbones, depending
-                on your preference, here are the simplest:
-              </p>
-              <ol className="m-t-2">
+              <ol>
                 <li>
                   use{' '}
                   <a
@@ -60,7 +54,9 @@ export default class InstallingDocumentation extends Component {
                   to link to the Bearbones stylesheet.
                   <div className="code-block">
                     <Code language="markup">
-                      {`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bearbones@latest/css/bearbones.min.css" crossorigin="anonymous">`}
+                      {`<link rel="stylesheet" href="${
+                        process.env.REACT_APP_CDN_URL
+                      }">`}
                     </Code>
                   </div>
                 </li>
@@ -68,7 +64,7 @@ export default class InstallingDocumentation extends Component {
               <p>
                 You can also use the Bearbones{' '}
                 <a
-                  href="https://github.com/Humenko/Bearbones"
+                  href={process.env.REACT_APP_GITHUB_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-secondary font-weight-bold"
@@ -99,7 +95,7 @@ export default class InstallingDocumentation extends Component {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bearbones CSS CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bearbones@latest/css/bearbones.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="${process.env.REACT_APP_CDN_URL}">
 
     <title>Bearbones, powered by Pandas!</title>
   </head>

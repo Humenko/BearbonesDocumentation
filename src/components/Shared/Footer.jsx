@@ -14,7 +14,7 @@ export default function Footer() {
                 <li className="inline-item">
                   <a
                     className="item"
-                    href="https://github.com/humenko"
+                    href={process.env.REACT_APP_GITHUB_URL}
                     rel="noopener noreferrer"
                     target="_blank"
                     aria-label="github"
@@ -25,7 +25,7 @@ export default function Footer() {
                 <li className="inline-item">
                   <a
                     className="item"
-                    href="https://twitter.com/humenko8"
+                    href={process.env.REACT_APP_TWITTER_URL}
                     rel="noopener noreferrer"
                     target="_blank"
                     aria-label="twitter"
@@ -41,7 +41,7 @@ export default function Footer() {
               <p className="m-b-3">
                 <strong>Bearbones</strong> by{' '}
                 <a
-                  href="https://www.humenko.co.uk"
+                  href={process.env.REACT_APP_PERSONAL_URL}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -56,7 +56,7 @@ export default function Footer() {
             <p className="text-center">
               Code licensed{' '}
               <a
-                href="https://github.com/Humenko/Bearbones/blob/master/LICENSE"
+                href={`${process.env.REACT_APP_GITHUB_URL}/blob/master/LICENSE`}
                 rel="noopener noreferrer"
                 target="_blank"
               >
