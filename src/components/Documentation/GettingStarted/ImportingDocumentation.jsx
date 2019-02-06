@@ -84,9 +84,7 @@ export default class ImportingDocumentation extends Component {
               </p>
               <Code language="js">{`import "/bearbones/scss/bearbones"`}</Code>
               <p>
-                <strong>Simple, right?</strong> Now you can use the button
-                component as well as all the classes and states that come with{' '}
-                <code>.bb-btn</code>
+                Now you have all the components imported into your application.
               </p>
             </div>
           </div>
