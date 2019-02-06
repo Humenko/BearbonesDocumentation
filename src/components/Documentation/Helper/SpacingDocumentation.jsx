@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Heading from '../../Shared/DocumentationHeading';
 import SubHeading from '../../Shared/DocumentationSubHeading';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
@@ -9,16 +10,7 @@ export default class SpacingDocumentation extends Component {
       <div className="section lg p-t-0">
         <MetaTags title={this.props.title} subTitle={this.props.subTitle} />
         <div className="container">
-          <div className="bb-grid md">
-            <div className="column column-16">
-              <h1 className="title">{this.props.heading}</h1>
-              <p className="subtitle">
-                This helper is for setting the margin and / or padding of
-                various elements, using this method is a lot more efficient and
-                manageable than creating your own classes.
-              </p>
-            </div>
-          </div>
+          <Heading title={this.props.heading} subTitle={this.props.subTitle} />
           <div className="bb-grid md">
             <div className="column column-8">
               <SubHeading title="Basic" />

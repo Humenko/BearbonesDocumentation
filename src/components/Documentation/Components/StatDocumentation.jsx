@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
+import Heading from '../../Shared/DocumentationHeading';
 import DocumentationHelper from '../../Shared/DocumentationHelper';
 import SubHeading from '../../Shared/DocumentationSubHeading';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
@@ -11,18 +12,11 @@ export default class PaginationDocumentation extends Component {
       <div className="section lg p-t-0">
         <MetaTags title={this.props.title} subTitle={this.props.subTitle} />
         <div className="container">
-          <div className="bb-grid md">
-            <div className="column column-16">
-              <h1 className="title">{this.props.heading}</h1>
-              <p className="subtitle">
-                This component is used to empathise both the label and value for
-                an attribute.
-              </p>
-              <Code language="js">
-                {'import "../bearbones/sass/components/stat/all"'}
-              </Code>
-            </div>
-          </div>
+          <Heading
+            title={this.props.heading}
+            subTitle={this.props.subTitle}
+            code='import "../bearbones/sass/components/stat/all"'
+          />
           <div className="bb-grid md">
             <div className="column column-16">
               <SubHeading title="Basic" />
@@ -246,7 +240,7 @@ export default class PaginationDocumentation extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h3 className="title">Stat Groups</h3>
+              <h1>Stat Groups</h1>
               <Code language="js">
                 {'import "../bearbones/sass/components/stat-group/all"'}
               </Code>

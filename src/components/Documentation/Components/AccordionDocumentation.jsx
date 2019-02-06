@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Accordion, AccordionItem } from '../../Shared/Accordion';
 import Code from '../../Shared/Code';
+import Heading from '../../Shared/DocumentationHeading';
 import DocumentationHelper from '../../Shared/DocumentationHelper';
 import SubHeading from '../../Shared/DocumentationSubHeading';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
@@ -12,18 +13,11 @@ export default class AccordionDocumentation extends Component {
       <div className="section lg p-t-0">
         <MetaTags title={this.props.title} subTitle={this.props.subTitle} />
         <div className="container">
-          <div className="bb-grid md">
-            <div className="column column-16">
-              <h1 className="title">{this.props.heading}</h1>
-              <p className="subtitle">
-                A collapsible component which allows the user to show and hide
-                content to meet their needs.
-              </p>
-              <Code language="js">
-                {'import "../bearbones/sass/components/accordion/all"'}
-              </Code>
-            </div>
-          </div>
+          <Heading
+            title={this.props.heading}
+            subTitle={this.props.subTitle}
+            code='import "../bearbones/sass/components/accordion/all"'
+          />
           <div className="bb-grid md">
             <div className="column column-16">
               <SubHeading title="Basic" />

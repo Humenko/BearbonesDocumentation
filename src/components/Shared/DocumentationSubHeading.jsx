@@ -10,7 +10,7 @@ export default class SubHeading extends Component {
         <div className="media-left">
           <FontAwesomeIcon
             icon={this.props.icon ? this.props.icon : faPaw}
-            size="lg"
+            size="2x"
             className="text-secondary"
           />
         </div>

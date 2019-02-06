@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
+import Heading from '../../Shared/DocumentationHeading';
 import DocumentationHelper from '../../Shared/DocumentationHelper';
 import SubHeading from '../../Shared/DocumentationSubHeading';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
@@ -11,18 +12,11 @@ export default class BoxDocumentation extends Component {
       <div className="section lg p-t-0">
         <MetaTags title={this.props.title} subTitle={this.props.subTitle} />
         <div className="container">
-          <div className="bb-grid md">
-            <div className="column column-16">
-              <h1 className="title">{this.props.heading}</h1>
-              <p className="subtitle">
-                This component is used as a basic container that full widths to
-                any element it is within.
-              </p>
-              <Code language="js">
-                {'import "../bearbones/sass/components/box/all"'}
-              </Code>
-            </div>
-          </div>
+          <Heading
+            title={this.props.heading}
+            subTitle={this.props.subTitle}
+            code='import "../bearbones/sass/components/box/all"'
+          />
           <div className="bb-grid md">
             <div className="column column-16">
               <SubHeading title="Basic" />

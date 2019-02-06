@@ -2,6 +2,7 @@ import { faPaw } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
+import Heading from '../../Shared/DocumentationHeading';
 import DocumentationHelper from '../../Shared/DocumentationHelper';
 import SubHeading from '../../Shared/DocumentationSubHeading';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
@@ -13,18 +14,11 @@ export default class ButtonDocumentation extends Component {
       <div className="section lg p-t-0">
         <MetaTags title={this.props.title} subTitle={this.props.subTitle} />
         <div className="container">
-          <div className="bb-grid md">
-            <div className="column column-16">
-              <h1 className="title">{this.props.heading}</h1>
-              <p className="subtitle">
-                An essential component for any design, providing the user a
-                simple way to trigger an event.
-              </p>
-              <Code language="js">
-                {'import "../bearbones/sass/components/button/all"'}
-              </Code>
-            </div>
-          </div>
+          <Heading
+            title={this.props.heading}
+            subTitle={this.props.subTitle}
+            code='import "../bearbones/sass/components/button/all"'
+          />
           <div className="bb-grid md">
             <div className="column column-16">
               <SubHeading title="Basic" />
@@ -621,7 +615,7 @@ Icon</button>`}
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h3 className="title">Button Groups</h3>
+              <h1>Button Groups</h1>
               <Code language="js">
                 {'import "../bearbones/sass/components/button-group/all"'}
               </Code>

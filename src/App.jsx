@@ -176,7 +176,7 @@ const documentationRoutes = [
     path: '/documentation/components/table',
     title: 'Table',
     subTitle:
-      'his component is used to spruce up the HTML table we all know and love.',
+      'his component is used to spruce up the HTML table we all know and hate.',
     component: TableDocumentation
   },
   {

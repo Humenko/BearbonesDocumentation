@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
+import Heading from '../../Shared/DocumentationHeading';
 import DocumentationHelper from '../../Shared/DocumentationHelper';
 import SubHeading from '../../Shared/DocumentationSubHeading';
 import MetaTags from '../../Shared/MetaTags';
+
 export default class HeroDocumentation extends Component {
   render() {
     return (
@@ -10,18 +12,11 @@ export default class HeroDocumentation extends Component {
         <MetaTags title={this.props.title} subTitle={this.props.subTitle} />
         <div className="section p-t-0 p-b-0">
           <div className="container">
-            <div className="bb-grid md">
-              <div className="column column-16">
-                <h1 className="title">{this.props.heading}</h1>
-                <p className="subtitle">
-                  A component which extends to the whole horizontal viewport,
-                  used to showcase key messaging.
-                </p>
-                <Code language="js">
-                  {'import "../bearbones/sass/components/hero/all"'}
-                </Code>
-              </div>
-            </div>
+            <Heading
+              title={this.props.heading}
+              subTitle={this.props.subTitle}
+              code='import "../bearbones/sass/components/hero/all"'
+            />
           </div>
         </div>
         <section className="hero m-b-4">

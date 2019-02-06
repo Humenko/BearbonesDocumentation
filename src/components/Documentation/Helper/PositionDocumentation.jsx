@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Heading from '../../Shared/DocumentationHeading';
 import MetaTags from '../../Shared/MetaTags';
 
 export default class PositionDocumentation extends Component {
@@ -7,15 +8,7 @@ export default class PositionDocumentation extends Component {
       <div className="section lg p-t-0">
         <MetaTags title={this.props.title} subTitle={this.props.subTitle} />
         <div className="container">
-          <div className="bb-grid md">
-            <div className="column column-16">
-              <h1 className="title">{this.props.heading}</h1>
-              <p className="subtitle">
-                Easily be able to toggle through position properties with these
-                helper classes.
-              </p>
-            </div>
-          </div>
+          <Heading title={this.props.heading} subTitle={this.props.subTitle} />
           <div className="bb-grid md">
             <div className="column column-8">
               <table className="bb-table striped full-x">
