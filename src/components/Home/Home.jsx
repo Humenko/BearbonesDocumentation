@@ -100,7 +100,7 @@ export default class Home extends Component {
                   <h3 className="text-secondary title">Contemporary.</h3>
                   <p className="subtitle lg">
                     Built using the latest and greatest tech including Flexbox,
-                    Sass and{' '}
+                    Scss and{' '}
                     <a href="https://fontawesome.com/" target="blank">
                       Font Awesome 5
                     </a>

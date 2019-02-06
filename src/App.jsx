@@ -300,7 +300,7 @@ export default function App() {
                           documentationRoutes={documentationRoutes}
                           component={Documentation}
                           title="Documentation - Bearbones"
-                          subTitle="Bearbones is an open source CSS framework built using the latest and greatest tech including Flexbox, Sass and Font Awesome 5."
+                          subTitle="Bearbones is an open source CSS framework built using the latest and greatest tech including Flexbox, Scss and Font Awesome 5."
                         />
                       )}
                     />
