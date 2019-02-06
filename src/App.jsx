@@ -256,7 +256,7 @@ const documentationRoutes = [
   {
     section: 'Helper',
     path: '/documentation/helper/visibility',
-    title: 'Visbility',
+    title: 'Visibility',
     subTitle:
       'Easily be able to toggle through the visibility of elements with these helper classes."',
     component: VisibilityDocumentation
