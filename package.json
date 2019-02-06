@@ -17,7 +17,7 @@
     "@fortawesome/pro-light-svg-icons": "^5.7.1",
     "@fortawesome/pro-solid-svg-icons": "^5.7.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "bearbones": "^0.32.4",
+    "bearbones": "^0.33.0",
     "eslint-plugin-flowtype": "3.2.1",
     "eslint-plugin-react": "7.12.4",
     "node-sass": "4.11.0",
