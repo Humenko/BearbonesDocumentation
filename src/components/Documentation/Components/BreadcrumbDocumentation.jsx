@@ -15,7 +15,7 @@ export default class BreadcrumbDocumentation extends Component {
           <Heading
             title={this.props.heading}
             subTitle={this.props.subTitle}
-            code='import "../bearbones/sass/components/breadcrumb/all"'
+            code='import "/bearbones/scss/components/breadcrumb/all"'
           />
           <div className="bb-grid md">
             <div className="column column-16">

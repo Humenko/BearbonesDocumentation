@@ -6,7 +6,6 @@ import SubHeading from '../../Shared/DocumentationSubHeading';
 import DocumentationVariables from '../../Shared/DocumentationVariables';
 import MetaTags from '../../Shared/MetaTags';
 
-
 export default class AlertDocumentation extends Component {
   render() {
     return (
@@ -16,7 +15,7 @@ export default class AlertDocumentation extends Component {
           <Heading
             title={this.props.heading}
             subTitle={this.props.subTitle}
-            code='import "../bearbones/sass/components/alert/all"'
+            code='import "/bearbones/scss/components/alert/all"'
           />
           <div className="bb-grid md">
             <div className="column column-16">

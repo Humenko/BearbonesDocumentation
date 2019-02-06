@@ -15,7 +15,7 @@ export default class FooterDocumentation extends Component {
           <Heading
             title={this.props.heading}
             subTitle={this.props.subTitle}
-            code='import "../bearbones/sass/components/footer/all"'
+            code='import "/bearbones/scss/components/footer/all"'
           />
           <div className="bb-grid md">
             <div className="column column-16">

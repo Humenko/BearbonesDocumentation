@@ -17,7 +17,7 @@ export default class ButtonDocumentation extends Component {
           <Heading
             title={this.props.heading}
             subTitle={this.props.subTitle}
-            code='import "../bearbones/sass/components/button/all"'
+            code='import "/bearbones/scss/components/button/all"'
           />
           <div className="bb-grid md">
             <div className="column column-16">
@@ -617,7 +617,7 @@ Icon</button>`}
             <div className="column column-16">
               <h1>Button Groups</h1>
               <Code language="js">
-                {'import "../bearbones/sass/components/button-group/all"'}
+                {'import "/bearbones/scss/components/button-group/all"'}
               </Code>
             </div>
           </div>

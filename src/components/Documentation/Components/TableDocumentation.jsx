@@ -15,7 +15,7 @@ export default class TableDocumentaion extends Component {
           <Heading
             title={this.props.heading}
             subTitle={this.props.subTitle}
-            code='import "../bearbones/sass/components/table/all"'
+            code='import "/bearbones/scss/components/table/all"'
           />
           <div className="bb-grid md">
             <div className="column column-16">

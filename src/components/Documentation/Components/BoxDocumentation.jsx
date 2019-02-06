@@ -15,7 +15,7 @@ export default class BoxDocumentation extends Component {
           <Heading
             title={this.props.heading}
             subTitle={this.props.subTitle}
-            code='import "../bearbones/sass/components/box/all"'
+            code='import "/bearbones/scss/components/box/all"'
           />
           <div className="bb-grid md">
             <div className="column column-16">

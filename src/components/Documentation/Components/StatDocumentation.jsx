@@ -15,7 +15,7 @@ export default class PaginationDocumentation extends Component {
           <Heading
             title={this.props.heading}
             subTitle={this.props.subTitle}
-            code='import "../bearbones/sass/components/stat/all"'
+            code='import "/bearbones/scss/components/stat/all"'
           />
           <div className="bb-grid md">
             <div className="column column-16">
@@ -242,7 +242,7 @@ export default class PaginationDocumentation extends Component {
             <div className="column column-16">
               <h1>Stat Groups</h1>
               <Code language="js">
-                {'import "../bearbones/sass/components/stat-group/all"'}
+                {'import "/bearbones/scss/components/stat-group/all"'}
               </Code>
             </div>
           </div>

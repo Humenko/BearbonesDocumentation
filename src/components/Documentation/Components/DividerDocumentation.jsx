@@ -17,7 +17,7 @@ export default class DividerDocumentation extends Component {
           <Heading
             title={this.props.heading}
             subTitle={this.props.subTitle}
-            code='import "../bearbones/sass/components/divider/all"'
+            code='import "/bearbones/scss/components/divider/all"'
           />
           <div className="bb-grid md">
             <div className="column column-16">
