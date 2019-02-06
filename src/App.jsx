@@ -27,6 +27,7 @@ import PositionDocumentation from './components/Documentation/Helper/PositionDoc
 import SpacingDocumentation from './components/Documentation/Helper/SpacingDocumentation';
 import VisibilityDocumentation from './components/Documentation/Helper/VisibilityDocumentation';
 import HeroDocumentation from './components/Documentation/Layout/HeroDocumentation';
+import PageNotFound from './components/Error/PageNotFound';
 import Home from './components/Home/Home';
 import BreadcrumbNavigation from './components/Shared/BreadcrumbNavigation';
 import PageLayout from './components/Shared/PageLayout';
@@ -243,7 +244,7 @@ const documentationRoutes = [
     path: '/documentation/helper/spacing',
     title: 'Spacing',
     subTitle:
-      'Easily be able to seet the margin and / or padding of various elements.',
+      'Easily be able to set the margin and / or padding of various elements.',
     component: SpacingDocumentation
   },
   {
@@ -265,68 +266,71 @@ const documentationRoutes = [
 
 export default function App() {
   return (
-    <>
-      <main>
-        <PageLayout>
-          <Route
-            exact
-            path="/"
-            render={props => (
-              <Home
-                {...props}
-                component={Home}
-                title="Bearbones: one of the world‘s most customisable CSS frameworks."
-                subTitle="One of the world‘s most customisable CSS frameworks. It's customisable, contemporary and completely Free!"
+    <main>
+      <PageLayout>
+        <Route path="/documentation" component={BreadcrumbNavigation} />
+        <Route
+          render={({ location }) => (
+            <Switch>
+              <Route
+                exact
+                path="/"
+                render={props => (
+                  <Home
+                    {...props}
+                    component={Home}
+                    title="Bearbones: one of the world‘s most customisable CSS frameworks."
+                    subTitle="One of the world‘s most customisable CSS frameworks. It's customisable, contemporary and completely Free!"
+                  />
+                )}
               />
-            )}
-          />
-          <Route path="/documentation" component={BreadcrumbNavigation} />
-          <Route
-            render={({ location }) => (
-              <TransitionGroup>
-                <CSSTransition
-                  onEntering={() => window.scrollTo(0, 0)}
-                  key={location.key}
-                  classNames="doc-page-animation"
-                  timeout={500}
-                >
-                  <Switch location={location}>
-                    <Route
-                      exact
-                      path="/documentation"
-                      render={props => (
-                        <Documentation
-                          {...props}
-                          documentationRoutes={documentationRoutes}
-                          component={Documentation}
-                          title="Documentation - Bearbones"
-                          subTitle="Bearbones is an open source CSS framework built using the latest and greatest tech including Flexbox, Scss and Font Awesome 5."
-                        />
-                      )}
-                    />
-                    {documentationRoutes.map(route => (
+              <>
+                <TransitionGroup>
+                  <CSSTransition
+                    onEntering={() => window.scrollTo(0, 0)}
+                    key={location.key}
+                    classNames="doc-page-animation"
+                    timeout={500}
+                  >
+                    <Switch location={location}>
                       <Route
                         exact
-                        path={route.path}
-                        key={route.path}
+                        path="/documentation"
                         render={props => (
-                          <route.component
+                          <Documentation
                             {...props}
-                            component={route.component}
-                            title={route.title + ' - Bearbones'}
-                            heading={route.title}
-                            subTitle={route.subTitle}
+                            documentationRoutes={documentationRoutes}
+                            component={Documentation}
+                            title="Documentation - Bearbones"
+                            subTitle="Bearbones is an open source CSS framework built using the latest and greatest tech including Flexbox, Scss and Font Awesome 5."
                           />
                         )}
                       />
-                    ))}
-                  </Switch>
-                </CSSTransition>
-              </TransitionGroup>
-            )}
-          />
-        </PageLayout>
-      </main>
-    </>
+                      {documentationRoutes.map(route => (
+                        <Route
+                          exact
+                          path={route.path}
+                          key={route.path}
+                          render={props => (
+                            <route.component
+                              {...props}
+                              component={route.component}
+                              title={route.title + ' - Bearbones'}
+                              heading={route.title}
+                              subTitle={route.subTitle}
+                            />
+                          )}
+                        />
+                      ))}
+                      <Route component={PageNotFound} />
+                    </Switch>
+                  </CSSTransition>
+                </TransitionGroup>
+              </>
+            </Switch>
+          )}
+        />
+      </PageLayout>
+    </main>
   );
 }

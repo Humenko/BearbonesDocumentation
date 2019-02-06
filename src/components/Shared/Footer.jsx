@@ -13,7 +13,7 @@ export default function Footer() {
               <ul className="inline social-links">
                 <li className="inline-item">
                   <a
-                    className="item"
+                    className="item text-white"
                     href={process.env.REACT_APP_GITHUB_URL}
                     rel="noopener noreferrer"
                     target="_blank"
@@ -24,7 +24,7 @@ export default function Footer() {
                 </li>
                 <li className="inline-item">
                   <a
-                    className="item"
+                    className="item text-white"
                     href={process.env.REACT_APP_TWITTER_URL}
                     rel="noopener noreferrer"
                     target="_blank"
@@ -41,6 +41,7 @@ export default function Footer() {
               <p className="m-b-3">
                 <strong>Bearbones</strong> by{' '}
                 <a
+                 className="text-white"
                   href={process.env.REACT_APP_PERSONAL_URL}
                   rel="noopener noreferrer"
                   target="_blank"
@@ -56,6 +57,7 @@ export default function Footer() {
             <p className="text-center">
               Code licensed{' '}
               <a
+                className="text-white"
                 href={`${process.env.REACT_APP_GITHUB_URL}/blob/master/LICENSE`}
                 rel="noopener noreferrer"
                 target="_blank"

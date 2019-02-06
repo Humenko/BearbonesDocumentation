@@ -1,4 +1,11 @@
 .illustration.hero {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
 	&.space {
 		background-color: $black;
 		.container {
