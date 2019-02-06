@@ -19,6 +19,7 @@ import StatDocumentation from './components/Documentation/Components/StatDocumen
 import TabDocumentation from './components/Documentation/Components/TabDocumentation';
 import TableDocumentation from './components/Documentation/Components/TableDocumentation';
 import Documentation from './components/Documentation/Documentation';
+import ImportingDocumentation from './components/Documentation/GettingStarted/ImportingDocumentation';
 import InstallingDocumentation from './components/Documentation/GettingStarted/InstallingDocumentation';
 import DisplayDocumentation from './components/Documentation/Helper/DisplayDocumentation';
 import FlexDocumentation from './components/Documentation/Helper/FlexDocumentation';
@@ -39,10 +40,11 @@ const documentationRoutes = [
     component: InstallingDocumentation
   },
   {
-    path: '/documentation/getting-started',
+    path: '/documentation/getting-started/importing',
     section: 'Getting Started',
     title: 'Importing',
-    subTitle: 'Coming soon...'
+    subTitle: 'Import what you need, when you need it.',
+    component: ImportingDocumentation
   },
   {
     path: '/documentation/getting-started',
