@@ -21,6 +21,10 @@
             "value": "no-referrer-when-downgrade"
           }
         ]
+      },
+      {
+        "source": "/service-worker.js",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
       }
     ],
     "public": "build",
