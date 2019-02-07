@@ -4,7 +4,8 @@
   "private": true,
   "homepage": "https://bearbon.es/",
   "scripts": {
-    "build": "react-scripts build && react-snapshot",
+    "build": "react-scripts build",
+    "shot": "react-snapshot",
     "start": "react-scripts start",
     "eslint": "eslint ./src/components/** --ext jsx --ext js",
     "test": "react-scripts test --env=jsdom",
@@ -39,5 +40,11 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "reactSnapshot": {
+    "exclude": [
+      "/documentation/**"
+    ],
+    "snapshotDelay": 300
+  }
 }
