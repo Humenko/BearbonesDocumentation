@@ -1,6 +1,7 @@
+import '@babel/polyfill';
 import React from 'react';
+import { render } from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { render } from 'react-snapshot';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './styles/sass/main.scss';
