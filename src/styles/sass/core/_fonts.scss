@@ -2,6 +2,26 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
 
 @font-face {
+	font-weight: 300;
+	font-style: normal;
+	font-family: 'Inter';
+	src: url('../../fonts/Inter/Inter-Light-BETA.woff2') format('woff2'),
+	url('../../fonts/Inter/Inter-Light-BETA.woff') format('woff');
+
+	font-display: swap;
+}
+
+@font-face {
+	font-weight: 300;
+	font-style: italic;
+	font-family: 'Inter';
+	src: url('../../fonts/Inter/Inter-LightItalic-BETA.woff2') format('woff2'),
+	url('../../fonts/Inter/Inter-LightItalic-BETA.woff') format('woff');
+
+	font-display: swap;
+}
+
+@font-face {
 	font-weight: normal;
 	font-style: normal;
 	font-family: 'Inter';
