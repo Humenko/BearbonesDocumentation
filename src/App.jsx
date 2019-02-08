@@ -25,6 +25,7 @@ import DisplayDocumentation from './components/Documentation/Helper/DisplayDocum
 import FlexDocumentation from './components/Documentation/Helper/FlexDocumentation';
 import PositionDocumentation from './components/Documentation/Helper/PositionDocumentation';
 import SpacingDocumentation from './components/Documentation/Helper/SpacingDocumentation';
+import TypographyDocumentation from './components/Documentation/Helper/TypographyDocumentation';
 import VisibilityDocumentation from './components/Documentation/Helper/VisibilityDocumentation';
 import HeroDocumentation from './components/Documentation/Layout/HeroDocumentation';
 import PageNotFound from './components/Error/PageNotFound';
@@ -138,6 +139,12 @@ const documentationRoutes = [
   },
   {
     section: 'Components',
+    path: '/documentation/components/Heading',
+    title: 'Heading',
+    subTitle: 'Coming soon...'
+  },
+  {
+    section: 'Components',
     path: '/documentation/components/media',
     title: 'Media',
     subTitle:
@@ -228,8 +235,8 @@ const documentationRoutes = [
     section: 'Helper',
     path: '/documentation/helper/list',
     title: 'List',
-    subTitle: 'Coming soon...',
-    component: SpacingDocumentation
+    subTitle: 'Coming soon...'
+    // component: ListDocumentation
   },
   {
     section: 'Helper',
@@ -251,8 +258,9 @@ const documentationRoutes = [
     section: 'Helper',
     path: '/documentation/helper/typography',
     title: 'Typography',
-    subTitle: 'Coming soon...',
-    component: SpacingDocumentation
+    subTitle:
+      'Easily be able to use common text utilities to control alignment, styles, weight and wrapping.',
+    component: TypographyDocumentation
   },
   {
     section: 'Helper',

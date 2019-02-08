@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Heading from '../../Shared/DocumentationHeading';
 import MetaTags from '../../Shared/MetaTags';
 
-export default class DisplayDocumentation extends Component {
+export default class FlexDocumentation extends Component {
   render() {
     return (
       <div className="section lg p-t-0">
@@ -10,7 +10,7 @@ export default class DisplayDocumentation extends Component {
         <div className="container">
           <Heading title={this.props.heading} subTitle={this.props.subTitle} />
           <div className="bb-grid md">
-            <div className="column column-8">
+            <div className="column column-8 scroll">
               <table className="bb-table striped full-x">
                 <tbody>
                   <tr className="primary font-weight-bold">
