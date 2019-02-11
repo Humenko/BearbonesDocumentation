@@ -19,7 +19,9 @@
 <url><loc>https://bearbon.es/documentation/layout/hero</loc><priority>0.5</priority></url>
 <url><loc>https://bearbon.es/documentation/helper/display</loc><priority>0.5</priority></url>
 <url><loc>https://bearbon.es/documentation/helper/flex</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/helper/list</loc><priority>0.5</priority></url>
 <url><loc>https://bearbon.es/documentation/helper/position</loc><priority>0.5</priority></url>
 <url><loc>https://bearbon.es/documentation/helper/spacing</loc><priority>0.5</priority></url>
+<url><loc>https://bearbon.es/documentation/helper/typography</loc><priority>0.5</priority></url>
 <url><loc>https://bearbon.es/documentation/helper/visibility</loc><priority>0.5</priority></url>
 </urlset>
