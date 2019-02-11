@@ -127,7 +127,8 @@ const documentationRoutes = [
     section: 'Components',
     path: '/documentation/components/field',
     title: 'Field',
-    subTitle: 'Coming soon...',
+    subTitle:
+      'An essential component for any form, providing the user a simple way to fill in their data.',
     component: FieldDocumentation
   },
   {
