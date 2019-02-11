@@ -1,4 +1,4 @@
-import { faPaw } from '@fortawesome/pro-solid-svg-icons';
+import { faPawClaws } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
@@ -431,18 +431,18 @@ export default class ButtonDocumentation extends Component {
                   <div className="doc-content">
                     <button className="bb-btn icon">
                       <span>
-                        <FontAwesomeIcon icon={faPaw} />
+                        <FontAwesomeIcon icon={faPawClaws} />
                       </span>
                     </button>
                     <button className="bb-btn m-x-2 icon">
                       Icon
                       <span className="p-l-2">
-                        <FontAwesomeIcon icon={faPaw} />
+                        <FontAwesomeIcon icon={faPawClaws} />
                       </span>
                     </button>
                     <button className="bb-btn icon">
                       <span className="p-r-2">
-                        <FontAwesomeIcon icon={faPaw} />
+                        <FontAwesomeIcon icon={faPawClaws} />
                       </span>
                       Icon
                     </button>
@@ -453,21 +453,21 @@ export default class ButtonDocumentation extends Component {
                     <Code language="markup">
                       {`<button class="bb-btn icon">
   <span>
-    <i class="fas fa-paw"></i>
+    <i class="fas fa-paw-claws"></i>
   </span>
 </button>`}
                     </Code>
                     <Code language="markup">
                       {`<button class="bb-btn icon">Icon
   <span class="p-l-2">
-    <i class="fas fa-paw"></i>
+    <i class="fas fa-paw-claws"></i>
   </span>
 </button>`}
                     </Code>
                     <Code language="markup">
                       {`<button class="bb-btn icon">
   <span class="p-l-2">
-    <i class="fas fa-paw"></i>
+    <i class="fas fa-paw-claws"></i>
   </span>
 Icon</button>`}
                     </Code>

@@ -1,4 +1,4 @@
-import { faPaw } from '@fortawesome/pro-solid-svg-icons';
+import { faPawClaws } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import Code from '../../Shared/Code';
@@ -120,7 +120,7 @@ export default class DividerDocumentation extends Component {
                       day.
                     </p>
                     <div className="bb-divider divider-content">
-                      <FontAwesomeIcon icon={faPaw} />
+                      <FontAwesomeIcon icon={faPawClaws} />
                     </div>
                     <p>
                       One variation of the black bear is a white bear called the
@@ -135,7 +135,7 @@ export default class DividerDocumentation extends Component {
                   <>
                     <Code language="markup">
                       {`<div class="bb-divider divider-content">
-  <i class="fas fa-paw" />
+  <i class="fas fa-paw-claws" />
 </div>`}
                     </Code>
                     <Code language="markup">

@@ -23,6 +23,7 @@ import ImportingDocumentation from './components/Documentation/GettingStarted/Im
 import InstallingDocumentation from './components/Documentation/GettingStarted/InstallingDocumentation';
 import DisplayDocumentation from './components/Documentation/Helper/DisplayDocumentation';
 import FlexDocumentation from './components/Documentation/Helper/FlexDocumentation';
+import ListDocumentation from './components/Documentation/Helper/ListDocumentation';
 import PositionDocumentation from './components/Documentation/Helper/PositionDocumentation';
 import SpacingDocumentation from './components/Documentation/Helper/SpacingDocumentation';
 import TypographyDocumentation from './components/Documentation/Helper/TypographyDocumentation';
@@ -139,7 +140,7 @@ const documentationRoutes = [
   },
   {
     section: 'Components',
-    path: '/documentation/components/Heading',
+    path: '/documentation/components/heading',
     title: 'Heading',
     subTitle: 'Coming soon...'
   },
@@ -186,7 +187,7 @@ const documentationRoutes = [
     path: '/documentation/components/table',
     title: 'Table',
     subTitle:
-      'his component is used to spruce up the HTML table we all know and hate.',
+      'This component is used to spruce up the HTML table we all know and hate.',
     component: TableDocumentation
   },
   {
@@ -235,8 +236,9 @@ const documentationRoutes = [
     section: 'Helper',
     path: '/documentation/helper/list',
     title: 'List',
-    subTitle: 'Coming soon...'
-    // component: ListDocumentation
+    subTitle:
+      'Easily be able to create ordered and unordered lists with these simple classes.',
+    component: ListDocumentation
   },
   {
     section: 'Helper',
