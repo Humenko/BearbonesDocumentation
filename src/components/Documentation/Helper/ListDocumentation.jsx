@@ -180,27 +180,35 @@ export default class ListDocumentation extends Component {
                 content={
                   <ul className="icon">
                     <li>
-                      <i>
-                        <FontAwesomeIcon icon={faPawClaws} />
-                      </i>
+                      <span>
+                        <i>
+                          <FontAwesomeIcon icon={faPawClaws} />
+                        </i>
+                      </span>
                       Panda
                     </li>
                     <li>
-                      <i>
-                        <FontAwesomeIcon icon={faPawClaws} />
-                      </i>
+                      <span>
+                        <i>
+                          <FontAwesomeIcon icon={faPawClaws} />
+                        </i>
+                      </span>
                       Brown Bear
                     </li>
                     <li>
-                      <i>
-                        <FontAwesomeIcon icon={faPawClaws} />
-                      </i>
+                      <span>
+                        <i>
+                          <FontAwesomeIcon icon={faPawClaws} />
+                        </i>
+                      </span>
                       Polar Bear
                     </li>
                     <li>
-                      <i>
-                        <FontAwesomeIcon icon={faPawClaws} />
-                      </i>
+                      <span>
+                        <i>
+                          <FontAwesomeIcon icon={faPawClaws} />
+                        </i>
+                      </span>
                       Sloth Bear
                     </li>
                   </ul>
@@ -208,10 +216,10 @@ export default class ListDocumentation extends Component {
                 code={
                   <Code language="markup">
                     {`<ul class="icon">
-  <li><i class="fas fa-paw-claws"></i> Panda</li>
-  <li><i class="fas fa-paw-claws"></i> Brown Bear</li>
-  <li><i class="fas fa-paw-claws"></i> Polar Bear</li>
-  <li><i class="fas fa-paw-claws"></i> Sloth Bear</li>
+  <li><span><i class="fas fa-paw-claws"></i></span> Panda</li>
+  <li><span><i class="fas fa-paw-claws"></i></span> Brown Bear</li>
+  <li><span><i class="fas fa-paw-claws"></i></span> Polar Bear</li>
+  <li><span><i class="fas fa-paw-claws"></i></span> Sloth Bear</li>
 </ul>`}
                   </Code>
                 }
