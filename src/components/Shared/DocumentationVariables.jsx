@@ -21,8 +21,8 @@ export default class DocumentationVariables extends Component {
                 <td>Name</td>
                 <td>Value</td>
               </tr>
-              {this.props.variables.map(variable => (
-                <tr>
+              {this.props.variables.map((variable, i) => (
+                <tr key={i}>
                   {variable.name ? (
                     <td>
                       <code>{variable.name}</code>

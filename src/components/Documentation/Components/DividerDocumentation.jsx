@@ -110,7 +110,7 @@ export default class DividerDocumentation extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <SubHeading title="Helper" />
-              <h5>Content</h5>
+              <h5 className="m-y-2">Content</h5>
               <DocumentationHelper
                 content={
                   <>

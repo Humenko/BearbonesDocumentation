@@ -686,7 +686,7 @@ export default class TableDocumentaion extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <SubHeading title="Helper" />
-              <h5>Full width</h5>
+              <h5 className="m-y-2">Full width</h5>
               <DocumentationHelper
                 content={
                   <div className="doc-content">
