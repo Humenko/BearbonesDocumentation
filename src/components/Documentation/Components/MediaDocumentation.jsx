@@ -271,7 +271,7 @@ export default class MediaDocumentation extends Component {
                           <p>
                             <strong>Paddington</strong>
                           </p>
-                          <p className="text-xl">
+                          <p>
                             Black bears are typically smaller than grizzly
                             bears, have a smaller shoulder hump, less shaggy
                             fur, longer ears, and a less concave facial profile.
@@ -336,7 +336,7 @@ export default class MediaDocumentation extends Component {
                           <p>
                             <strong>Paddington</strong>
                           </p>
-                          <p className="text-xl">
+                          <p>
                             Black bears are typically smaller than grizzly
                             bears, have a smaller shoulder hump, less shaggy
                             fur, longer ears, and a less concave facial profile.

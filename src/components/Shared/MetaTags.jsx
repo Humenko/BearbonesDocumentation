@@ -6,9 +6,8 @@ export default class MetaTags extends Component {
   render() {
     return (
       <Helmet>
-        <meta charSet="utf-8" />
         <title>{this.props.title}</title>
-        <meta name="desciption" content={this.props.subTitle} />
+        <meta name="description" content={this.props.subTitle} />
       </Helmet>
     );
   }
