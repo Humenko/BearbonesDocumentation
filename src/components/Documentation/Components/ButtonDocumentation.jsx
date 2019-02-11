@@ -479,7 +479,7 @@ Icon</button>`}
           <div className="bb-grid md">
             <div className="column column-16">
               <SubHeading title="Helper" />
-              <h5>Full width</h5>
+              <h5 className="m-y-2">Full width</h5>
               <DocumentationHelper
                 content={
                   <div className="doc-content">
@@ -496,7 +496,7 @@ Icon</button>`}
               />
             </div>
             <div className="column column-16">
-              <h5 className="m-y-3">No border radius</h5>
+              <h5 className="m-y-2">No border radius</h5>
               <DocumentationHelper
                 content={
                   <div className="doc-content">
@@ -515,7 +515,7 @@ Icon</button>`}
               />
             </div>
             <div className="column column-16">
-              <h5 className="m-y-3">Link</h5>
+              <h5 className="m-y-2">Link</h5>
               <DocumentationHelper
                 content={
                   <>
@@ -681,7 +681,7 @@ Icon</button>`}
           <div className="bb-grid md">
             <div className="column column-16">
               <SubHeading title="Helper" />
-              <h5>Full width</h5>
+              <h5 className="m-y-2">Full width</h5>
               <DocumentationHelper
                 content={
                   <div className="doc-content">
@@ -706,7 +706,7 @@ Icon</button>`}
               />
             </div>
             <div className="column column-16">
-              <h5 className="m-y-3">No border radius</h5>
+              <h5 className="m-y-2">No border radius</h5>
               <DocumentationHelper
                 content={
                   <div className="doc-content">
