@@ -747,8 +747,8 @@ Icon</button>`}
               { name: '$button-line-height', value: '1.3' },
               { name: '$button-text-transform', value: 'none' },
               {},
-              { name: '$button-spacing-x', value: '.5rem' },
-              { name: '$button-spacing-y', value: '.5rem' },
+              { name: '$button-spacing-x', value: '0.5rem' },
+              { name: '$button-spacing-y', value: '0.5rem' },
               {},
               {
                 name: '$button-transition',

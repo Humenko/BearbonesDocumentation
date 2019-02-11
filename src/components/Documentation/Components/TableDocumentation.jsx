@@ -844,8 +844,8 @@ export default class TableDocumentaion extends Component {
               { name: '$table-border-style', value: ' $border-style' },
               { name: '$table-border-width', value: ' $border-width / 2' },
               {},
-              { name: '$table-spacing-x', value: ' .75rem' },
-              { name: '$table-spacing-y', value: ' .75rem' },
+              { name: '$table-spacing-x', value: '0.75rem' },
+              { name: '$table-spacing-y', value: '0.75rem' },
               {},
               {
                 name: '$table-transition',

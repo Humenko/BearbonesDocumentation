@@ -28,14 +28,14 @@ export default class FooterDocumentation extends Component {
                       <div className="container text-center">
                         <p>
                           <strong>Bearbones</strong> by{' '}
-                          <a className="link" href="#example">
+                          <a className="link text-white" href="#example">
                             Daniel Humenko
                           </a>
                           .
                         </p>
                         <p>
                           Code licensed{' '}
-                          <a className="link" href="#example">
+                          <a className="link text-white" href="#example">
                             MIT
                           </a>
                           .

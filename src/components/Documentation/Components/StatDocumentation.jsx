@@ -378,11 +378,11 @@ export default class PaginationDocumentation extends Component {
               },
               {
                 name: '$stat-value-font-size-sm',
-                value: '$stat-value-font-size - .75rem'
+                value: '$stat-value-font-size - 0.75rem'
               },
               {
                 name: '$stat-value-font-size-lg',
-                value: '$stat-value-font-size + .75rem'
+                value: '$stat-value-font-size + 0.75rem'
               },
               {
                 name: '$stat-value-font-size-xl',

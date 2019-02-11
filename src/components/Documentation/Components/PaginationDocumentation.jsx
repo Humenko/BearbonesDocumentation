@@ -984,8 +984,8 @@ export default class PaginationDocumentation extends Component {
               { name: '$pagination-font-weight', value: '500' },
               {},
               { name: '$pagination-min-width', value: '3rem' },
-              { name: '$pagination-spacing-y', value: '.5rem' },
-              { name: '$pagination-spacing-x', value: '.75rem' },
+              { name: '$pagination-spacing-y', value: '0.5rem' },
+              { name: '$pagination-spacing-x', value: '0.75rem' },
               {},
               {
                 name: '$pagination-transition',
@@ -996,8 +996,8 @@ export default class PaginationDocumentation extends Component {
                 name: '$pagination-dot-border-radius',
                 value: '$border-radius-circle'
               },
-              { name: '$pagination-dot-size', value: '.3rem' },
-              { name: '$pagination-dot-spacing', value: '.1rem' }
+              { name: '$pagination-dot-size', value: '0.3rem' },
+              { name: '$pagination-dot-spacing', value: '0.1rem' }
             ]}
           />
         </div>
