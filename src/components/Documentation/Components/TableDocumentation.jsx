@@ -260,6 +260,7 @@ export default class TableDocumentaion extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <SubHeading title="Styles" />
+              <h5 className="m-y-2">Striped</h5>
               <DocumentationHelper
                 content={
                   <>
@@ -420,6 +421,7 @@ export default class TableDocumentaion extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
+              <h5 className="m-y-2">Naked</h5>
               <DocumentationHelper
                 content={
                   <>
