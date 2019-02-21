@@ -133,6 +133,7 @@ export default class ButtonDocumentation extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <SubHeading title="Styles" />
+              <h5 className="m-y-2">Outline</h5>
               <DocumentationHelper
                 content={
                   <div className="doc-content">
@@ -189,6 +190,7 @@ export default class ButtonDocumentation extends Component {
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
+              <h5 className="m-y-2">Invert</h5>
               <DocumentationHelper
                 content={
                   <div className="doc-content">
@@ -246,6 +248,7 @@ export default class ButtonDocumentation extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <SubHeading title="State" />
+              <h5 className="m-y-2">Loading</h5>
               <DocumentationHelper
                 content={
                   <>
@@ -297,6 +300,7 @@ export default class ButtonDocumentation extends Component {
               />
             </div>
             <div className="column column-16">
+              <h5 className="m-y-2">Disabled</h5>
               <DocumentationHelper
                 content={
                   <>
@@ -376,6 +380,7 @@ export default class ButtonDocumentation extends Component {
               />
             </div>
             <div className="column column-16">
+              <h5 className="m-y-2">Active</h5>
               <DocumentationHelper
                 content={
                   <>
@@ -618,7 +623,7 @@ Icon</button>`}
           </div>
           <div className="bb-grid md">
             <div className="column column-16">
-              <h1>Button Groups</h1>
+              <h2>Button Groups</h2>
               <Code language="js">
                 {'import "/bearbones/scss/components/button-group/all"'}
               </Code>
