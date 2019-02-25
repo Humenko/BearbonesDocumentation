@@ -463,10 +463,10 @@ export default class CardDocumentation extends Component {
                           </p>
                         </div>
                         <div className="footer">
-                          <a className="item" href="#">
+                          <a className="item" href="#example">
                             Lorem
                           </a>
-                          <a className="item" href="#">
+                          <a className="item" href="#example">
                             Ipsum
                           </a>
                         </div>
@@ -500,10 +500,10 @@ export default class CardDocumentation extends Component {
                           </p>
                         </div>
                         <div className="footer">
-                          <a className="item" href="#">
+                          <a className="item" href="#example">
                             Lorem
                           </a>
-                          <a className="item" href="#">
+                          <a className="item" href="#example">
                             Ipsum
                           </a>
                         </div>

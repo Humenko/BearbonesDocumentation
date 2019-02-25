@@ -10,6 +10,7 @@ import DropdownDocumentation from '../Documentation/Components/DropdownDocumenta
 import FieldDocumentation from '../Documentation/Components/FieldDocumentation';
 import FooterDocumentation from '../Documentation/Components/FooterDocumentation';
 import MediaDocumentation from '../Documentation/Components/MediaDocumentation';
+import NavbarDocumentation from '../Documentation/Components/NavbarDocumentation';
 import PaginationDocumentation from '../Documentation/Components/PaginationDocumentation';
 import StatDocumentation from '../Documentation/Components/StatDocumentation';
 import TabDocumentation from '../Documentation/Components/TabDocumentation';
@@ -96,7 +97,8 @@ export const routes = [
     section: 'Components',
     path: '/documentation/components/card',
     title: 'Card',
-    subTitle: 'Coming soon...',
+    subTitle:
+      'A relatively modern component that utilised to display content in a grouped entity',
     component: CardDocumentation
   },
   {
@@ -148,9 +150,9 @@ export const routes = [
     section: 'Components',
     path: '/documentation/components/navbar',
     title: 'Navbar',
-    subTitle: 'Coming soon...'
-    // 'An essential component for all sites, allowing customers to easily navigate.',
-    // component: NavbarDocumentation
+    subTitle:
+      'An essential component for all sites, allowing customers to easily navigate.',
+    component: NavbarDocumentation
   },
   {
     section: 'Components',
