@@ -113,7 +113,7 @@ $link-hover-decoration: underline !default;
 
 // Typography //
 
-//******************Body
+// Body
 $body-font-size: 1rem !default;
 $font-color: $base-color !default;
 $font-family: 'Inter', 'Helvetica', 'Arial', sans-serif !default;
@@ -284,25 +284,39 @@ $button-loader-size: .75rem !default;
 $button-loader-offset: -($button-loader-size / 2) !default;
 $button-loader-spacing: $button-loader-offset 0 0 $button-loader-offset !default;
 
-//******************Card //
+// Card //
 
-$card-background: $white !default;
-$card-border-color: $lighter-grey !default;
+$card-variant-background: $white !default;
+$card-variant-color: $base-variant-background !default;
+$card-variant-border: $lighter-grey !default;
+$card-variant-hover: $lighter-grey !default;
+//
+$card-border-radius: $border-radius * 2 !default;
 $card-border-style: $border-style !default;
-$card-border-width: .25rem !default;
-$card-border-radius: $border-radius !default;
-$card-color: $base-color !default;
-$card-footer-border-color: $card-border-color !default;
-$card-item-border-color: $card-border-color !default;
-$card-box-shadow: 0 3px 1px -1px rgba(0, 0, 0, .1),
-  0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !default;
+$card-border-width: $border-width !default;
+//
+$card-header-variant-border: $card-variant-border !default;
+$card-header-variant-color: $primary-variant-background !default;
+$card-header-font-family: $heading-font-family !default;
+$card-header-font-weight: $font-weight-bold !default;
+$card-header-border-style: $card-border-style !default;
+$card-header-border-width: $card-border-width / 2 !default;
+$card-header-spacing-x: $padding !default;
+$card-header-spacing-y: $padding !default;
+//
 $card-content-font-family: $font-family !default;
 $card-content-spacing-x: $padding !default;
 $card-content-spacing-y: $padding !default;
-$card-heading-font-family: $heading-font-family !default;
-$card-heading-font-weight: $font-weight-bold !default;
-$card-header-spacing-x: $padding !default;
-$card-header-spacing-y: $padding !default;
+//
+$card-footer-variant-border: $card-variant-border !default;
+$card-footer-variant-color: $primary-variant-background !default;
+$card-footer-item-variant-border: $card-footer-variant-border !default;
+$card-footer-border-style: $card-border-style !default;
+$card-footer-border-width: $card-border-width / 2 !default;
+$card-footer-spacing-x: $padding !default;
+$card-footer-spacing-y: $padding !default;
+//
+$card-box-shadow: 0 1.25rem 1.5rem -1.25rem rgba(10, 10, 10, .1) !default;
 
 // Divider //
 
@@ -343,14 +357,14 @@ $dropdown-offset: -.125rem !default;
 $dropdown-transition: color 0s, opacity $transition-effect $transition-duration,
   transform $transition-effect $transition-duration !default;
 
-//******************Field //
+// Field //
 
-//
 $field-variant-background: $white !default;
 $field-variant-color: $base-variant-background !default;
 $field-variant-border: $lighter-grey !default;
 $field-variant-active: $base-variant-active !default;
 $field-variant-focus: $field-variant-active !default;
+$field-variant-disabled-opacity: .2 !default;
 $field-variant-toggle: $light-grey !default;
 $field-variant-toggle-active: $light-grey !default;
 $field-variant-placeholder: $lighter-grey !default;
@@ -378,7 +392,7 @@ $field-line-height: $font-line-height !default;
 //
 $field-minimum-height: 2.625rem !default;
 $field-spacing-x: .5rem !default;
-$field-spacing-y: .5rem !default; // sort this, field-spacing-addon-y
+$field-spacing-y: .5rem !default;
 //
 $field-toggle-spacing-x: .75rem !default;
 $field-toggle-width: .5rem !default;
@@ -397,17 +411,13 @@ $field-label-font-size: $font-size !default;
 $field-text-font-size: $font-size-sm !default;
 $field-text-spacing-y: .25rem !default;
 //
-$field-transition: border-color $transition-effect $transition-duration,
-  background-color $transition-effect $transition-duration,
-  color $transition-effect $transition-duration !default;
+$field-transition: all $transition-effect $transition-duration !default;
 
 // Addon
-$field-addon-variant-background: $lighter-grey !default;
-$field-addon-variant-color: $base-color !default;
-$field-addon-variant-border: $field-variant-border !default;
-$field-addon-variant-focus: $lighter-grey !default;
-$field-addon-variant-background-focus: $field-variant-focus !default;
-$field-addon-variant-border-focus: $field-variant-color !default;
+$field-addon-variant-background: $field-variant-active !default;
+$field-addon-variant-color: $field-variant-background !default;
+$field-addon-variant-border: $field-variant-active !default;
+$field-addon-variant-disabled-opacity: .2 !default;
 //
 $field-addon-spacing-x: .5rem !default;
 $field-addon-spacing-y: .5rem !default;
@@ -425,7 +435,7 @@ $footer-spacing: 3rem $layout-spacing-x 6rem $layout-spacing-x !default;
 
 $media-variant-border: $light-grey !default;
 //
-$media-border-radius: $border-width !default;
+$media-border-radius: $border-radius !default;
 $media-border-style: $border-style !default;
 $media-border-width: $border-width !default;
 //
@@ -435,8 +445,7 @@ $media-spacing-y: 1rem !default;
 //******************Navbar //
 
 $navbar-background: $base-pair !default;
-$navbar-box-shadow: 0 3px 1px 0 rgba(0, 0, 0, .1),
-  0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12) !default;
+$navbar-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .12) !default;
 $navbar-item-spacing-x: .5rem !default;
 $navbar-item-spacing-y: .75rem !default;
 $navbar-font-weight: $font-weight-bold !default;
@@ -511,23 +520,33 @@ $stat-text-font-size: $stat-value-font-size / 2 !default;
 $stat-line-height: 1em !default;
 //
 $stat-spacing: 1rem !default;
-//
-$stat-value-font-size-xs: $stat-value-font-size - 1rem !default;
-$stat-value-font-size-sm: $stat-value-font-size - .5rem !default;
-$stat-value-font-size-lg: $stat-value-font-size + .5rem !default;
-$stat-value-font-size-xl: $stat-value-font-size + 1rem !default;
+$stat-value-font-sizes: (
+  xs: $stat-value-font-size - 1rem,
+  sm: $stat-value-font-size - .5rem,
+  lg: $stat-value-font-size + .5rem,
+  xl: $stat-value-font-size + 1rem
+) !default;
 
 //FIX FONT SIZING
 
-//******************Tab //
+// Tab //
 
-$tab-background: darken($base-pair, 2%) !default;
+$tab-variant-background: $base-color !default;
+$tab-variant-color: $base-color !default;
+$tab-variant-border: rgba($tab-variant-background, .2) !default;
+$tab-variant-hover: $tab-variant-background !default;
+$tab-variant-active: $tab-variant-hover !default;
+//
+$tab-border-radius: $border-radius !default;
+$tab-border-style: $border-style !default;
 $tab-border-width: $border-width !default;
+//
+$tab-spacing-x: 1rem !default;
+$tab-spacing-y: .25rem !default;
+//
 $tab-transition: all $transition-effect $transition-duration !default;
-$tab-item-spacing-x: $padding !default;
-$tab-item-spacing-y: $padding / 2 !default;
 
-// Table //
+// ******* Table //
 
 $table-variant-background: darken($base-variant-color, 2%) !default;
 $table-variant-color: $base-variant-background !default;

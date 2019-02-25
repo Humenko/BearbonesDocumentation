@@ -108,8 +108,8 @@ export default class FieldDocumentation extends Component {
                     htmlFor="CheckboxExample"
                     id="CheckboxExampleLabel"
                   >
-                    Contact me via email when this product is available and for
-                    marketing and research purposes.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris.
                     <input
                       type="checkbox"
                       id="CheckboxExample"
@@ -125,8 +125,8 @@ export default class FieldDocumentation extends Component {
   for="CheckboxExample"
   id="CheckboxExampleLabel"
 >
-  Contact me via email when this product is available and for
-  marketing and research purposes.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Phasellus nec iaculis mauris.
   <input
     type="checkbox"
     id="CheckboxExample"

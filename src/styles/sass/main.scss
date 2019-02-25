@@ -4,6 +4,15 @@
 @import 'components/footer/all';
 @import 'layout/all';
 
+//
+$warning-color: #FAAE68 !default;
+$warning-pair: darken($warning-color, 90%) !default;
+$warning-variant-background: $warning-color !default;
+$warning-variant-border: darken($warning-variant-background, 10%) !default;
+$warning-variant-color: $warning-pair !default;
+$warning-variant-hover: darken($warning-variant-background, 10%) !default;
+$warning-variant-active: darken($warning-variant-background, 12%) !default;
+
 .bb-accordion {
 	width: 100%;
 }
@@ -17,29 +26,8 @@ body {
 	padding-bottom: 1rem;
 }
 
-.bb-navbar {
+.bb-navbar.docs {
 	border-top: .25rem solid $secondary-color;
-	opacity: 0;
-	transition: transform $transition-effect $transition-duration,
-	opacity $transition-effect $transition-duration;
-	transform: translateY(-2rem);
-	pointer-events: none;
-}
-
-.doc-navbar {
-	border-top: none;
-	opacity: 0;
-	transition: transform $transition-effect $transition-duration,
-	opacity $transition-effect $transition-duration;
-	transform: translateY(2rem);
-	pointer-events: none;
-}
-
-.bb-navbar.display,
-.doc-navbar.display {
-	opacity: 1;
-	transform: translateY(0);
-	pointer-events: auto;
 }
 
 // @include respond-to('md') {
@@ -80,8 +68,8 @@ body {
 		background: transparent;
 		color: $base-color;
 		font-size: $font-size-sm;
-		&:hover,
-		&.active {
+
+		@include hover-focus-active {
 			border-color: transparent;
 			background: transparent;
 			color: $secondary-color;
@@ -99,16 +87,6 @@ body {
 		ul li {
 			padding-bottom: 0;
 		}
-	}
-}
-
-.bb-card {
-	@include border($card-border-width, $card-border-style, $card-border-color);
-	&.primary {
-		@include border($card-border-width, $card-border-style, $primary-color);
-	}
-	&.secondary {
-		@include border($card-border-width, $card-border-style, $secondary-color);
 	}
 }
 
@@ -232,4 +210,12 @@ $button-box-shadow-hover: none;
 			visibility: hidden !important;
 		}
 	}
+}
+
+.bb-alert.warning {
+	@include alert-variant(
+	$warning-variant-color,
+	$warning-variant-background,
+	$warning-variant-border
+	);
 }

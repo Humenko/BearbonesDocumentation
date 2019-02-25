@@ -7,7 +7,7 @@ import BearbonesLogo from './Logo/BearbonesLogo';
 export default function Header() {
   return (
     <div className="container">
-      <nav className="bb-navbar docs fixed" id="top-navbar">
+      <nav className="bb-navbar shadow docs fixed" id="top-navbar">
         <div className="brand justify-content-between">
           <Link to="/" aria-label="home" className="item">
             <div className="logo">
