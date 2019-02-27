@@ -54,11 +54,11 @@ export default class NavbarDocumentation extends Component {
                         <BearbonesLogo />
                       </div>
                     </Link>
-                    <a className="toggle" onClick={this.handleNavbar}>
+                    <div className="toggle" onClick={this.handleNavbar}>
                       <span aria-hidden="true" />
                       <span aria-hidden="true" />
                       <span aria-hidden="true" />
-                    </a>
+                    </div>
                   </div>
 
                   <div
@@ -67,29 +67,39 @@ export default class NavbarDocumentation extends Component {
                     }`}
                   >
                     <div className="left">
-                      <a className="item" href="#">
+                      <a className="item" href="/">
                         Home
                       </a>
 
-                      <a className="item" href="#">
+                      <a className="item" href="/documentation">
                         Documentation
                       </a>
 
                       <div className="item bb-dropdown hover">
-                        <a className="link">About</a>
+                        <span className="link">About</span>
                         <div className="dropdown-menu">
-                          <a className="dropdown-item">Lorem ipsum</a>
-                          <a className="dropdown-item">Lorem ipsum</a>
+                          <a className="dropdown-item" href="#example">
+                            Lorem ipsum
+                          </a>
+                          <a className="dropdown-item" href="#example">
+                            Lorem ipsum
+                          </a>
                           <hr className="bb-divider secondary" />
-                          <a className="dropdown-item">Lorem ipsum</a>
+                          <a className="dropdown-item" href="#example">
+                            Lorem ipsum
+                          </a>
                         </div>
                       </div>
                     </div>
 
                     <div className="right">
                       <div className="item">
-                        <a className="bb-btn primary outline">Lorem</a>
-                        <a className="bb-btn positive m-l-2">Ipsum</a>
+                        <a className="bb-btn primary outline" href="#example">
+                          Lorem
+                        </a>
+                        <a className="bb-btn positive m-l-2" href="#example">
+                          Ipsum
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -105,18 +115,18 @@ export default class NavbarDocumentation extends Component {
   <div class="brand">
     <a class="item" href="#">
     </a>
-    <a class="toggle">
+    <div class="toggle">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
-    </a>
+    </div>
   </div>
   <div class="items">
     <div class="left">
       <a class="item" href="#">Home</a>
       <a class="item" href="#">Documentation</a>
       <div class="item bb-dropdown hover">
-        <a class="link">About</a>
+        <span class="link">About</span>
         <div class="dropdown-menu">
           <a class="dropdown-item">Lorem ipsum</a>
           <a class="dropdown-item">Lorem ipsum</a>
