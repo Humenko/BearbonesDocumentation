@@ -21,11 +21,11 @@ export default class AccordionDocumentation extends Component {
           <div className="bb-grid md">
             <div className="column column-16">
               <SubHeading title="Basic" />
-              <p className="subtitle sm p-b-3">
-                As there is no js in Bearbones, you need to toggle the{' '}
-                <code>.active</code> class on the element header and content you
+              <div className="bb-alert warning m-b-3">
+                Bearbones <strong>does not</strong> implement any Javascript.
+                Therefore you need to toggle the <code>.active</code> class on the element header and content you
                 want to expand/collapse.
-              </p>
+              </div>
               <DocumentationHelper
                 content={
                   <div className="doc-content">

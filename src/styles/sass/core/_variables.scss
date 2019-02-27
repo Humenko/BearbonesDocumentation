@@ -178,7 +178,8 @@ $accordion-heading-spacing-x: 0 !default;
 $accordion-heading-spacing-y: 1rem !default;
 $accordion-content-spacing-x: 1rem !default;
 $accordion-content-spacing-y: 1rem !default;
-$accordion-toggle-spacing: 0 .5rem 0 0 !default; // sort this
+$accordion-toggle-spacing-y: 0 !default;
+$accordion-toggle-spacing-x: 1rem !default;
 $accordion-toggle-width: .5rem !default;
 $accordion-toggle-height: .5rem !default;
 //
@@ -462,7 +463,7 @@ $navbar-font-weight: $font-weight !default;
 //
 $navbar-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .12) !default;
 $navbar-height: 4rem !default;
-$navbar-logo-max-height: $navbar-height/1.5 !default;
+$navbar-logo-max-height: 3rem !default;
 $navbar-logo-height: $navbar-height !default;
 $navbar-logo-width: $navbar-height !default;
 //
