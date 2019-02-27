@@ -194,11 +194,6 @@ $button-box-shadow-hover: none;
 	}
 }
 
-.bb-navbar .item .logo {
-	max-height: 3rem;
-	width: 4rem;
-}
-
 @each $breakpoint in map-keys($breakpoints) {
 	.invisible-#{$breakpoint}-up {
 		@include respond-to-up($breakpoint) {

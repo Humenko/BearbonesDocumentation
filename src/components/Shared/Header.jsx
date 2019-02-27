@@ -1,20 +1,42 @@
 import { faGithubAlt, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import BearbonesLogo from './Logo/BearbonesLogo';
 
-export default function Header() {
-  return (
-    <div className="container">
-      <nav className="bb-navbar shadow docs fixed" id="top-navbar">
-        <div className="brand justify-content-between">
-          <Link to="/" aria-label="home" className="item">
-            <div className="logo">
-              <BearbonesLogo />
-            </div>
-          </Link>
-          <div className="item">
+export default class Header extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      navbarIsOpen: false
+    };
+
+    this.handleNavbar = this.handleNavbar.bind(this);
+  }
+
+  handleNavbar() {
+    this.setState({
+      navbarIsOpen: !this.state.navbarIsOpen
+    });
+  }
+  render() {
+    return (
+      <div className="container">
+        <nav className="bb-navbar shadow docs fixed" id="top-navbar">
+          <div className="brand">
+            <Link to="/" aria-label="home" className="item">
+              <div className="logo">
+                <BearbonesLogo />
+              </div>
+            </Link>
+            <Link
+              to="/documentation"
+              aria-label="documentation"
+              className="item"
+            >
+              Documentation
+            </Link>
             <a
               className="item"
               href={process.env.REACT_APP_GITHUB_URL}
@@ -33,41 +55,9 @@ export default function Header() {
             >
               <FontAwesomeIcon icon={faTwitter} size="lg" />
             </a>
-            {/* <div className="item hidden-lg-down">
-                <a href="/404" className="bb-btn positive">
-                  Download
-                </a>
-              </div> */}
           </div>
-        </div>
-        <div className="items">
-          {/* <div className="right">
-              <div className="item bb-dropdown hover">
-                <div className="bb-btn link icon">
-                  <FontAwesomeIcon
-                    className="m-r-3"
-                    icon={['fas', 'palette']}
-                  />
-                  Themes
-                </div>
-                <div className="dropdown-menu">
-                  <a href="#example" className="dropdown-item">
-                    Normal
-                  </a>
-                  <a href="#example" className="dropdown-item">
-                    Dark
-                  </a>
-                  <a href="#example" className="dropdown-item">
-                    Retro
-                  </a>
-                  <a href="#example" className="dropdown-item">
-                    Material
-                  </a>
-                </div>
-              </div>
-            </div> */}
-        </div>
-      </nav>
-    </div>
-  );
+        </nav>
+      </div>
+    );
+  }
 }
