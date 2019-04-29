@@ -1,12 +1,9 @@
 import { faCss3 } from '@fortawesome/free-brands-svg-icons';
-import {
-  faCogs,
-  faFileAlt,
-  faThumbsUp
-} from '@fortawesome/pro-light-svg-icons';
+import { faCogs, faFileAlt, faThumbsUp } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+
 import Footer from '../Shared/Footer';
 import IllustrationPainter from '../Shared/Illustrations/IllustrationPainter';
 import IllustrationRubble from '../Shared/Illustrations/IllustrationRubble';
@@ -39,7 +36,7 @@ export default class Home extends Component {
     return (
       <section>
         <MetaTags title={this.props.title} subTitle={this.props.subTitle} />
-        <div className="hero full-y m-t-5">
+        <div className="hero full-y m-t-3">
           <div className="body">
             <div className="container full-x">
               <div className="bb-grid lg align-items-center">
