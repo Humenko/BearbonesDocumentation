@@ -12,7 +12,7 @@ before_install:
   - echo //npm.fontawesome.com/:_authToken=$FA_TOKEN >> .npmrc
 
 script:
-  - yarn build
+  - npm run build
 
 deploy:
   provider: firebase
