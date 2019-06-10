@@ -12,13 +12,13 @@
     "analyse-main": "yarn build && source-map-explorer build/static/js/main.*"
   },
   "devDependencies": {
-    "@babel/polyfill": "^7.4.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
     "@fortawesome/pro-light-svg-icons": "^5.9.0",
     "@fortawesome/pro-solid-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bearbones": "^0.36.0",
+    "core-js": "^3.1.3",
     "eslint-plugin-flowtype": "^3.10.0",
     "eslint-plugin-react": "^7.13.0",
     "node-sass": "^4.12.0",

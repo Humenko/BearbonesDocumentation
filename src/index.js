@@ -1,5 +1,5 @@
 import './styles/sass/main.scss';
-import '@babel/polyfill';
+import 'core-js/stable';
 
 import React from 'react';
 import { render } from 'react-dom';
