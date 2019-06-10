@@ -1,0 +1,8 @@
+.doc.bb-breadcrumb {
+  @include respond-to-down('lg') {
+    margin-top: 4rem;
+    ul li {
+      padding-bottom: 0;
+    }
+  }
+}

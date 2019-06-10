@@ -1,0 +1,24 @@
+.doc.bb-navbar {
+  border-top: 0.25rem solid $secondary-color;
+}
+
+.doc.bottom.bb-navbar {
+  border-top: none;
+  .bb-btn {
+    flex-direction: column;
+    border-color: transparent;
+    background: transparent;
+    color: $base-color;
+    font-size: $font-size-sm;
+
+    @include hover-focus-active {
+      border-color: transparent;
+      background: transparent;
+      color: $secondary-color;
+    }
+    &.icon span {
+      margin: 0 0 0.5rem 0;
+      font-size: $font-size-lg;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.doc.bb-table {
+  background: darken($base-pair, 2%);
+  code {
+    padding: 0.25rem 0.5rem;
+    background: $secondary-color;
+    color: $secondary-pair;
+    white-space: nowrap;
+    font-size: 0.75rem;
+  }
+  td:first-child {
+    @include border-right(
+      $table-border-width,
+      $table-border-style,
+      $table-variant-border
+    );
+  }
+}

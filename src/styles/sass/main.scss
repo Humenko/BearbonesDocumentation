@@ -1,11 +1,14 @@
 @import 'core/all';
 @import 'components/box/all';
+@import 'components/breadcrumb/all';
 @import 'components/code/all';
 @import 'components/footer/all';
+@import 'components/navbar/all';
+@import 'components/animation/all';
 @import 'layout/all';
 
 //
-$warning-color: #FAAE68 !default;
+$warning-color: #faae68 !default;
 $warning-pair: darken($warning-color, 90%) !default;
 $warning-variant-background: $warning-color !default;
 $warning-variant-border: darken($warning-variant-background, 10%) !default;
@@ -13,204 +16,21 @@ $warning-variant-color: $warning-pair !default;
 $warning-variant-hover: darken($warning-variant-background, 10%) !default;
 $warning-variant-active: darken($warning-variant-background, 12%) !default;
 
-.bb-accordion {
-	width: 100%;
+.warning.bb-alert {
+  @include alert-variant(
+    $warning-variant-color,
+    $warning-variant-background,
+    $warning-variant-border
+  );
 }
 
 body {
-	padding-bottom: env(safe-area-inset-bottom);
-	background: darken($base-pair, 2%);
-}
-
-.bb-grid .column:last-child {
-	padding-bottom: 1rem;
-}
-
-.bb-navbar.docs {
-	border-top: .25rem solid $secondary-color;
-}
-
-// @include respond-to('md') {
-//   .section {
-//     padding-right: calc(env(safe-area-inset-right)+#{$layout-spacing-x});
-//     padding-left: env(safe-area-inset-left);
-//   }
-// }
-
-.bottom {
-	&.fixed {
-		position: fixed;
-		top: auto;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		z-index: 100;
-		padding-bottom: env(safe-area-inset-bottom);
-	}
-	&.shadow {
-		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .12);
-		.items.active {
-			box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .12);
-		}
-	}
+  padding-bottom: env(safe-area-inset-bottom);
+  background: darken($base-pair, 2%);
 }
 
 .text-center-lg {
-	@include respond-to('lg') {
-		text-align: center;
-	}
-}
-
-.doc-navbar {
-	.bb-btn {
-		flex-direction: column;
-		border-color: transparent;
-		background: transparent;
-		color: $base-color;
-		font-size: $font-size-sm;
-
-		@include hover-focus-active {
-			border-color: transparent;
-			background: transparent;
-			color: $secondary-color;
-		}
-		&.icon span {
-			margin: 0 0 .5rem 0;
-			font-size: $font-size-lg;
-		}
-	}
-}
-
-.doc.bb-breadcrumb {
-	@include respond-to-down('lg') {
-		margin-top: 4rem;
-		ul li {
-			padding-bottom: 0;
-		}
-	}
-}
-
-.subtitle {
-	&.sm {
-		font-size: $font-size-md;
-	}
-	&.lg {
-		font-size: $font-size-xl;
-	}
-}
-
-// body {
-//   background: $lighter-grey;
-// }
-
-.doc-page-animation-enter {
-	position: absolute;
-	z-index: -1;
-	width: 100%;
-	opacity: 0;
-	transition: all .25s ease-in-out;
-	transition-delay: .25s;
-	transform: translateX(-5rem);
-}
-.doc-page-animation-enter.doc-page-animation-enter-active {
-	opacity: 1;
-	transform: translateX(0);
-
-	will-change: opacity, transform;
-}
-.doc-page-animation-exit {
-	position: absolute;
-	width: 100%;
-	opacity: 1;
-	transform: translateX(0);
-
-	will-change: opacity, transform;
-
-	h1 {
-		transition: all .2s ease-in-out;
-		transform: translateX(5rem);
-	}
-}
-.doc-page-animation-exit.doc-page-animation-exit-active {
-	opacity: 0;
-	transition: all .25s ease-in-out;
-	transform: translateX(5rem);
-
-	will-change: opacity, transform;
-}
-
-.bb-breadcrumb {
-	text-transform: capitalize;
-}
-
-.section {
-	&.p-t-0 {
-		padding-top: 0;
-	}
-	&.p-b-0 {
-		padding-bottom: 0;
-	}
-}
-
-.bb-table.doc {
-	background: darken($base-pair, 2%);
-	code {
-		padding: .25rem .5rem;
-		background: $secondary-color;
-		color: $secondary-pair;
-		white-space: nowrap;
-		font-size: .75rem;
-	}
-	td:first-child {
-		@include border-right(
-		$table-border-width,
-		$table-border-style,
-		$table-variant-border
-		);
-	}
-}
-
-.scroll {
-	overflow-x: scroll;
-}
-
-//remove bb-dropdown - align items
-
-@mixin table-striped-variant($color) {
-	tr:nth-child(even) {
-		background: darken($table-variant-background, 10%);
-		color: $color;
-	}
-}
-
-$button-box-shadow: none;
-$button-box-shadow-hover: none;
-
-#{$button} {
-	box-shadow: $button-box-shadow;
-
-	@include hover {
-		box-shadow: $button-box-shadow-hover;
-	}
-}
-
-@each $breakpoint in map-keys($breakpoints) {
-	.invisible-#{$breakpoint}-up {
-		@include respond-to-up($breakpoint) {
-			visibility: hidden !important;
-		}
-	}
-	.invisible-#{$breakpoint}-down {
-		@include respond-to-down($breakpoint) {
-			visibility: hidden !important;
-		}
-	}
-}
-
-.bb-alert.warning {
-	@include alert-variant(
-	$warning-variant-color,
-	$warning-variant-background,
-	$warning-variant-border
-	);
+  @include respond-to('lg') {
+    text-align: center;
+  }
 }
