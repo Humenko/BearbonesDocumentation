@@ -1,5 +1,5 @@
-import { faCss3 } from '@fortawesome/free-brands-svg-icons';
-import { faCogs, faFileAlt, faThumbsUp } from '@fortawesome/pro-light-svg-icons';
+import { faNpm, faSass } from '@fortawesome/free-brands-svg-icons';
+import { faFileAlt, faUserCog } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
@@ -50,8 +50,11 @@ export default class Home extends Component {
                     <span className="font-weight-bold">customisable</span> CSS
                     frameworks.
                   </p>
-                  <div className="column m-t-4">
-                    <Link to="/documentation" className="bb-btn secondary lg">
+                  <div className="column column-10 column-offset-3 m-t-4">
+                    <Link
+                      to="/documentation"
+                      className="bb-btn secondary full-x lg"
+                    >
                       Documentation
                       <span className="p-l-2">
                         <FontAwesomeIcon icon={faFileAlt} />
@@ -82,7 +85,7 @@ export default class Home extends Component {
               <div className="bb-grid lg m-t-5">
                 <div className="column one-third text-center-lg text-right">
                   <p className="text-secondary m-b-3">
-                    <FontAwesomeIcon icon={faCogs} size="5x" />
+                    <FontAwesomeIcon icon={faUserCog} size="5x" />
                   </p>
                   <h3 className="text-secondary title">Customisable.</h3>
                   <p className="subtitle lg">
@@ -92,7 +95,7 @@ export default class Home extends Component {
                 </div>
                 <div className="column one-third text-center-lg">
                   <p className="text-secondary m-b-3">
-                    <FontAwesomeIcon icon={faCss3} size="5x" />
+                    <FontAwesomeIcon icon={faSass} size="5x" />
                   </p>
                   <h3 className="text-secondary title">Contemporary.</h3>
                   <p className="subtitle lg">
@@ -106,7 +109,7 @@ export default class Home extends Component {
                 </div>
                 <div className="column one-third text-center-lg text-right">
                   <p className="text-secondary m-b-3">
-                    <FontAwesomeIcon icon={faThumbsUp} size="5x" />
+                    <FontAwesomeIcon icon={faNpm} size="5x" />
                   </p>
                   <h3 className="text-secondary title">Completely Free.</h3>
                   <p className="subtitle lg">

@@ -16,7 +16,7 @@ export default class AccordionDocumentation extends Component {
           <Heading
             title={this.props.heading}
             subTitle={this.props.subTitle}
-            code='import "/bearbones/scss/components/accordion/all"'
+            code='@import "/bearbones/scss/components/accordion/all"'
           />
           <div className="bb-grid md">
             <div className="column column-16">

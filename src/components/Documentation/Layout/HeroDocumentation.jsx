@@ -15,7 +15,7 @@ export default class HeroDocumentation extends Component {
             <Heading
               title={this.props.heading}
               subTitle={this.props.subTitle}
-              code='import "/bearbones/scss/components/hero/all"'
+              code='@import "/bearbones/scss/components/hero/all"'
             />
           </div>
         </div>

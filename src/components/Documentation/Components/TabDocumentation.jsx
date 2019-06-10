@@ -14,7 +14,7 @@ export default class TabDocumentation extends Component {
           <Heading
             title={this.props.heading}
             subTitle={this.props.subTitle}
-            code='import "/bearbones/scss/components/tab/all"'
+            code='@import "/bearbones/scss/components/tab/all"'
           />
           <div className="bb-grid md">
             <div className="column column-16">

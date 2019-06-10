@@ -33,7 +33,7 @@ export default class NavbarDocumentation extends Component {
             <Heading
               title={this.props.heading}
               subTitle={this.props.subTitle}
-              code='import "/bearbones/scss/components/navbar/all"'
+              code='@import "/bearbones/scss/components/navbar/all"'
             />
             <div className="bb-alert warning m-b-3">
               Bearbones <strong>does not</strong> implement any Javascript.

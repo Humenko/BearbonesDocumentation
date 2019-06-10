@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <div className="container">
       <nav
-        className="bb-navbar fixed bottom shadow doc-navbar hidden-lg-up"
+        className="bb-navbar fixed bottom shadow doc hidden-lg-up"
         id="bottom-navbar"
       >
         <div className="bb-btns full-x no-border-radius">

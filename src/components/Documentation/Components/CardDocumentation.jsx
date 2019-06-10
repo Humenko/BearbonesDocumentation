@@ -16,7 +16,7 @@ export default class CardDocumentation extends Component {
           <Heading
             title={this.props.heading}
             subTitle={this.props.subTitle}
-            code='import "/bearbones/scss/components/card/all"'
+            code='@import "/bearbones/scss/components/card/all"'
           />
           <div className="bb-grid md">
             <div className="column column-16">

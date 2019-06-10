@@ -2,6 +2,7 @@ import { faGithubAlt, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+
 import BearbonesLogo from './Logo/BearbonesLogo';
 
 export default class Header extends Component {
@@ -23,7 +24,7 @@ export default class Header extends Component {
   render() {
     return (
       <div className="container">
-        <nav className="bb-navbar shadow docs fixed" id="top-navbar">
+        <nav className="bb-navbar shadow doc fixed" id="top-navbar">
           <div className="brand">
             <Link to="/" aria-label="home" className="item">
               <div className="logo">

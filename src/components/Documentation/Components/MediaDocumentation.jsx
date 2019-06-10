@@ -15,7 +15,7 @@ export default class MediaDocumentation extends Component {
           <Heading
             title={this.props.heading}
             subTitle={this.props.subTitle}
-            code='import "/bearbones/scss/components/media/all"'
+            code='@import "/bearbones/scss/components/media/all"'
           />
           <div className="bb-grid md">
             <div className="column column-16">

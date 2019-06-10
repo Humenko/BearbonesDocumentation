@@ -17,7 +17,7 @@ export default class ButtonDocumentation extends Component {
           <Heading
             title={this.props.heading}
             subTitle={this.props.subTitle}
-            code='import "/bearbones/scss/components/button/all"'
+            code='@import "/bearbones/scss/components/button/all"'
           />
           <div className="bb-grid md">
             <div className="column column-16">

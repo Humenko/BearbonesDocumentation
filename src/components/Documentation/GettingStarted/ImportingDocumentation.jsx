@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import Code from '../../Shared/Code';
 import Heading from '../../Shared/DocumentationHeading';
 import DocumentationHelper from '../../Shared/DocumentationHelper';
@@ -31,7 +32,7 @@ export default class ImportingDocumentation extends Component {
                 Say you only want the button component.
               </p>
               <Code language="js">
-                {`import "/bearbones/scss/components/button/all"`}
+                {`@import "/bearbones/scss/components/button/all"`}
               </Code>
               <p>
                 <strong>Simple, right?</strong> Now you can use the button
@@ -82,7 +83,7 @@ export default class ImportingDocumentation extends Component {
               <p className="subtitle p-b-2">
                 Again, <strong>simple.</strong>
               </p>
-              <Code language="js">{`import "/bearbones/scss/bearbones"`}</Code>
+              <Code language="js">{`@import "/bearbones/scss/bearbones"`}</Code>
               <p>
                 Now you have all the components imported into your application.
               </p>

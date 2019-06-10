@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import Code from '../../Shared/Code';
 import Heading from '../../Shared/DocumentationHeading';
 import DocumentationHelper from '../../Shared/DocumentationHelper';
@@ -15,7 +16,7 @@ export default class PaginationDocumentation extends Component {
           <Heading
             title={this.props.heading}
             subTitle={this.props.subTitle}
-            code='import "/bearbones/scss/components/stat/all"'
+            code='@import "/bearbones/scss/components/stat/all"'
           />
           <div className="bb-grid md">
             <div className="column column-16">
@@ -370,7 +371,8 @@ export default class PaginationDocumentation extends Component {
               },
               { name: '$stat-line-height', value: '1em' },
               {},
-              { name: '$stat-spacing', value: '1rem' },
+              { name: '$stat-spacing-y', value: '1rem' },
+              { name: '$stat-spacing-x', value: '1rem' },
               {},
               {
                 name: '$stat-value-font-size-xs',
